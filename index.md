@@ -1,7 +1,7 @@
 ## 聯絡方式
 - Line 帳號 @211wegrx
-- IG 帳號 taomuru
-- Threads 帳號 @taomuru
+- IG 帳號 [taomuru](https://www.instagram.com/taomuru/)
+- Threads 帳號 [@taomuru](https://www.threads.com/@taomuru)
 - Youtube 頻道 https://www.youtube.com/@thaolaxd
 ## 服務方式
 - 需要提供一張全身照片, 並參考下方照片的人像大小,背景,姿勢,穿著
