@@ -6,7 +6,7 @@
 - Youtube 頻道 https://www.youtube.com/@thaolaxd
 ## 服務方式
 - 需要提供一張全身照片, 並參考下方照片的人像大小,背景,姿勢,穿著
-![氣場拍照姿勢](./aura-body.png)
+![氣場拍照姿勢](./aura-body.jpg)
 # 氣場介紹
 ## 何謂氣場
 - Aura,氣場,人體能量場,輝光,暉光,靈氣這些都是代表一樣的定義.
