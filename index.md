@@ -3,6 +3,7 @@
 - IG 帳號 [taomuru](https://www.instagram.com/taomuru/)
 - Threads 帳號 [@taomuru](https://www.threads.com/@taomuru)
 - Youtube 頻道 https://www.youtube.com/@thaolaxd
+- Telegram @lightaurastudio
 ## 服務方式
 - 線上諮詢,可文字,語音或視訊(Line, Zoom, Google Meet, WeChat, Whatsapp, Telegram, Email)
 - 提供Aura基礎解讀報告一份(可指定報告的語文,例如英文,中文,等等)
