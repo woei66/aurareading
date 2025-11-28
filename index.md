@@ -19,7 +19,6 @@
 - Includes one basic Aura reading report (you may specify the report language, e.g., English, Chinese, etc.)
 - Provides one-on-one consultation (additional fee)
 - No consultation for health issues, no communication with deceased relatives
-- Supports PayPal payment. 
 - [Pay the one-time Aura reading fee via PayPay](https://www.paypal.com/ncp/payment/VZGHCNNMF3RME)
 - A full-body photo is required. Please refer to the sample photo above and pay attention to body proportion and posture: 30% empty space above the head, the person occupies 20% of the photo height, 30% empty space from the feet to the bottom, palms facing forward, preferably with a light-colored wall background, and ideally wearing short sleeves and shorts.
 ## 訂閱服務
