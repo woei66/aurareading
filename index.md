@@ -6,12 +6,12 @@
 - Telegram @lightaurastudio
 - Book Aura Analysis Session https://calendly.com/taomuru/new-meeting
 ## 服務方式
-- 線上諮詢,可文字,語音或視訊(Line, Zoom, Google Meet, WeChat, Whatsapp, Telegram, Email)
-- 提供Aura基礎解讀報告一份(可指定報告的語文,例如英文,中文,等等)
+- 線上諮詢,可文字,語音或視訊
+- 提供 Aura 基礎解讀報告一份(可指定報告的語文,例如英文,中文,等等)
 - 提供一對一諮詢(額外收費)
 - 不提供健康問題諮詢,不提供過世親人通靈
-- 支援Paypal付款. 
-- [透過Paypay支付一次性氣場分析費用](https://www.paypal.com/ncp/payment/QQSPYKD6WHUUC)
+- 支援 Paypal 付款. 
+- [透過 Paypay 支付一次性氣場解讀費用](https://www.paypal.com/ncp/payment/QQSPYKD6WHUUC)
 - 需要提供一張全身照片, 並參考下方照片,注意人像比例跟姿勢, 頭頂上方空間佔據30%, 人佔據照片高度的20%, 腳底到最下方的空間佔據30%, 掌心向前, 背景最好是淡色的牆壁, 最好是短袖短褲
 ![氣場拍照姿勢](./aura-body.jpg)
 - Google評價 https://g.page/r/CQfz6lbreLYLEBM/review
@@ -24,14 +24,14 @@
 - [Pay the one-time Aura reading fee via PayPay](https://www.paypal.com/ncp/payment/VZGHCNNMF3RME)
 - A full-body photo is required. Please refer to the sample photo above and pay attention to body proportion and posture: 30% empty space above the head, the person occupies 20% of the photo height, 30% empty space from the feet to the bottom, palms facing forward, preferably with a light-colored wall background, and ideally wearing short sleeves and shorts.
 ## 訂閱服務
-- [個人每月20次氣場分析](./subscription-personal.html)
-- [家庭共享每月20次氣場分析](./subscription-family.html)
-- [好友共享每月20次氣場分析](./subscription-friends.html)
+- [個人每月20次氣場解讀](./subscription-personal.html)
+- [家庭共享每月20次氣場解讀](./subscription-family.html)
+- [好友共享每月20次氣場解讀](./subscription-friends.html)
 ## Subscription Plans
 
-* [Personal: 20 Aura Analyses per Month](./subscription-personal.html)
-* [Family Shared: 20 Aura Analyses per Month](./subscription-family.html)
-* [Friends Shared: 20 Aura Analyses per Month](./subscription-friends.html)
+* [Personal: 20 Aura Reading per Month](./subscription-personal.html)
+* [Family Shared: 20 Aura Reading per Month](./subscription-family.html)
+* [Friends Shared: 20 Aura Reading per Month](./subscription-friends.html)
 
 ## 關於我
 - 畢業於中興大學應用數學系跟資訊科學研究所
