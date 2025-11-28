@@ -4,7 +4,7 @@
 - Threads 帳號 [@taomuru](https://www.threads.com/@taomuru)
 - Youtube 頻道 https://www.youtube.com/@thaolaxd
 - Telegram @lightaurastudio
-- Book Aura Analysis Session https://calendly.com/taomuru/new-meeting
+- Book(預約) Aura Reading Session https://calendly.com/taomuru/new-meeting
 ## 服務方式
 - 線上諮詢,可文字,語音或視訊
 - 提供 Aura 基礎解讀報告一份(可指定報告的語文,例如英文,中文,等等)
