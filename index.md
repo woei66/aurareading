@@ -21,6 +21,16 @@
 - No consultation for health issues, no communication with deceased relatives
 - Supports PayPal payment
 - A full-body photo is required. Please refer to the sample photo above and pay attention to body proportion and posture: 30% empty space above the head, the person occupies 20% of the photo height, 30% empty space from the feet to the bottom, palms facing forward, preferably with a light-colored wall background, and ideally wearing short sleeves and shorts.
+## 訂閱服務
+- [個人每月20次氣場分析](./subscription-personal.html)
+- [家庭共享每月20次氣場分析](./subscription-family.html)
+- [好友共享每月20次氣場分析](./subscription-friends.html)
+## Subscription Plans
+
+* [Personal: 20 Aura Analyses per Month](./subscription-personal.html)
+* [Family Shared: 20 Aura Analyses per Month](./subscription-family.html)
+* [Friends Shared: 20 Aura Analyses per Month](./subscription-friends.html)
+
 ## 關於我
 - 畢業於中興大學應用數學系跟資訊科學研究所
 - 曾經擔任多家公司主管及新創公司CEO
