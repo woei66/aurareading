@@ -22,14 +22,14 @@
 - [Pay the one-time Aura reading fee via PayPay](https://www.paypal.com/ncp/payment/VZGHCNNMF3RME)
 - A full-body photo is required. Please refer to the sample photo above and pay attention to body proportion and posture: 30% empty space above the head, the person occupies 20% of the photo height, 30% empty space from the feet to the bottom, palms facing forward, preferably with a light-colored wall background, and ideally wearing short sleeves and shorts.
 ## 訂閱服務
-- [個人每月20次氣場解讀](./subscription-personal.html)
-- [家庭共享每月20次氣場解讀](./subscription-family.html)
-- [好友共享每月20次氣場解讀](./subscription-friends.html)
+- [個人 Aura Reading 月訂閱](./subscription-personal.html)
+- [家庭 Aura Reading 月訂閱（最多 3 人）](./subscription-family.html)
+- [朋友分享 Aura Reading 月訂閱（2 人方案）](./subscription-friends.html)
 ## Subscription Plans
 
-* [Personal: 20 Aura Reading per Month](./subscription-personal.html)
-* [Family Shared: 20 Aura Reading per Month](./subscription-family.html)
-* [Friends Shared: 20 Aura Reading per Month](./subscription-friends.html)
+* [Individual Aura Reading Monthly Plan](./subscription-personal.html)
+* [Family Aura Reading Monthly Plan (Up to 3 Members)](./subscription-family.html)
+* [Friends Share Aura Reading Monthly Plan (2-Person Plan)](./subscription-friends.html)
 
 ## 關於我
 - 畢業於中興大學應用數學系跟資訊科學研究所
