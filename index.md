@@ -76,5 +76,5 @@
 - Fifth Layer: Lower Mental — associated with intellectual level.
 - Sixth Layer: Higher Mental — connects to universal wisdom.
 - Seventh Layer: Spiritual — absorbs cosmic energy for sustaining life.
-## Aura氣場圖 (Aura Diagram)
-![Aura氣場圖](./aura.jpg)
+## Aura氣場圖跟解讀報告 (Aura Diagram & Aura Reading)
+![Aura氣場圖](./sample.jpg)
