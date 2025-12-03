@@ -5,15 +5,17 @@
 - Youtube 頻道 https://www.youtube.com/@thaolaxd
 - Telegram @lightaurastudio
 - Book(預約) Aura Reading Session https://calendly.com/taomuru/new-meeting
+
 ## 服務方式
 - 線上諮詢,可文字,語音或視訊
 - 提供 Aura 基礎解讀報告一份(可指定報告的語文,例如英文,中文,等等)
 - 提供一對一諮詢(額外收費)
 - 不提供健康問題諮詢,不提供過世親人通靈
-- [透過 Paypay 支付一次性氣場解讀費用](https://www.paypal.com/ncp/payment/QQSPYKD6WHUUC)
+- [透過 Paypay 支付一次性氣場解讀費用](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL)
 - 需要提供一張全身照片, 並參考下方照片,注意人像比例跟姿勢, 頭頂上方空間佔據30%, 人佔據照片高度的20%, 腳底到最下方的空間佔據30%, 掌心向前, 背景最好是淡色的牆壁, 最好是短袖短褲
 ![氣場拍照姿勢](./aura-body.jpg)
 - Google評價 https://g.page/r/CQfz6lbreLYLEBM/review
+
 ## Service Method
 - Online consultation via text, voice, or video
 - Includes one basic Aura reading report (you may specify the report language, e.g., English, Chinese, etc.)
@@ -21,15 +23,17 @@
 - No consultation for health issues, no communication with deceased relatives
 - [Pay the one-time Aura reading fee via PayPay](https://www.paypal.com/ncp/payment/VZGHCNNMF3RME)
 - A full-body photo is required. Please refer to the sample photo above and pay attention to body proportion and posture: 30% empty space above the head, the person occupies 20% of the photo height, 30% empty space from the feet to the bottom, palms facing forward, preferably with a light-colored wall background, and ideally wearing short sleeves and shorts.
+
 ## 訂閱服務
-- [個人 Aura Reading 月訂閱](./subscription-personal.html)
-- [家庭 Aura Reading 月訂閱（最多 3 人）](./subscription-family.html)
-- [朋友分享 Aura Reading 月訂閱（2 人方案）](./subscription-friends.html)
+- [個人 Aura Reading 月訂閱](./subscription-personal.html) 提供每月 1 次完整 Aura Reading（60 分鐘），含 1 次 30 分鐘追問諮詢與文字提問支援（每週回覆 1–2 次）。適合希望定期了解能量狀態的個人。
+- [家庭 Aura Reading 月訂閱（最多 3 人）](./subscription-family.html) 提供最多 3 位家庭成員，每人每月 1 次 Aura Reading，並含家庭能量整合建議與家庭群組文字諮詢（每週回覆 1–2 次）。適合希望了解家庭整體能量狀態的家庭。
+- [朋友分享 Aura Reading 月訂閱（2 人方案）](./subscription-friends.html) 提供 2 位朋友共享，每人每月 1 次 Aura Reading，含共同群組提問（每週統一回覆 1–2 次）。適合想一起探索能量的朋友組合。
+
 ## Subscription Plans
 
-* [Individual Aura Reading Monthly Plan](./subscription-personal.html)
-* [Family Aura Reading Monthly Plan (Up to 3 Members)](./subscription-family.html)
-* [Friends Share Aura Reading Monthly Plan (2-Person Plan)](./subscription-friends.html)
+* [Individual Aura Reading Monthly Plan](./subscription-personal.html) Includes one full Aura Reading per month (60 minutes), one 30-minute follow-up consultation, and text support (1–2 replies per week). Ideal for individuals who want regular energy insights.
+* [Family Aura Reading Monthly Plan (Up to 3 Members)](./subscription-family.html) Includes one Aura Reading per month for up to three family members, plus a family energy integration summary and group text support (1–2 replies per week). Designed for families seeking collective energy guidance.
+* [Friends Share Aura Reading Monthly Plan (2-Person Plan)](./subscription-friends.html) Includes one Aura Reading per month for two friends, with a shared group text channel for questions (1–2 consolidated replies per week). Ideal for friends who want to explore their energy together.
 
 ## 關於我
 - 畢業於中興大學應用數學系跟資訊科學研究所
