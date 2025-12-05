@@ -1,3 +1,77 @@
+# 為何你需要做氣場解讀?
+
+我替許多人做過氣場解讀。有人覺得非常準、對他們幫助很大；也有人感受不深，或只覺得似乎有些幫助。
+
+多數人看待氣場解讀的方式，往往與看醫生相同：
+如果身體有感冒、流感或糖尿病，就期望看醫生、吃藥後，症狀能立刻改善。因此他們也會期待氣場解讀能快速解決問題，最好能在一兩週內見效。
+
+但如果你從事能量療癒，你會知道氣場（或稱人體能量場）的運作方式。你明白療癒師做的是協助調整對方的能量場，讓脈輪恢復流動、解除阻塞。一旦脈輪順暢，只要個案願意保持積極正向的意願，就有機會自我修復。
+
+能量療癒是一種 **長期、以自我療癒為核心** 的方式。會主動尋求療癒的人，通常具有較高的自我覺察，心態也較為開放，願意接觸新的觀念。
+
+---
+
+## 有人問我：氣場解讀到底能提供什麼幫助？
+
+我們都知道生活環境會影響健康：
+住在發電廠或飛機航道旁對身體不好；
+住在公園附近、家裡通風採光良好會讓人感覺舒適。
+同樣地，吵架、壓力、責罵會讓人心情低落、疲憊；
+旅遊、聽音樂、看喜劇會讓人開心放鬆；
+睡前看太多 3C 容易焦慮、難以入睡。
+
+這些因素都可能讓人「生病」，但呈現方式不一定是細菌或病毒造成的身體疾病，有時則是心理層面的不適。當心理生病時，我們會找心理醫師，但若看診與用藥後仍沒有改善，那該怎麼辦？
+
+這時，氣場解讀就能派上用場。
+
+氣場解讀能協助處理那些 **你感覺得到，但並非細菌或病毒造成的心理與能量層面的問題**，例如：
+憂鬱、空虛、寂寞、恐慌、焦慮、心情低落、迷惘、人生停滯、工作不順、親子議題、夫妻衝突、人際緊張、長輩壓力、愛情友情困境等。
+
+氣場是你的「人體能量場」，其中蘊含你的一切：包含過去世的影響、當下的狀態，以及未來的可能性。
+氣場解讀是一種身心靈的整體分析，協助你看清問題、找到方向。
+
+最重要的是：
+氣場解讀就像一份 **長期幫助你自我成長、自我療癒的計畫書**。
+只要願意依循建議，相信自己的改變能力，許多困擾你多年的問題，其實都能逐步化解。
+
+---
+
+# Why do you need an aura reading?
+
+I have done aura readings for many people. Some feel the readings are very accurate and helpful; some do not feel much, while others sense that they help to a certain degree.
+
+Many people approach aura readings the same way they visit a doctor.
+When they catch a cold, have the flu, or deal with chronic illnesses like diabetes, they expect that after seeing a doctor and taking medication, their symptoms will improve quickly.
+So they also expect an aura reading to solve their problems within a short time—often within one or two weeks.
+
+However, if you work in energy healing, you know how the aura—also called the human energy field—actually functions. You understand that healing work involves adjusting someone’s energy field, unblocking their chakras, and restoring energetic flow. Once the chakras operate smoothly, the person has the ability to self-heal, as long as they maintain a positive and open attitude.
+
+Energy healing is **a long-term, self-healing process**. People who seek help from healers often have higher levels of self-awareness and are more open to new perspectives.
+
+
+## Some people ask me: How can an aura reading help?
+
+We all know that our living environment affects our well-being.
+Living near a power plant or flight path harms the body;
+living near a park with good ventilation and sunlight makes us feel better.
+Likewise, arguments, pressure, and criticism can lower our mood and cause fatigue;
+traveling, humor, gaming, and music can uplift us.
+Using electronic devices before bed can cause anxiety and poor sleep.
+
+These experiences can also make us “sick,” but the effects may not show as bacterial or viral illnesses—they often manifest emotionally or mentally. When our mind suffers, we may seek a psychologist. But if therapy and medication still do not bring improvement, what else can we do?
+
+This is where an aura reading can help.
+
+Aura readings address issues that **you can feel but are not caused by germs or physical illness**, such as:
+depression, emptiness, loneliness, panic, anxiety, low mood, life confusion, stagnation, career obstacles, family conflict, relationship tension, pressure from elders, or struggles in love and friendships.
+
+Your aura is your **energy field**, containing everything about you: past-life influences, your present condition, and potential future directions.
+An aura reading is a holistic mind-body-spirit analysis that helps you see your challenges more clearly and discover answers.
+
+Most importantly, an aura reading serves as a **long-term self-growth and self-healing roadmap**.
+By following the insights and recommendations, and believing in your ability to change, many long-standing issues can gradually resolve.
+
+
 ## 聯絡方式
 - Line 帳號 @211wegrx
 - IG 帳號 [taomuru](https://www.instagram.com/taomuru/)
@@ -76,5 +150,5 @@
 - Fifth Layer: Lower Mental — associated with intellectual level.
 - Sixth Layer: Higher Mental — connects to universal wisdom.
 - Seventh Layer: Spiritual — absorbs cosmic energy for sustaining life.
-## Aura氣場圖跟解讀報告 (Aura Diagram & Aura Reading)
-![Aura氣場圖](./sample.jpg)
+## Aura氣場圖 (Aura Diagram)
+![Aura氣場圖](./aura.jpg)
