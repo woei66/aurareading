@@ -1,4 +1,4 @@
-# 氣場解讀
+# 為何你需要做氣場解讀?
 我替許多人做過氣場解讀。有人覺得非常準確、非常受用，也有人感受較少，或覺得似乎有一些幫助。
 
 許多人看待氣場解讀的方式，就像看醫生一樣：
@@ -51,7 +51,7 @@
 
 ---
 
-# Aura Reading
+# Why do you need an aura reading?
 I have done aura readings for many people. Some feel the readings are highly accurate and extremely helpful; others feel little change, while some notice partial improvement.
 
 Many people approach aura readings with the same mindset they have when visiting a doctor.
