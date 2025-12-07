@@ -4,9 +4,6 @@
 An aura reading reveals your physical, emotional, and spiritual state in full clarity. It brings to light issues you are aware of or unaware of, problems you want to face or avoid, and obstacles you want to resolve but don’t know how.
 Through the reading, you receive a clear “self-awareness list” that guides you on how to understand and face yourself.
 
-You can also get aura readings regularly to support your own healing, as well as the healing of your family and friends.
-
----
 Aura readings help with issues such as:
 
 * confusion, life stagnation, career blocks
