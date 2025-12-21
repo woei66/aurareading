@@ -43,9 +43,6 @@ Aura reading is a deep mind-body-spirit analysis that helps you see the true roo
 * [Family Aura Reading Monthly Plan (Up to 3 Members)](./subscription-family.html) Includes one Aura Reading per month for up to three family members, plus a family energy integration summary and group text support (1–2 replies per week). Designed for families seeking collective energy guidance.
 * [Friends Share Aura Reading Monthly Plan (2-Person Plan)](./subscription-friends.html) Includes one Aura Reading per month for two friends, with a shared group text channel for questions (1–2 consolidated replies per week). Ideal for friends who want to explore their energy together.
 
-## About Me
-- Former manager in several companies and CEO of a startup
-![關於我](./me.jpg)
 
 ## Collaboration
 - Healers and psychological counseling organizations are welcome to collaborate
