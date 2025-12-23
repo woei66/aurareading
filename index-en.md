@@ -30,10 +30,10 @@ Aura reading is a deep mind-body-spirit analysis that helps you see the true roo
 
 ## Payment (Paypal)
 
-* [One-time Aura Reading](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL)
-* [Personal Aura Reading Monthly Subscription](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-9327408615231862CNEURGOI): Unlimited questions per month with one response per week. Ideal for individuals who want to regularly understand their energy state.
-* [Family Aura Reading Monthly Subscription (up to 3 people)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-67R16583C3936594SNEURJKI): Shared access for family members, with unlimited questions per month and one response per week. Ideal for families who want insight into their overall family energy.
-* [Friends Aura Reading Monthly Subscription (2-person plan)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3M724631HW081202XNEURMAY): Shared by two friends, with unlimited questions per month and one response per week. Ideal for friends who want to explore energy together.
+* [One-time Aura Reading](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL). AUD 50 per session.
+* [Personal Aura Reading Monthly Subscription](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-9327408615231862CNEURGOI): Unlimited questions per month with one response per week. Ideal for individuals who want to regularly understand their energy state. AUD 100 per month.
+* [Family Aura Reading Monthly Subscription (up to 3 people)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-67R16583C3936594SNEURJKI): Shared access for family members, with unlimited questions per month and one response per week. Ideal for families who want insight into their overall family energy. AUD 180 per month.
+* [Friends Aura Reading Monthly Subscription (2-person plan)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3M724631HW081202XNEURMAY): Shared by two friends, with unlimited questions per month and one response per week. Ideal for friends who want to explore energy together. AUD 120 per month.
 
 
 
