@@ -16,6 +16,7 @@
 - Threads 帳號 [@taomuru](https://www.threads.com/@taomuru)
 - Youtube 頻道 https://www.youtube.com/@thaolaxd
 - Telegram @lightaurastudio
+- Email: taomuru@gmail.com
 - 預約氣場諮詢 https://calendly.com/taomuru/new-meeting
 
 ## 服務方式
@@ -34,7 +35,7 @@
 - [個人 Aura Reading 月訂閱](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1A242348KM810422RNEURFKA) 提供每月無限次數提問，每週回覆一次。適合希望定期了解能量狀態的個人。每月台幣 1,800 元。
 - [家庭 Aura Reading 月訂閱（最多 3 人）](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1GT743292R9991809NEURI2I) 提供家庭成員共同使用，每月無限次數提問，每週回覆一次。適合希望了解家庭整體能量狀態的家庭。每月台幣 3,600 元。
 - [朋友分享 Aura Reading 月訂閱（2 人方案）](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-5P259692CH450731XNEURLHQ) 提供 2 位朋友共享，每月無限次數提問，每週回覆一次。適合想一起探索能量的朋友組合。每月台幣 2,400 元。
-
+- 付款之後，請提供您Paypal付款Email。
 
 ## 合作
 - 歡迎療癒師,心理輔導諮商單位合作

@@ -18,6 +18,7 @@ Aura reading is a deep mind-body-spirit analysis that helps you see the true roo
 - Threads  [@taomuru](https://www.threads.com/@taomuru)
 - Youtube  https://www.youtube.com/@thaolaxd
 - Telegram @lightaurastudio
+- Email: taomuru@gmail.com
 - Book Aura Reading Session https://calendly.com/taomuru/new-meeting
 
 ## Service Method
@@ -34,6 +35,8 @@ Aura reading is a deep mind-body-spirit analysis that helps you see the true roo
 * [Personal Aura Reading Monthly Subscription](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-9327408615231862CNEURGOI): Unlimited questions per month with one response per week. Ideal for individuals who want to regularly understand their energy state. AUD 100 per month.
 * [Family Aura Reading Monthly Subscription (up to 3 people)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-67R16583C3936594SNEURJKI): Shared access for family members, with unlimited questions per month and one response per week. Ideal for families who want insight into their overall family energy. AUD 180 per month.
 * [Friends Aura Reading Monthly Subscription (2-person plan)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3M724631HW081202XNEURMAY): Shared by two friends, with unlimited questions per month and one response per week. Ideal for friends who want to explore energy together. AUD 120 per month.
+* After payment, please provide the PayPal email address you used for the payment.
+
 
 
 
