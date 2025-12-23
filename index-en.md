@@ -41,9 +41,5 @@ Aura reading is a deep mind-body-spirit analysis that helps you see the true roo
 - Healers and psychological counseling organizations are welcome to collaborate
 - Public welfare events are welcome to inquire about
 
-## What Is Aura
-- Aura, energy field, human energy field, radiance, luminescence, spiritual energy
-- Covers electromagnetic particles surrounding the human body
-
 ## Aura Diagram
 ![Aura](./aura.jpg)
