@@ -31,9 +31,9 @@
 ## 付款方式 (Paypal)
 
 - [一次性氣場解讀](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL)
-- [個人 Aura Reading 月訂閱](./subscription-personal.html) 提供每月無限次數提問，每週回覆一次。適合希望定期了解能量狀態的個人。
-- [家庭 Aura Reading 月訂閱（最多 3 人）](./subscription-family.html) 提供家庭成員共同使用，每月無限次數提問，每週回覆一次。適合希望了解家庭整體能量狀態的家庭。
-- [朋友分享 Aura Reading 月訂閱（2 人方案）](./subscription-friends.html) 提供 2 位朋友共享，每月無限次數提問，每週回覆一次。適合想一起探索能量的朋友組合。
+- [個人 Aura Reading 月訂閱](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1A242348KM810422RNEURFKA) 提供每月無限次數提問，每週回覆一次。適合希望定期了解能量狀態的個人。
+- [家庭 Aura Reading 月訂閱（最多 3 人）](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1GT743292R9991809NEURI2I) 提供家庭成員共同使用，每月無限次數提問，每週回覆一次。適合希望了解家庭整體能量狀態的家庭。
+- [朋友分享 Aura Reading 月訂閱（2 人方案）](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-5P259692CH450731XNEURLHQ) 提供 2 位朋友共享，每月無限次數提問，每週回覆一次。適合想一起探索能量的朋友組合。
 
 
 ## 合作

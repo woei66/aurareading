@@ -31,9 +31,9 @@ Aura reading is a deep mind-body-spirit analysis that helps you see the true roo
 ## Payment (Paypal)
 
 * [One-time Aura Reading](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL)
-* [Personal Aura Reading Monthly Subscription](./subscription-personal.html): Unlimited questions per month with one response per week. Ideal for individuals who want to regularly understand their energy state.
-* [Family Aura Reading Monthly Subscription (up to 3 people)](./subscription-family.html): Shared access for family members, with unlimited questions per month and one response per week. Ideal for families who want insight into their overall family energy.
-* [Friends Aura Reading Monthly Subscription (2-person plan)](./subscription-friends.html): Shared by two friends, with unlimited questions per month and one response per week. Ideal for friends who want to explore energy together.
+* [Personal Aura Reading Monthly Subscription](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-9327408615231862CNEURGOI): Unlimited questions per month with one response per week. Ideal for individuals who want to regularly understand their energy state.
+* [Family Aura Reading Monthly Subscription (up to 3 people)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-67R16583C3936594SNEURJKI): Shared access for family members, with unlimited questions per month and one response per week. Ideal for families who want insight into their overall family energy.
+* [Friends Aura Reading Monthly Subscription (2-person plan)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3M724631HW081202XNEURMAY): Shared by two friends, with unlimited questions per month and one response per week. Ideal for friends who want to explore energy together.
 
 
 
