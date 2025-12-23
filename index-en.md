@@ -4,14 +4,6 @@
 An aura reading reveals your physical, emotional, and spiritual state in full clarity. It brings to light issues you are aware of or unaware of, problems you want to face or avoid, and obstacles you want to resolve but don’t know how.
 Through the reading, you receive a clear “self-awareness list” that guides you on how to understand and face yourself.
 
-Aura readings help with issues such as:
-
-* confusion, life stagnation, career blocks
-* family conflict, parent-child issues, marital tension
-* social difficulties, pressure from elders
-* problems in love, friendship, or personal relationships
-* uncertainty about life direction
-
 Your aura is your **energy field**, containing everything about you:
 your past-life influences, your present state, and your future potential.
 
@@ -38,10 +30,11 @@ Aura reading is a deep mind-body-spirit analysis that helps you see the true roo
 
 ## Payment (Paypal)
 
-* [Pay the one-time Aura reading fee](https://www.paypal.com/ncp/payment/VZGHCNNMF3RME)
-* [Individual Aura Reading Monthly Plan](./subscription-personal.html) Includes one full Aura Reading per month (60 minutes), one 30-minute follow-up consultation, and text support (1–2 replies per week). Ideal for individuals who want regular energy insights.
-* [Family Aura Reading Monthly Plan (Up to 3 Members)](./subscription-family.html) Includes one Aura Reading per month for up to three family members, plus a family energy integration summary and group text support (1–2 replies per week). Designed for families seeking collective energy guidance.
-* [Friends Share Aura Reading Monthly Plan (2-Person Plan)](./subscription-friends.html) Includes one Aura Reading per month for two friends, with a shared group text channel for questions (1–2 consolidated replies per week). Ideal for friends who want to explore their energy together.
+* [One-time Aura Reading](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL)
+* [Personal Aura Reading Monthly Subscription](./subscription-personal.html): Unlimited questions per month with one response per week. Ideal for individuals who want to regularly understand their energy state.
+* [Family Aura Reading Monthly Subscription (up to 3 people)](./subscription-family.html): Shared access for family members, with unlimited questions per month and one response per week. Ideal for families who want insight into their overall family energy.
+* [Friends Aura Reading Monthly Subscription (2-person plan)](./subscription-friends.html): Shared by two friends, with unlimited questions per month and one response per week. Ideal for friends who want to explore energy together.
+
 
 
 ## Collaboration
@@ -52,17 +45,5 @@ Aura reading is a deep mind-body-spirit analysis that helps you see the true roo
 - Aura, energy field, human energy field, radiance, luminescence, spiritual energy
 - Covers electromagnetic particles surrounding the human body
 
-## Origin of Aura
-- Around 500–700 BC, the Indian Upanishads mentioned five layers of the energy field, but did not mention light
-- Around 320 BC, Ge Hong (styled Baopuzi) was the first to document the halo and light around the human body in written form
-
-## Seven Layers of the Aura
-- First Layer: Physical — related to physical health; commonly seen techniques such as Kirlian photography, Kirlian, and GDV belong to this layer
-- Second Layer: Etheric — consists of two sublayers; this layer represents the eternal self, storing reincarnation, memories, and the subconscious, and carries the soul at physical death. What people commonly refer to as ghosts is essentially this layer.
-- Third Layer: Vital — absorbs energy and is the only layer that also emits energy outward.
-- Fourth Layer: Astral — oval-shaped, also known as the “auric egg,” interacts with surrounding energies.
-- Fifth Layer: Lower Mental — associated with intellectual level.
-- Sixth Layer: Higher Mental — connects to universal wisdom.
-- Seventh Layer: Spiritual — absorbs cosmic energy for sustaining life.
 ## Aura Diagram
 ![Aura](./aura.jpg)
