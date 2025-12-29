@@ -1,99 +1,72 @@
-**Traditional Chinese** | [English](./index-en.html)
+[繁體中文](./index.html) | [English](./index-en.html)
+
+### Have you ever asked yourself these questions, yet still couldn’t find the answers?
+
+You’ve actually been trying very hard.
+But some things can’t be untangled through endurance, effort, or logic alone.
+
+You may be experiencing one of the following:
+
+**▍Feeling powerless in a relationship**
+You and your partner argue over small things, and both of you feel misunderstood.
+You know the problem isn’t just about money, personality, or daily stress,
+yet you can’t quite pinpoint where things are truly stuck.
+You think about leaving, but you can’t bear to.
+You stay, but it feels painful.
+You carry everything on your own, unsure who you can turn to.
+
+**▍Growing distance between you and your child**
+Your child lacks motivation to study, and you feel worried, heartbroken, and helpless.
+You miss the child who once clung to you,
+but somewhere along the way, it feels like a wall has formed between you.
+You want to help, but you don’t know what the real issue is.
+
+**▍Loneliness within a relationship**
+You have a partner, yet it feels like you’re holding everything together alone.
+One of you earns money outside, the other carries the emotional and caregiving load at home.
+There are no major conflicts, yet there is no real closeness either.
+
+**▍Your child’s social struggles**
+Your child says they have no friends at school, feel excluded, or misunderstood.
+You want to help, but don’t know where to begin.
+Teachers say everything is fine, but you know your child is hurting.
+
+**▍Confusion about your career**
+You feel unmotivated at work, yet you don’t know what would suit you better.
+Changing jobs feels risky, but staying feels like your spirit is slowly fading.
+
+**▍Uncertainty in a new relationship**
+You sense something feels “off,”
+but you can’t quite name what it is or decide whether to continue.
+
+**▍Wanting to understand your true self**
+You want to know your strengths and blind spots—
+why the way others see you differs from how you see yourself.
+
+**▍Feeling low or anxious without knowing why**
+You know something isn’t right,
+but no one seems able to explain what’s really going on.
+
+**▍Wanting to know which colors truly support you**
+Not just what looks good,
+but which colors stabilize you, protect you, and support your emotional state.
+
+**▍Wanting to understand your spiritual state**
+You feel that life is more than just getting by,
+yet you don’t know which stage your energy is currently in.
 
 ---
 
-## Why Might You Need an Aura Reading?
+### Through Aura Reading, I can help you see:
 
-Many people seek an aura reading not out of superstition or curiosity,
-but because they are experiencing a state where—
-**despite their efforts, they still feel stuck.**
+* Where you are truly stuck right now
+* The interaction patterns within your relationships
+* Why your emotions and energy are not flowing
+* The direction, rhythm, and healing approach that suits you
 
-You may resonate with one or more of the following:
+Your aura has been sending signals all along —
+it’s just that no one has helped translate them for you yet.
 
-* You know what the issue is, yet you cannot truly change it
-* The same emotions, relationships, or situations keep repeating
-* Everything seems fine logically, yet inside you feel tired, empty, or “off”
-* You have tried many methods, but nothing fully integrates
-
-These states are often not caused by a lack of willpower or understanding, but by **an inner energetic condition that has not yet been seen or adjusted**.
-
----
-
-## What Does Aura Reading Do?
-
-Aura reading is not about predicting the future or judging what is right or wrong.
-Its core purpose is to:
-
-> **Help you see your current inner state as it truly is.**
-
-Each of us lives through a certain *energetic state*, and this state influences:
-
-* How you respond emotionally
-* The people and situations you attract
-* How you make decisions
-* Whether real change is possible
-
-Aura reading helps you understand:
-
-* Where you are energetically right now
-* Which energies support you and which drain you
-* Whether you are living from your true self or from adopted patterns
-
----
-
-## Why Can Some Issues Only Be Addressed Through Aura Reading?
-
-### 1. It perceives layers that exist *before language*
-
-Some states are not thoughts or emotions, but exist at a deeper, pre-verbal level.
-This is why understanding something intellectually does not always lead to change.
-
-Aura reading can directly perceive these underlying structures.
-
----
-
-### 2. It focuses on your *state*, not just events
-
-Many challenges are not caused by events themselves, but by the inner state that cannot yet hold change.
-
-When the state shifts, change often happens naturally—without force.
-
----
-
-### 3. It distinguishes what is truly “you” from what is not
-
-Some patterns come from:
-
-* Family influences
-* Residues from past relationships
-* Roles projected onto you over time
-
-Aura reading helps clarify:
-which energies are truly yours, and which are temporary attachments.
-
----
-
-## Who Is Aura Reading For?
-
-You may benefit especially if you are experiencing:
-
-* Repeating life patterns (relationships, work, self-worth)
-* Confusion about who you are or where you are going
-* Long-term fatigue or stagnation despite being “fine” medically
-* A sense of not feeling like yourself
-* A desire to understand your inner state beyond surface-level solutions
-
----
-
-## What Can Aura Reading Offer?
-
-It does not tell you what to do.
-Instead, it helps you **see the state from which you are living**.
-
-When this becomes clear, change often unfolds naturally—
-not through effort, but by returning to a state that truly fits you.
-
----
 
 ## Contact
 
