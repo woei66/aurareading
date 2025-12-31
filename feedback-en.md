@@ -1,5 +1,7 @@
 ## Client Feedback
 
+![](./aura-pic2.png)
+
 ### Client 1 Feedback
 
 I was able to gain a clearer awareness of my current state, and the personality description felt very accurate. The negative experiences from the womb period also resonated with me, and the guidance on aligning mind and body was truly valuable and insightful.
