@@ -1,5 +1,7 @@
 [繁體中文](./index.html) | [English](./index-en.html)
 
+* [看看別人的回饋意見](./feedback.html)
+
 ### 你是不是也在心裡問過這些問題，卻一直找不到答案？
 
 你其實已經很努力了。

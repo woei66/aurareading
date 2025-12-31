@@ -1,5 +1,7 @@
 [繁體中文](./index.html) | [English](./index-en.html)
 
+* [User's feedback](./feedback-en.html)
+
 ### Have you ever asked yourself these questions, yet still couldn’t find the answers?
 
 You’ve actually been trying very hard.
