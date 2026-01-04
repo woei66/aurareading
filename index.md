@@ -75,31 +75,7 @@
 
 氣場早就已經在提醒你，只是沒有人替你翻譯。
 
-### 聯絡方式
-- Line 帳號 @211wegrx
-- IG 帳號 [taomuru](https://www.instagram.com/taomuru/)
-- Threads 帳號 [@taomuru](https://www.threads.com/@taomuru)
-- Youtube 頻道 https://www.youtube.com/@thaolaxd
-- Telegram @lightaurastudio
-- Email: taomuru@gmail.com
-- 預約氣場諮詢 https://calendly.com/taomuru/new-meeting
-
-### 服務方式
-- 不提供健康問題諮詢,不提供過世親人通靈
-- 需要提供一張全身照片, 並參考下方照片,注意人像比例跟姿勢, 頭頂上方空間佔據30%, 人佔據照片高度的20%, 腳底到最下方的空間佔據30%, 掌心向前, 背景最好是淡色的牆壁
-![氣場拍照姿勢](./aura-body.jpg)
-- Google評價 https://g.page/r/CQfz6lbreLYLEBM/review
-
-### 付款方式 (Paypal)
-
-- [一次性氣場解讀](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL)。每次台幣 1,000元。
-- [個人 Aura Reading 月訂閱](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1A242348KM810422RNEURFKA) 提供每月無限次數提問，每週回覆一次。適合希望定期了解能量狀態的個人。每月台幣 1,800 元。
-- [家庭 Aura Reading 月訂閱（最多 3 人）](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1GT743292R9991809NEURI2I) 提供家庭成員共同使用，每月無限次數提問，每週回覆一次。適合希望了解家庭整體能量狀態的家庭。每月台幣 3,600 元。
-- [朋友分享 Aura Reading 月訂閱（2 人方案）](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-5P259692CH450731XNEURLHQ) 提供 2 位朋友共享，每月無限次數提問，每週回覆一次。適合想一起探索能量的朋友組合。每月台幣 2,400 元。
-- 付款之後，請提供您Paypal付款Email。
-
-
-### 個案意見回饋
+### 個案回饋
 
 ![](./aura-pic2.png)
 
@@ -157,4 +133,29 @@
 >我是前幾天有請你幫我測過的那位，真的很準！覺得你超厲害的。
 
 
+### 聯絡方式
+- Line 帳號 @211wegrx
+- IG 帳號 [taomuru](https://www.instagram.com/taomuru/)
+- Threads 帳號 [@taomuru](https://www.threads.com/@taomuru)
+- Youtube 頻道 https://www.youtube.com/@thaolaxd
+- Telegram @lightaurastudio
+- Email: taomuru@gmail.com
+- 預約氣場諮詢 https://calendly.com/taomuru/new-meeting
 
+### 服務方式
+- 不提供健康問題諮詢,不提供過世親人通靈
+- 需要提供一張全身照片, 並參考下方照片,注意人像比例跟姿勢, 頭頂上方空間佔據30%, 人佔據照片高度的20%, 腳底到最下方的空間佔據30%, 掌心向前, 背景最好是淡色的牆壁
+![氣場拍照姿勢](./aura-body.jpg)
+- Google評價 https://g.page/r/CQfz6lbreLYLEBM/review
+
+### 付款方式 (Paypal)
+
+- [一次性氣場解讀](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL)。每次台幣 1,000元。
+- [個人 Aura Reading 月訂閱](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1A242348KM810422RNEURFKA) 提供每月無限次數提問，每週回覆一次。適合希望定期了解能量狀態的個人。每月台幣 1,800 元。
+- [家庭 Aura Reading 月訂閱（最多 3 人）](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1GT743292R9991809NEURI2I) 提供家庭成員共同使用，每月無限次數提問，每週回覆一次。適合希望了解家庭整體能量狀態的家庭。每月台幣 3,600 元。
+- [朋友分享 Aura Reading 月訂閱（2 人方案）](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-5P259692CH450731XNEURLHQ) 提供 2 位朋友共享，每月無限次數提問，每週回覆一次。適合想一起探索能量的朋友組合。每月台幣 2,400 元。
+- 付款之後，請提供您Paypal付款Email。
+
+
+### 問與答
+* [適合你的顏色](./colors.html), 2026-01-04

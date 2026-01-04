@@ -79,48 +79,6 @@ yet you don’t know which stage your energy is currently in.
 Your aura has been sending signals all along —
 it’s just that no one has helped translate them for you yet.
 
-
-## Contact
-
-* Line ID: @211wegrx
-* Instagram: [taomuru](https://www.instagram.com/taomuru/)
-* Threads: [@taomuru](https://www.threads.com/@taomuru)
-* YouTube: [https://www.youtube.com/@thaolaxd](https://www.youtube.com/@thaolaxd)
-* Telegram: @lightaurastudio
-* Email: [taomuru@gmail.com](mailto:taomuru@gmail.com)
-* Book a session: [https://calendly.com/taomuru/new-meeting](https://calendly.com/taomuru/new-meeting)
-
----
-
-## Service Guidelines
-
-* Health-related consultations and communication with deceased individuals are not provided.
-* A full-body photo is required. Please follow the example below:
-
-  * Leave approximately 30% space above the head
-  * The body should occupy about 20% of the image height
-  * Leave about 30% space below the feet
-  * Palms facing forward
-  * Preferably a light-colored background
-
-![Aura Photo Guide](./aura-body.jpg)
-
-* Google Reviews: [https://g.page/r/CQfz6lbreLYLEBM/review](https://g.page/r/CQfz6lbreLYLEBM/review)
-
----
-
-## Payment (PayPal)
-
-* [One-time Aura Reading](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL). AUD 50 per session.
-* [Personal Aura Reading Monthly Subscription](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-9327408615231862CNEURGOI): Unlimited questions per month with one response per week. Ideal for individuals who want to regularly understand their energy state. AUD 100 per month.
-* [Family Aura Reading Monthly Subscription (up to 3 people)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-67R16583C3936594SNEURJKI): Shared access for family members, with unlimited questions per month and one response per week. Ideal for families who want insight into their overall family energy. AUD 180 per month.
-* [Friends Aura Reading Monthly Subscription (2-person plan)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3M724631HW081202XNEURMAY): Shared by two friends, with unlimited questions per month and one response per week. Ideal for friends who want to explore energy together. AUD 120 per month.
-* After payment, please provide the PayPal email address you used for the payment.
-
-After payment, please provide the PayPal email used for the transaction.
-
----
-
 ### Client Feedback
 
 ![](./aura-pic2.png)
@@ -184,3 +142,46 @@ For example, when a client reports headaches, the intuitive approach might focus
 >I’m the one who asked you to do a reading for me a few days ago — it was incredibly accurate! I really think you’re amazing.
 
 ---
+
+
+## Contact
+
+* Line ID: @211wegrx
+* Instagram: [taomuru](https://www.instagram.com/taomuru/)
+* Threads: [@taomuru](https://www.threads.com/@taomuru)
+* YouTube: [https://www.youtube.com/@thaolaxd](https://www.youtube.com/@thaolaxd)
+* Telegram: @lightaurastudio
+* Email: [taomuru@gmail.com](mailto:taomuru@gmail.com)
+* Book a session: [https://calendly.com/taomuru/new-meeting](https://calendly.com/taomuru/new-meeting)
+
+---
+
+## Service Guidelines
+
+* Health-related consultations and communication with deceased individuals are not provided.
+* A full-body photo is required. Please follow the example below:
+
+  * Leave approximately 30% space above the head
+  * The body should occupy about 20% of the image height
+  * Leave about 30% space below the feet
+  * Palms facing forward
+  * Preferably a light-colored background
+
+![Aura Photo Guide](./aura-body.jpg)
+
+* Google Reviews: [https://g.page/r/CQfz6lbreLYLEBM/review](https://g.page/r/CQfz6lbreLYLEBM/review)
+
+---
+
+## Payment (PayPal)
+
+* [One-time Aura Reading](https://www.paypal.com/ncp/payment/5M7YTG2PM4HCL). AUD 50 per session.
+* [Personal Aura Reading Monthly Subscription](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-9327408615231862CNEURGOI): Unlimited questions per month with one response per week. Ideal for individuals who want to regularly understand their energy state. AUD 100 per month.
+* [Family Aura Reading Monthly Subscription (up to 3 people)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-67R16583C3936594SNEURJKI): Shared access for family members, with unlimited questions per month and one response per week. Ideal for families who want insight into their overall family energy. AUD 180 per month.
+* [Friends Aura Reading Monthly Subscription (2-person plan)](https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3M724631HW081202XNEURMAY): Shared by two friends, with unlimited questions per month and one response per week. Ideal for friends who want to explore energy together. AUD 120 per month.
+* After payment, please provide the PayPal email address you used for the payment.
+
+After payment, please provide the PayPal email used for the transaction.
+
+---
+
