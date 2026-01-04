@@ -1,5 +1,3 @@
-<script>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRVQVR8HKR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -7,7 +5,6 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CRVQVR8HKR');
-</script>
 </script>
 
 [繁體中文](./index.html) | [English](./index-en.html)
