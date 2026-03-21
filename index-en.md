@@ -149,7 +149,7 @@ For example, when a client reports headaches, the intuitive approach might focus
 * YouTube: [https://www.youtube.com/@thaolaxd](https://www.youtube.com/@thaolaxd)
 * Telegram: @lightaurastudio
 * Email: [taomuru@gmail.com](mailto:taomuru@gmail.com)
-* Book a session: [https://calendly.com/taomuru/new-meeting](https://calendly.com/taomuru/new-meeting)
+
 
 ---
 

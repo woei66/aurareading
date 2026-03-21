@@ -137,7 +137,7 @@
 - Youtube 頻道 https://www.youtube.com/@thaolaxd
 - Telegram @lightaurastudio
 - Email: taomuru@gmail.com
-- 預約氣場諮詢 https://calendly.com/taomuru/new-meeting
+
 
 ### 服務方式
 - 不提供健康問題諮詢,不提供過世親人通靈
