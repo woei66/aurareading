@@ -1,4 +1,4 @@
-# 與自我對話
+# 與自己對話
 
 * [Android手機/平板專用 Aura Camera](https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro)
 * iPhone手機/平板專用Aura Camera請等候發布
