@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is the aura? What is the relationship between the aura and your work, life, emotions, studies, achievements, and health?</title>
+  <meta name="description" content="Creates aura visualizations from photos and provides interpretations." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Core styles consistent with Home (lite) */
+    .glass {
+      background: rgba(255, 255, 255, .7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(2, 6, 23, .06);
+    }
+
+    .hero-article {
+      position: relative;
+      overflow: hidden;
+      color: #0b1020;
+      background:
+        radial-gradient(800px 300px at 10% 0%, rgba(124, 58, 237, .18), transparent 55%),
+        radial-gradient(800px 300px at 90% 10%, rgba(20, 184, 166, .16), transparent 55%),
+        linear-gradient(180deg, #ffffff, #f8fafc);
+    }
+
+    .hero-article:after {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      filter: blur(30px);
+      background:
+        radial-gradient(30rem 12rem at 20% 80%, rgba(99, 102, 241, .16), transparent 60%),
+        radial-gradient(26rem 12rem at 85% 40%, rgba(16, 185, 129, .12), transparent 60%);
+      pointer-events: none;
+    }
+
+    .section-title {
+      font-weight: 800;
+      letter-spacing: .2px;
+      background: linear-gradient(90deg, #0f172a, #312e81);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .article-content {
+      color: #0f172a;
+    }
+
+    .article-content h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 800;
+      margin: 0 0 1rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      font-weight: 700;
+      margin: 2rem 0 .75rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin: 1.25rem 0 .5rem;
+    }
+
+    .article-content p {
+      margin: .75rem 0;
+      line-height: 1.85;
+    }
+
+    .article-content ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+      margin: .5rem 0 1rem;
+    }
+
+    .article-content ol {
+      list-style: decimal;
+      padding-left: 1.25rem;
+      margin: .5rem 0 1rem;
+    }
+
+    .article-content blockquote {
+      border-left: 4px solid #a78bfa;
+      padding: .5rem 1rem;
+      margin: 1rem 0;
+      color: #334155;
+      background: #f8fafc;
+      border-radius: .25rem;
+    }
+
+    .toc a {
+      color: #334155;
+    }
+
+    .toc a:hover {
+      color: #4f46e5;
+    }
+
+    .soft-card {
+      background: linear-gradient(180deg, #ffffff, #fafafa);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(2, 6, 23, .06);
+    }
+
+    .social-link {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      background: #0f172a;
+      color: #fff;
+      border: 1px solid rgba(148, 163, 184, .2);
+    }
+  </style>
+</head>
+
+<body class="antialiased text-slate-800">
+
+  <!-- Header (simple version consistent with Home) -->
+  <header class="sticky top-0 z-40 glass">
+    <div class="mx-auto max-w-7xl px-5 py-4 flex items-center justify-between">
+      <a href="/index.html" class="flex items-center gap-2 font-extrabold text-xl tracking-tight">
+        <span class="inline-block w-3 h-3 rounded-full"
+          style="background: radial-gradient(circle at 30% 30%, #10b981, #4f46e5);"></span>
+        <span>Aura144</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="/index.html#features" class="hover:text-indigo-700">Features</a>
+        <a href="/index.html#how" class="hover:text-indigo-700">How it works</a>
+        <a href="/index.html#articles" class="hover:text-indigo-700">Aura knowledge</a>
+        <a href="/index.html#download" class="hover:text-indigo-700">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Article hero -->
+  <section class="hero-article">
+    <div class="mx-auto max-w-7xl px-6 py-12">
+      <div class="max-w-3xl">
+        <p class="text-sm text-slate-600 mb-2">
+          <a href="/index.html#articles" class="hover:text-indigo-700">Aura knowledge</a> ·
+          <span><!-- Category --></span>
+        </p>
+        <h1 class="text-4xl font-extrabold tracking-tight mb-3"><!-- Article title --></h1>
+        <p class="text-slate-600 max-w-2xl"><!-- 1–2 sentence summary --></p>
+        <div class="mt-4 flex items-center gap-5">
+          <div class="flex -space-x-2">
+            <!-- Replace with author avatar -->
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-teal-400 border-2 border-white"></div>
+          </div>
+          <div class="text-sm text-slate-600">
+            <span><!-- Author --></span> · <time datetime="2026-01-01"><!-- Date --></time>
+          </div>
+          <div class="ml-auto hidden sm:flex items-center gap-3">
+
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Main content with TOC -->
+  <main class="mx-auto max-w-7xl px-6 py-10 grid md:grid-cols-[260px_minmax(0,1fr)] gap-10">
+    <!-- Manually maintained TOC (optional) -->
+    <aside class="hidden md:block">
+      <div class="soft-card p-5 sticky top-24">
+        <h3 class="text-sm font-semibold text-slate-700 mb-3">Contents</h3>
+        <nav class="toc text-sm space-y-2">
+          <a href="/pages/5.html" class="block">Aura144 - a powerful Aura Camera</a>
+          <a href="/pages/4.html" class="block">What is the aura? What is the relationship between the aura and your work, life, emotions, studies, achievements, and health?</a>
+          <a href="/pages/3.html" class="block">Which trees are particularly helpful to the human aura?</a>
+          <a href="/pages/2.html" class="block">Which colors are harmful to the human body?</a>
+          <a href="/pages/1.html" class="block">What is an aura?</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Article content -->
+    <article class="article-content max-w-3xl">
+      <!-- Article starts: sample structure below; replace for real posts -->
+      <h1 id="what">What is the aura? What is the relationship between the aura and your work, life, emotions, studies, achievements, and health?</h1>
+      <p><strong>Q: What is the aura? What is the relationship between the aura and your work, life, emotions, studies, achievements, and health?</strong></p>
+<p><strong>A:</strong> The aura, or the human energy field, is a luminous, multi-layered energy body that surrounds and interpenetrates the physical form. It is composed of seven distinct layers, each vibrating at a different frequency and corresponding to a specific chakra. The first layer, the etheric body, is a blueprint of sparkling blue light beams that forms the energetic matrix upon which the physical body is built. Subsequent layers relate to our emotional life, mental activity, and higher spiritual aspects.</p>
+<p>This energy field is not separate from your existence; it is the very fabric of it. Every feeling you have, every thought you think, exists within these levels of life energy. The aura serves as a communication and integration system, directly expressing your physical, emotional, mental, and spiritual states. Therefore, the condition of your aura is intrinsically linked to all facets of your life.</p>
+<p>Regarding your work and achievements, the energy of your workspace is a direct reflection of your inner state. A cluttered or disharmonious space can disrupt your creative flow, while a space that truly expresses who you are can support and serve you well. Your intentions, held in a deeper level of the field, have tremendous importance in the creative process. When your intentions are clear and aligned, you tap into tremendous creative abilities. Conversely, unconscious or opposing intentions create internal conflict and disrupt your capacity to manifest.</p>
+<p>For your emotions and relationships, specific layers of the aura are dedicated to these experiences. The second layer is associated with your personal emotional relationship to yourself—your capacity for self-love and acceptance. The fourth layer, connected to the heart chakra, is the center of interpersonal love and "I-thou" connections. The health of these layers determines your ability to give and receive love, feel connected, and maintain emotional well-being.</p>
+<p>Concerning your studies and mental clarity, the third layer of the aura is associated with your mental activity and linear thinking. A well-functioning third chakra and this layer of the field support a clear, agile mind. When they are imbalanced, confusion and muddled thoughts can arise.</p>
+<p>Most fundamentally, the aura is the foundation of your health. The physical body expresses the fluid levels of the energy field. Health is a state where your core essence flows unimpeded through all layers of your field into physical reality. Disease, discomfort, or a lack of happiness are signals of a disconnection from this core essence—a blockage or imbalance in the energy flow. For instance, a healthy, balanced flow in the aura appears as bright colors and smooth movement, while illness manifests as darkened colors, stagnant energy, or blockages. The chakras absorb universal life energy and distribute it to the nervous system, endocrine glands, and blood to nourish the entire body. Keeping these energy centers open and balanced allows more energy to flow, which is essential for vitality and wellness.</p>
+<p>In essence, your aura is the dynamic, living map of your entire being. Its balance and clarity directly influence your capacity for creative work, the quality of your emotional life, the sharpness of your mind, the success of your endeavors, and the vitality of your physical health. To care for your aura—through awareness, intention, and balancing practices—is to care for the holistic well-being of your life's journey.</p>
+<p><img alt="" src="images/4.png" /></p>
+
+      <!-- Download CTA -->
+      <div class="mt-10 p-6 soft-card">
+        <h3 class="font-semibold text-lg mb-2">Track your shifts with Aura144</h3>
+        <p class="text-slate-600 mb-3">Capture your aura regularly to follow your restoration and growth.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-white" style="background:#000;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M16.365 1.43c0 1.14-.456 2.19-1.199 2.98-.767.82-2.03 1.45-3.078 1.36-.14-1.12.496-2.28 1.234-3.07.79-.85 2.156-1.46 3.043-1.27zM20.64 17.06c-.58 1.35-.86 1.94-1.61 3.13-1.04 1.64-2.5 3.69-4.31 3.71-1.62.02-2.04-1.1-4.24-1.09-2.2.01-2.66 1.11-4.28 1.09-1.81-.02-3.2-1.86-4.24-3.5C.49 17.55-.57 13.16 1.44 10.34c1.07-1.54 2.76-2.45 4.37-2.43 1.71.03 3.13 1.14 4.2 1.14 1.05 0 2.97-1.41 5-1.2.85.04 3.24.34 4.77 2.56-4.17 2.27-3.5 8.17.86 6.65z" />
+            </svg>
+            <span>App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-white" style="background:#000;">
+            <svg width="18" height="18" viewBox="0 0 512 512">
+              <path fill="#34a853"
+                d="M325 234.3 92.8 2.1C83.5-2.8 74 0 74 14.1v483.8c0 13.1 9.1 17.9 18.8 12.7L325 277.7V234.3z" />
+              <path fill="#ea4335"
+                d="m420.8 183.8-62.3-35.5-33.5 33.5 0 62.5 33.5 33.5 62.3-35.5c23.6-13.5 23.6-48.3 0-61.5z" />
+              <path fill="#4285f4" d="M358.5 148.3 124 14.7c-6.5-3.8-13.4-3.9-19.2-1.2l220.2 220.8 33.5-33.5v-52.5z" />
+              <path fill="#fbbc04"
+                d="M104.8 498.4c5.8 2.6 12.7 2.5 19.2-1.2l234.5-133.6v-52.5l-33.5-33.5L85 498.9c6.1 3.1 12.7 3.3 19.8-.5z" />
+            </svg>
+            <span>Google Play</span>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="py-10">
+    <div class="mx-auto max-w-7xl px-6 text-center text-sm text-slate-500">
+      © 2026 Aura144. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

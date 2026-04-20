@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Which colors are harmful to the human body?</title>
+  <meta name="description" content="Creates aura visualizations from photos and provides interpretations." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Core styles consistent with Home (lite) */
+    .glass {
+      background: rgba(255, 255, 255, .7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(2, 6, 23, .06);
+    }
+
+    .hero-article {
+      position: relative;
+      overflow: hidden;
+      color: #0b1020;
+      background:
+        radial-gradient(800px 300px at 10% 0%, rgba(124, 58, 237, .18), transparent 55%),
+        radial-gradient(800px 300px at 90% 10%, rgba(20, 184, 166, .16), transparent 55%),
+        linear-gradient(180deg, #ffffff, #f8fafc);
+    }
+
+    .hero-article:after {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      filter: blur(30px);
+      background:
+        radial-gradient(30rem 12rem at 20% 80%, rgba(99, 102, 241, .16), transparent 60%),
+        radial-gradient(26rem 12rem at 85% 40%, rgba(16, 185, 129, .12), transparent 60%);
+      pointer-events: none;
+    }
+
+    .section-title {
+      font-weight: 800;
+      letter-spacing: .2px;
+      background: linear-gradient(90deg, #0f172a, #312e81);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .article-content {
+      color: #0f172a;
+    }
+
+    .article-content h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 800;
+      margin: 0 0 1rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      font-weight: 700;
+      margin: 2rem 0 .75rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin: 1.25rem 0 .5rem;
+    }
+
+    .article-content p {
+      margin: .75rem 0;
+      line-height: 1.85;
+    }
+
+    .article-content ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+      margin: .5rem 0 1rem;
+    }
+
+    .article-content ol {
+      list-style: decimal;
+      padding-left: 1.25rem;
+      margin: .5rem 0 1rem;
+    }
+
+    .article-content blockquote {
+      border-left: 4px solid #a78bfa;
+      padding: .5rem 1rem;
+      margin: 1rem 0;
+      color: #334155;
+      background: #f8fafc;
+      border-radius: .25rem;
+    }
+
+    .toc a {
+      color: #334155;
+    }
+
+    .toc a:hover {
+      color: #4f46e5;
+    }
+
+    .soft-card {
+      background: linear-gradient(180deg, #ffffff, #fafafa);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(2, 6, 23, .06);
+    }
+
+    .social-link {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      background: #0f172a;
+      color: #fff;
+      border: 1px solid rgba(148, 163, 184, .2);
+    }
+  </style>
+</head>
+
+<body class="antialiased text-slate-800">
+
+  <!-- Header (simple version consistent with Home) -->
+  <header class="sticky top-0 z-40 glass">
+    <div class="mx-auto max-w-7xl px-5 py-4 flex items-center justify-between">
+      <a href="/index.html" class="flex items-center gap-2 font-extrabold text-xl tracking-tight">
+        <span class="inline-block w-3 h-3 rounded-full"
+          style="background: radial-gradient(circle at 30% 30%, #10b981, #4f46e5);"></span>
+        <span>Aura144</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="/index.html#features" class="hover:text-indigo-700">Features</a>
+        <a href="/index.html#how" class="hover:text-indigo-700">How it works</a>
+        <a href="/index.html#articles" class="hover:text-indigo-700">Aura knowledge</a>
+        <a href="/index.html#download" class="hover:text-indigo-700">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Article hero -->
+  <section class="hero-article">
+    <div class="mx-auto max-w-7xl px-6 py-12">
+      <div class="max-w-3xl">
+        <p class="text-sm text-slate-600 mb-2">
+          <a href="/index.html#articles" class="hover:text-indigo-700">Aura knowledge</a> ·
+          <span><!-- Category --></span>
+        </p>
+        <h1 class="text-4xl font-extrabold tracking-tight mb-3"><!-- Article title --></h1>
+        <p class="text-slate-600 max-w-2xl"><!-- 1–2 sentence summary --></p>
+        <div class="mt-4 flex items-center gap-5">
+          <div class="flex -space-x-2">
+            <!-- Replace with author avatar -->
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-teal-400 border-2 border-white"></div>
+          </div>
+          <div class="text-sm text-slate-600">
+            <span><!-- Author --></span> · <time datetime="2026-01-01"><!-- Date --></time>
+          </div>
+          <div class="ml-auto hidden sm:flex items-center gap-3">
+
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Main content with TOC -->
+  <main class="mx-auto max-w-7xl px-6 py-10 grid md:grid-cols-[260px_minmax(0,1fr)] gap-10">
+    <!-- Manually maintained TOC (optional) -->
+    <aside class="hidden md:block">
+      <div class="soft-card p-5 sticky top-24">
+        <h3 class="text-sm font-semibold text-slate-700 mb-3">Contents</h3>
+        <nav class="toc text-sm space-y-2">
+          <a href="/pages/5.html" class="block">Aura144 - a powerful Aura Camera</a>
+          <a href="/pages/4.html" class="block">What is the aura? What is the relationship between the aura and your work, life, emotions, studies, achievements, and health?</a>
+          <a href="/pages/3.html" class="block">Which trees are particularly helpful to the human aura?</a>
+          <a href="/pages/2.html" class="block">Which colors are harmful to the human body?</a>
+          <a href="/pages/1.html" class="block">What is an aura?</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Article content -->
+    <article class="article-content max-w-3xl">
+      <!-- Article starts: sample structure below; replace for real posts -->
+      <h1 id="what">Which colors are harmful to the human body?</h1>
+      <p><strong>Q: Which colors are harmful to the human body?</strong></p>
+<p><strong>A:</strong> My child, let me gently share with you the knowledge of the colors of life. Each color is like a language, expressing the state of our body and mind. When certain colors appear in a person’s energy field, they are often associated with discomfort or challenges.</p>
+<p>For example, a blend of indigo and violet may be related to eye discomfort, headaches, nightmares, or memory fog. Blue may be associated with issues in the throat, ears, arms, or neck. Green may relate to the heart, lungs, or challenges involving the skin and respiration. Yellow may reflect the condition of the digestive system. Orange may be connected to the abdomen, kidneys, or bladder. Red may relate to the legs, bones, or intestinal issues. A teal-like color may be associated with challenges in the immune system. Violet may relate to blocked cellular memory or accumulated heavy emotions since birth. White may point to the endocrine system or discomforts that have not yet been recognized.</p>
+<p>On an emotional level, pale gray may remind us to be cautious and not become trapped by poor decisions. Charcoal gray suggests that we should not dwell on past pain but move forward. Black serves as a reminder to avoid being consumed by personal limitations and habits.</p>
+<p>Charcoal gray itself represents suppressed and suffocated energy. When it appears together with pink, the situation may be more serious. Another metallic gray tone can indicate the release of negative patterns or behaviors, such as addiction or self-harm; this color is sometimes observed in adults who experienced emotional trauma in childhood.</p>
+<p>When people go through pain and loss, strong emerald green and crimson may appear in the energy field to help them endure. However, in the case of prolonged distress, such as ongoing conflict from divorce, pale yellow and dark green energies may continuously disturb the field, creating instability.</p>
+<p>Certain emotions may also manifest as complex color combinations. For instance, shame may appear as an interweaving of lemon green, aqua green, and emerald green, often accompanied by a sense of loneliness. In depression, one might observe strands of dark brown, charcoal gray, pale yellow, and orange-red. Feelings of contempt may appear as a mix of ochre intertwined with charcoal gray, dark green, and dusty pink. When disgust arises, pale gray and metallic gray may spread like shadows, covering other colors.</p>
+<p>The appearance of these colors is not a form of punishment, but rather like a mirror, reminding us to pay attention to our inner balance. True wisdom lies in understanding these signals and transforming them with light and love.</p>
+<p><img alt="" src="images/2.png" /></p>
+
+      <!-- Download CTA -->
+      <div class="mt-10 p-6 soft-card">
+        <h3 class="font-semibold text-lg mb-2">Track your shifts with Aura144</h3>
+        <p class="text-slate-600 mb-3">Capture your aura regularly to follow your restoration and growth.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-white" style="background:#000;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+              <path
+                d="M16.365 1.43c0 1.14-.456 2.19-1.199 2.98-.767.82-2.03 1.45-3.078 1.36-.14-1.12.496-2.28 1.234-3.07.79-.85 2.156-1.46 3.043-1.27zM20.64 17.06c-.58 1.35-.86 1.94-1.61 3.13-1.04 1.64-2.5 3.69-4.31 3.71-1.62.02-2.04-1.1-4.24-1.09-2.2.01-2.66 1.11-4.28 1.09-1.81-.02-3.2-1.86-4.24-3.5C.49 17.55-.57 13.16 1.44 10.34c1.07-1.54 2.76-2.45 4.37-2.43 1.71.03 3.13 1.14 4.2 1.14 1.05 0 2.97-1.41 5-1.2.85.04 3.24.34 4.77 2.56-4.17 2.27-3.5 8.17.86 6.65z" />
+            </svg>
+            <span>App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-white" style="background:#000;">
+            <svg width="18" height="18" viewBox="0 0 512 512">
+              <path fill="#34a853"
+                d="M325 234.3 92.8 2.1C83.5-2.8 74 0 74 14.1v483.8c0 13.1 9.1 17.9 18.8 12.7L325 277.7V234.3z" />
+              <path fill="#ea4335"
+                d="m420.8 183.8-62.3-35.5-33.5 33.5 0 62.5 33.5 33.5 62.3-35.5c23.6-13.5 23.6-48.3 0-61.5z" />
+              <path fill="#4285f4" d="M358.5 148.3 124 14.7c-6.5-3.8-13.4-3.9-19.2-1.2l220.2 220.8 33.5-33.5v-52.5z" />
+              <path fill="#fbbc04"
+                d="M104.8 498.4c5.8 2.6 12.7 2.5 19.2-1.2l234.5-133.6v-52.5l-33.5-33.5L85 498.9c6.1 3.1 12.7 3.3 19.8-.5z" />
+            </svg>
+            <span>Google Play</span>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="py-10">
+    <div class="mx-auto max-w-7xl px-6 text-center text-sm text-slate-500">
+      © 2026 Aura144. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>
