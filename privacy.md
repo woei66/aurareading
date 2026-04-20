@@ -1,66 +1,84 @@
 Privacy Policy 
-Your privacy is important to Our App Service. Our Privacy Policy covers how we collect, use, disclose, transfer, and store your information. We hope our policy is straightforward and easy-to-understand. Please take a minute to review the details of our privacy practices below.
-This Privacy Policy is structured as follows:
-1. Definitions
-2. How We Collect Information & How We Use Information
-3. Third party accounts & Sharing of personal data
-4. Legal basis for data processing
-5. International transfers of personal data
-6. Children's Privacy
-7. Your rights
-8. Changes
-9. Contact Us
+Last updated: Jan 1, 2026
 
-1. Definitions
-You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
-AURA144 developer is be referred to "We", "Us" or "Our" in this Agreement.
-Application means the software program provided by AURA144 downloaded by You on any electronic device.
+1) Who we are
+- Controller/Developer: LIN WEI TING
+- Contact email: taomuru@gmail.com
 
-2. How We Collect Information
-We collect information in order to provide you with better, higher-quality, and more personalized services. We collect information by the following means:
-(I)When you use our email support services, we collect your correspondence in order to build up a public knowledge base, which will be available to all users of the site. Your correspondence will most likely not be used verbatim, but paraphrased in an FAQ format.
-(II)The data we collect depends on the context of your interactions with us, the choices you make, including your privacy settings, and the products and features you use. The data we collect can include SDK/API/JS code version, browser, Internet service provider, IP address, platform, timestamp, application identifier, application version, application distribution channel, independent deice identifier, Android ad master identifier, network card (MAC) address, and international mobile device identification code (IMEI) The equipment model, the terminal manufacturer, the terminal device operating system version, the session start / stop time, the location of the language, the time zone and the network state (WiFi and so on), the hard disk, the CPU, and the battery use, etc.
+2) Scope
+This Privacy Policy explains how the App collects and uses personal information when you use it. You can use the App without creating an account.
 
-How We Use Information
-We use the information collected through this app product: 
-(I) to communicate with you; (II) to process your requests and transactions; (III) to improve the app; (IV) to customize the services and/or products we provide to you; (V) to assist with our product and service development; (VI) to perform marketing analysis; and (VII) for other purposes related to our business.
+3) What we collect
 
-3. Third party accounts
-Our App Service does not store any other third part service passwords. Your account information is not disclosed to this app and you are free to cancel any of your social networking website connections with this app at any time. 
+A) Content you provide
+- Images or other media you upload for analysis.
+- Analysis results generated for you (delivered to your device).
 
-Sharing of personal data
-To improve our product and provide you better service, we also share personal data with vendors or agents working on our behalf for the purposes described in this privacy policy. For example, companies we've hired to provide data analytical services may need collect and access to personal data to provide those functions. In such cases, these companies must abide by our data privacy and security requirements.
+B) Device and app data (collected automatically)
+- Minimal technical identifiers such as a local app-instance ID or a randomly generated entitlement/purchase token needed to enable features and prevent abuse.
 
-4. Legal basis for data processing
-We process Personal Data for the purposes set out in this Privacy Policy, as described above. Our legal basis to process personal data includes processing that is: necessary for the performance of the contract with you (for example, to provide you with the services you request and to identify and authenticate you so you may use the Sites); necessary to comply with legal requirements (for example, to comply with applicable accounting rules and to make mandatory disclosures to law enforcement); necessary for our legitimate interests (for example, to manage our relationship with you, to ensure the security of our services, to communicate with you about our products and services); and based on consent by our customers (for example, to place certain cookies and to share your information with third parties for advertising purposes).  
+C) Payments
+- Payments are processed by the app store (Apple App Store/Google Play). We do not process or store your payment card details. We may receive non-personal purchase confirmations from the platform to unlock features.
 
-In some instances, you may be required to provide us with Personal Data for processing as described above, in order for us to be able to provide you all of our services, and for you to use all the features of our App.
+D) Sensitive information
+- Images may contain sensitive information (e.g., biometric, health, or other special-category data). We process such data only at your direction to provide the requested analysis and do not use it for unrelated purposes or model training.
 
-5. International transfers of personal data
-Our business may require us to transfer your Personal Data to countries outside of the European Economic Area ("EEA"), including to countries such as the People' s Republic of China or Singapore. We take appropriate steps to ensure that recipients of your Personal Data are bound to duties of confidentiality and we implement measures such as standard contractual clauses. A copy of those clauses can be obtained by contacting our Help Center.
+We do not collect your name, email address, phone number, contact list, precise location, or advertising identifiers.
 
-6. Children's Privacy
-Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
+4) How we use information (purposes)
+- Provide the App’s features, process your content, and deliver analysis results.
+- Verify in‑app purchases and manage access to paid features.
+- Maintain security and prevent fraud/abuse.
+- Comply with legal obligations.
 
-7. Your rights
-Subject to limitations in applicable law, you are entitled to object to or request the restriction of processing of your Personal Data, and to request access to, rectification, erasure and portability of your own Personal Data.  
+5) Legal bases for EEA/UK users (GDPR/UK GDPR)
+- Performance of a contract: to process your uploads and deliver the analysis/report; to verify purchases.
+- Legitimate interests: to secure and maintain the App.
+- Legal obligations: to comply with applicable laws.
 
-Where the use of your information is based on consent, you can withdraw this consent at any time without affecting the lawfulness of processing based on consent before its withdrawal.
+6) Data retention
+- Uploaded images/media: processed only as needed to generate and deliver the analysis report, then deleted after delivery.
+- Analysis results: stored on your device only. We do not back up or sync your content or settings.
+Because we do not store your data, if you change or reset devices your data and settings cannot be restored.
 
-Requests should be submitted by contacting us through our developer account e-Mail.
+7) Sharing and disclosures
+- We do not sell your personal information and do not share it for cross‑context behavioral advertising.
+- We disclose information only to:
+  - Platform providers for in‑app purchases (Apple/Google).
+  - Service providers strictly as needed to run the App (e.g., hosting/compute, if cloud processing is used), under contracts that limit their use to our instructions.
+  - Authorities where required by law or to protect rights and safety.
 
-If you are aware of changes or inaccuracies in your information, you should inform us of such changes so that our records may be updated or corrected. You may lodge a complaint with a supervisory authority if you consider that our processing of your Personal Data infringes applicable law.
+8) International transfers
+If you are in the EEA/UK/Switzerland, your data may be processed in countries with different data protection laws. Where required, we use appropriate safeguards such as the European Commission’s Standard Contractual Clauses (and UK equivalents). Contact us to learn more.
 
-We retain your Personal Data as long as needed to provide services or products to you, or as required or permitted by applicable laws, such as tax and accounting laws.
+9) Security
+We use reasonable technical and organizational measures (e.g., encryption in transit and access controls). No method of transmission or storage is completely secure.
 
-Transparency and Choice
-You can also control which social websites you wish to share or upload.
+10) Your choices
+- No account required.
+- Device permissions: you can control camera/photo permissions in your device settings.
+- Deletion: because we do not store your content after delivery, there is usually nothing for us to delete. If you contact us, we will delete any support communications after resolving your request.
 
-8. Changes
-Our Privacy Policy may change occasionally. We will not reduce your rights under this Privacy Policy without providing explicit, advance notice. 
-We will post any privacy policy changes on this page and, in the event of significant changes, we will provide a more prominent notice (such as an email notification). 
-Changes to this Privacy Policy are effective when they are posted on this page.
+11) Your rights
 
-9. Contact Us
-If you have any questions regarding this Privacy Policy, please feel free to contact us via taomuru@gmail.com, we will endeavor to provide clear answers to your questions in a timely manner.
-        
+A) EEA/UK residents
+You may request access, correction, deletion, restriction, and portability of your personal data, and object to processing based on legitimate interests. You can withdraw consent where we rely on it. You may lodge a complaint with your local Data Protection Authority.
+
+B) US residents (including California)
+You may have the right to know/access, delete, and correct your personal information, subject to legal exceptions. We do not sell or share personal information for cross‑context behavioral advertising. We will not discriminate against you for exercising your rights. To exercise rights, contact us at taomuru@gmail.com; we may need to verify your request.
+
+12) Children’s privacy
+The App is not directed to children under 13 (or under 16 in the EEA/UK). We do not knowingly collect personal information from children. If you believe a child has provided personal information, contact us to request deletion.
+
+13) Automated processing
+The App uses automated processing to analyze your uploaded content and generate a report. This does not produce legal or similarly significant effects about you.
+
+14) Do Not Track
+The App does not respond to Do Not Track signals. You can adjust permissions or platform privacy settings on your device.
+
+15) Changes to this policy
+We may update this Privacy Policy from time to time. We will post the updated version and update the “Last updated” date. Material changes will be communicated as required by law.
+
+16) Contact
+Questions or requests about this policy or your personal information:
+- Email: taomuru@gmail.com
