@@ -17,6 +17,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://www.aura144.com"
 OG = SITE + "/assets/img/og.jpg"
 PLAY = "https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro"
+FACEBOOK = "https://www.facebook.com/profile.php?id=61573296029392"
 
 CSS = """
     :root {
@@ -341,6 +342,14 @@ def share_en(lang):
 
       <h2>Or copy the link</h2>
       <div class="url">https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro</div>
+
+      <h2>Follow us</h2>
+      <p>
+        Aura144 Aura Camera on Facebook — aura colour tips, readings and updates.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="{FACEBOOK}">Follow our Facebook page</a>
+      </div>
 """
 
 
@@ -364,6 +373,14 @@ def share_tw(lang):
 
       <h2>或複製連結</h2>
       <div class="url">https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro</div>
+
+      <h2>追蹤我們</h2>
+      <p>
+        Aura144 氣場相機的 Facebook 粉絲頁——氣場顏色小知識、解讀分享與更新消息。
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="{FACEBOOK}">追蹤 Facebook 粉絲頁</a>
+      </div>
 """
 
 
