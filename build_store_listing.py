@@ -1,69 +1,39 @@
-# Google Play 商店頁文案（15 種語言，可直接貼上）
+#!/usr/bin/env python3
+"""
+build_store_listing.py — 產生 Google Play 商店頁文案（15 種語言）。
 
-> 由 `build_store_listing.py` 產生，請勿手改此檔；要改請改腳本再重跑。
+產出兩份：
+  store-listing.md   給人看的、可直接複製貼上 Play Console 的版本
+  store-listing.txt  機器可讀的版本（每種語言一區塊，欄位以 '名稱:' / '簡短說明:' / '完整說明:' 標示）
 
-## 這份文案修正了什麼
+用語一致性：解讀項目名稱直接沿用 App 內既有的翻譯
+（來源：auracamerapro/assets/translations/*.json 的 ownPersonalityAnalysis 等鍵），
+不自行另翻，以免商店頁與 App 內用詞不一致。
 
-目前的商店頁寫的是 **「Aura Photo Generator」＋「AI-simulated Aura glow effect」＋「entertainment purposes only」**，而官網已經是「與 Judith Collins 共同開發的氣場相機」。商店頁是每天約 240 次安裝的實際入口，**這是整份清單裡投報率最高的一件事。**
+兩個刻意的決定（依 2026-10 與開發者的確認）：
+  1. 應用程式名稱一律維持 "Aura144"，不改成「Aura144：氣場相機」，
+     因為商店名稱會連帶改掉手機桌面上的啟動器名稱，影響現有使用者。
+  2. 完全不放「等待時間」。商店舊文案與 App 內 15 種語言都寫 5–10 分鐘，
+     但開發者回報實際約 1–2 分鐘；在確認前不寫入任何數字。
 
-## 兩個刻意的決定
+用法:  python3 build_store_listing.py
+"""
+import os
+import sys
+import textwrap
 
-1. **應用程式名稱一律維持 `Aura144`**，沒有改成「Aura144：氣場相機」。商店名稱會連帶改掉手機桌面上的啟動器名稱，現有 28,000 位使用者會看到圖示改名，因此先不動。
-2. **完全不放等待時間。** 舊商店頁與 App 內 15 種語言都寫 5–10 分鐘，但開發者回報實際約 1–2 分鐘。在確認前不寫入任何數字。
+ROOT = os.path.dirname(os.path.abspath(__file__))
 
-## 用語一致性
+LIMITS = {"名稱": 30, "簡短說明": 80, "完整說明": 4000}
 
-十種解讀的名稱直接沿用 App 內既有翻譯（來源 `auracamerapro/assets/translations/*.json`），不另外翻譯，以免商店頁與 App 內用詞不一致。
+# 每種語言：locale, 顯示名稱, 名稱, 簡短說明, 完整說明
+L = []
 
-## 字數檢查（Google Play 上限：名稱 30 / 簡短說明 80 / 完整說明 4000）
-
-| 語言 | locale | 名稱 | 簡短說明 | 完整說明 | 版本資訊 |
-|---|---|---|---|---|---|
-| English | `en-US` | 7 | 77 | 2413 | 164 |
-| 繁體中文 | `zh-TW` | 7 | 41 | 920 | 65 |
-| 简体中文 | `zh-CN` | 7 | 41 | 920 | 65 |
-| 日本語 | `ja-JP` | 7 | 52 | 1183 | 82 |
-| 한국어 | `ko-KR` | 7 | 57 | 1279 | 79 |
-| Deutsch | `de-DE` | 7 | 74 | 2596 | 171 |
-| Français | `fr-FR` | 7 | 72 | 2724 | 171 |
-| Español | `es-ES` | 7 | 78 | 2489 | 171 |
-| Português | `pt-PT` | 7 | 71 | 2510 | 176 |
-| Italiano | `it-IT` | 7 | 76 | 2536 | 177 |
-| Русский | `ru-RU` | 7 | 75 | 2507 | 152 |
-| हिन्दी | `hi-IN` | 7 | 78 | 2251 | 138 |
-| Ελληνικά | `el-GR` | 7 | 71 | 2762 | 171 |
-| فارسی | `fa-IR` | 7 | 68 | 2198 | 136 |
-| Slovenščina | `sl-SI` | 7 | 73 | 2418 | 168 |
-
-全部在限制內。
-
-## 要一併處理的其他欄位
-
-| 欄位 | 現在的內容 | 改成 |
-|---|---|---|
-| 簡短說明 | `Aura Photo Generator` 等 | 下方各語言版本 |
-| 完整說明 | 「AI-simulated Aura glow effect…for entertainment purposes only」 | 下方各語言版本 |
-| 應用程式類別 | 原為 Entertainment / Tools | **Lifestyle**（或 Health & Fitness 的自我探索類） |
-| 隱私權政策網址 | 可能仍指向舊路徑 | `https://www.aura144.com/privacy`（舊 `/privacy-app` 亦可，內容相同） |
-| 開發者聯絡信箱 | — | `taomuru@gmail.com` |
-
----
-
-## English（`en-US`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（77 / 80）
-```
-Your aura, in colour, from one photo — built with aura expert Judith Collins.
-```
-
-### 完整說明（2413 / 4000）
-```
-Aura144 is an aura camera. Take one full-body photo and see the colours of your energy field — with a written reading of what they reflect about your emotional, mental and spiritual state.
+L.append(dict(
+    locale="en-US", label="English",
+    name="Aura144",
+    short="Your aura, in colour, from one photo — built with aura expert Judith Collins.",
+    full="""Aura144 is an aura camera. Take one full-body photo and see the colours of your energy field — with a written reading of what they reflect about your emotional, mental and spiritual state.
 
 Developed with Judith Collins, the Australian aura teacher and one of the best-known authorities on the human aura. She advises Aura144 on how it reads colour and how it explains what it sees.
 
@@ -114,31 +84,14 @@ Aura144 is free to download. Each reading is unlocked individually, and the fee 
 
 ABOUT THE READING
 
-Aura imagery and readings are an energy-based interpretation, offered for self-reflection and personal insight. They are not a medical, psychological, scientific or professional diagnosis, and they are not a substitute for professional advice.
-```
+Aura imagery and readings are an energy-based interpretation, offered for self-reflection and personal insight. They are not a medical, psychological, scientific or professional diagnosis, and they are not a substitute for professional advice.""",
+))
 
-### 版本資訊（164 / 500）
-```
-An aura camera co-developed with Australian aura authority Judith Collins. 15 languages, each reading unlocked individually — no subscription, no automatic charges.
-```
-
----
-
-## 繁體中文（`zh-TW`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（41 / 80）
-```
-一張全身照，看見你的氣場顏色。與氣場權威 Judith Collins 共同開發。
-```
-
-### 完整說明（920 / 4000）
-```
-Aura144 是一款氣場相機。只要一張全身照，就能看見你能量場的顏色，並附上一份文字解讀，說明這些顏色反映出你情緒、心理與靈性上的什麼狀態。
+L.append(dict(
+    locale="zh-TW", label="繁體中文",
+    name="Aura144",
+    short="一張全身照，看見你的氣場顏色。與氣場權威 Judith Collins 共同開發。",
+    full="""Aura144 是一款氣場相機。只要一張全身照，就能看見你能量場的顏色，並附上一份文字解讀，說明這些顏色反映出你情緒、心理與靈性上的什麼狀態。
 
 本 App 與 Judith Collins 共同開發。她是澳洲的氣場教師，也是人體氣場領域最知名的權威之一，指導 Aura144 如何讀取顏色、以及如何說明它看見的東西。
 
@@ -189,31 +142,14 @@ Aura144 免費下載。每一項解讀都在 App 內個別解鎖，費用在確�
 
 關於解讀
 
-氣場影像與解讀屬於能量層面的詮釋，提供自我反思與個人洞察之用，並非醫療、心理、科學或專業診斷，也不能取代專業建議。
-```
+氣場影像與解讀屬於能量層面的詮釋，提供自我反思與個人洞察之用，並非醫療、心理、科學或專業診斷，也不能取代專業建議。""",
+))
 
-### 版本資訊（65 / 500）
-```
-與澳洲氣場權威 Judith Collins 共同開發的氣場相機。支援 15 種語言，每一項解讀個別解鎖，沒有訂閱、不會自動扣款。
-```
-
----
-
-## 简体中文（`zh-CN`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（41 / 80）
-```
-一张全身照，看见你的气场颜色。与气场权威 Judith Collins 共同开发。
-```
-
-### 完整說明（920 / 4000）
-```
-Aura144 是一款气场相机。只要一张全身照，就能看见你能量场的颜色，并附上一份文字解读，说明这些颜色反映出你情绪、心理与灵性上的什么状态。
+L.append(dict(
+    locale="zh-CN", label="简体中文",
+    name="Aura144",
+    short="一张全身照，看见你的气场颜色。与气场权威 Judith Collins 共同开发。",
+    full="""Aura144 是一款气场相机。只要一张全身照，就能看见你能量场的颜色，并附上一份文字解读，说明这些颜色反映出你情绪、心理与灵性上的什么状态。
 
 本 App 与 Judith Collins 共同开发。她是澳洲的气场教师，也是人体气场领域最知名的权威之一，指导 Aura144 如何读取颜色、以及如何说明它看见的东西。
 
@@ -264,31 +200,14 @@ Aura144 免费下载。每一项解读都在 App 内单独解锁，费用在确�
 
 关于解读
 
-气场影像与解读属于能量层面的诠释，提供自我反思与个人洞察之用，并非医疗、心理、科学或专业诊断，也不能取代专业建议。
-```
+气场影像与解读属于能量层面的诠释，提供自我反思与个人洞察之用，并非医疗、心理、科学或专业诊断，也不能取代专业建议。""",
+))
 
-### 版本資訊（65 / 500）
-```
-与澳洲气场权威 Judith Collins 共同开发的气场相机。支持 15 种语言，每一项解读单独解锁，没有订阅、不会自动扣款。
-```
-
----
-
-## 日本語（`ja-JP`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（52 / 80）
-```
-全身写真1枚で、あなたのオーラの色を見る。オーラ研究の権威 Judith Collins との共同開発。
-```
-
-### 完整說明（1183 / 4000）
-```
-Aura144 はオーラカメラです。全身写真を1枚撮るだけで、あなたのエネルギー場の色が現れ、それが感情・心・スピリチュアルのどのような状態を映しているかを文章で読み解きます。
+L.append(dict(
+    locale="ja-JP", label="日本語",
+    name="Aura144",
+    short="全身写真1枚で、あなたのオーラの色を見る。オーラ研究の権威 Judith Collins との共同開発。",
+    full="""Aura144 はオーラカメラです。全身写真を1枚撮るだけで、あなたのエネルギー場の色が現れ、それが感情・心・スピリチュアルのどのような状態を映しているかを文章で読み解きます。
 
 開発は、オーラ研究の権威であるオーストラリアのオーラ教師 Judith Collins との共同です。彼女が Aura144 に対し、色をどう読み取るか、見えたものをどう言葉にするかを指導しています。
 
@@ -339,31 +258,14 @@ Aura144 は無料でダウンロードできます。各リーディングはア
 
 リーディングについて
 
-オーラの画像と解釈はエネルギーベースの読み解きであり、自己内省と気づきのために提供されるものです。医療・心理・科学的あるいは専門的な診断ではなく、専門家の助言に代わるものでもありません。
-```
+オーラの画像と解釈はエネルギーベースの読み解きであり、自己内省と気づきのために提供されるものです。医療・心理・科学的あるいは専門的な診断ではなく、専門家の助言に代わるものでもありません。""",
+))
 
-### 版本資訊（82 / 500）
-```
-オーラ研究の権威 Judith Collins との共同開発によるオーラカメラ。15言語対応、各リーディングは個別解除で、サブスクリプションも自動課金もありません。
-```
-
----
-
-## 한국어（`ko-KR`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（57 / 80）
-```
-전신 사진 한 장으로 내 오라의 색을 확인하세요. 오라 전문가 Judith Collins와 공동 개발.
-```
-
-### 完整說明（1279 / 4000）
-```
-Aura144는 오라 카메라입니다. 전신 사진 한 장을 찍으면 당신의 에너지장 색이 나타나고, 그 색이 감정·정신·영성의 어떤 상태를 반영하는지 글로 풀어 드립니다.
+L.append(dict(
+    locale="ko-KR", label="한국어",
+    name="Aura144",
+    short="전신 사진 한 장으로 내 오라의 색을 확인하세요. 오라 전문가 Judith Collins와 공동 개발.",
+    full="""Aura144는 오라 카메라입니다. 전신 사진 한 장을 찍으면 당신의 에너지장 색이 나타나고, 그 색이 감정·정신·영성의 어떤 상태를 반영하는지 글로 풀어 드립니다.
 
 호주의 오라 교사이자 인체 오라 분야에서 가장 널리 알려진 권위자 중 한 명인 Judith Collins와 함께 개발했습니다. 그녀는 Aura144가 색을 어떻게 읽고, 본 것을 어떻게 설명할지 자문합니다.
 
@@ -414,31 +316,14 @@ Aura144는 무료로 다운로드할 수 있습니다. 각 리딩은 앱 안에�
 
 리딩에 대하여
 
-오라 이미지와 해석은 에너지 기반의 풀이이며, 자기 성찰과 개인적 통찰을 위해 제공됩니다. 의료·심리·과학적 또는 전문적 진단이 아니며, 전문가의 조언을 대신하지 않습니다.
-```
+오라 이미지와 해석은 에너지 기반의 풀이이며, 자기 성찰과 개인적 통찰을 위해 제공됩니다. 의료·심리·과학적 또는 전문적 진단이 아니며, 전문가의 조언을 대신하지 않습니다.""",
+))
 
-### 版本資訊（79 / 500）
-```
-오라 전문가 Judith Collins와 공동 개발한 오라 카메라. 15개 언어 지원, 각 리딩은 개별 해제이며 구독과 자동 결제가 없습니다.
-```
-
----
-
-## Deutsch（`de-DE`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（74 / 80）
-```
-Deine Aura in Farbe, aus nur einem Foto. Mit Aura-Expertin Judith Collins.
-```
-
-### 完整說明（2596 / 4000）
-```
-Aura144 ist eine Aura-Kamera. Mach ein Ganzkörperfoto und sieh die Farben deines Energiefelds — mit einer schriftlichen Lesung dazu, was sie über deinen emotionalen, mentalen und spirituellen Zustand aussagen.
+L.append(dict(
+    locale="de-DE", label="Deutsch",
+    name="Aura144",
+    short="Deine Aura in Farbe, aus nur einem Foto. Mit Aura-Expertin Judith Collins.",
+    full="""Aura144 ist eine Aura-Kamera. Mach ein Ganzkörperfoto und sieh die Farben deines Energiefelds — mit einer schriftlichen Lesung dazu, was sie über deinen emotionalen, mentalen und spirituellen Zustand aussagen.
 
 Entwickelt mit Judith Collins, der australischen Aura-Lehrerin und einer der bekanntesten Autoritäten auf dem Gebiet der menschlichen Aura. Sie berät Aura144 darin, wie die App Farbe liest und wie sie erklärt, was sie sieht.
 
@@ -489,31 +374,14 @@ Aura144 ist kostenlos. Jede Lesung wird einzeln in der App freigeschaltet, und d
 
 ZUR LESUNG
 
-Aura-Bilder und Lesungen sind eine energiebasierte Deutung, angeboten für Selbstreflexion und persönliche Einsicht. Sie sind keine medizinische, psychologische, wissenschaftliche oder professionelle Diagnose und ersetzen keine professionelle Beratung.
-```
+Aura-Bilder und Lesungen sind eine energiebasierte Deutung, angeboten für Selbstreflexion und persönliche Einsicht. Sie sind keine medizinische, psychologische, wissenschaftliche oder professionelle Diagnose und ersetzen keine professionelle Beratung.""",
+))
 
-### 版本資訊（171 / 500）
-```
-Eine Aura-Kamera, entwickelt mit der australischen Aura-Autorität Judith Collins. 15 Sprachen, jede Lesung einzeln freigeschaltet — kein Abo, keine automatische Abbuchung.
-```
-
----
-
-## Français（`fr-FR`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（72 / 80）
-```
-Votre aura en couleurs, à partir d'une seule photo. Avec Judith Collins.
-```
-
-### 完整說明（2724 / 4000）
-```
-Aura144 est une caméra d'aura. Prenez une photo en pied et découvrez les couleurs de votre champ énergétique — accompagnées d'une lecture écrite de ce qu'elles révèlent de votre état émotionnel, mental et spirituel.
+L.append(dict(
+    locale="fr-FR", label="Français",
+    name="Aura144",
+    short="Votre aura en couleurs, à partir d'une seule photo. Avec Judith Collins.",
+    full="""Aura144 est une caméra d'aura. Prenez une photo en pied et découvrez les couleurs de votre champ énergétique — accompagnées d'une lecture écrite de ce qu'elles révèlent de votre état émotionnel, mental et spirituel.
 
 Développée avec Judith Collins, professeure australienne d'aura et l'une des autorités les plus reconnues sur l'aura humaine. Elle conseille Aura144 sur la manière de lire les couleurs et d'expliquer ce qu'elle voit.
 
@@ -564,31 +432,14 @@ Aura144 est gratuit. Chaque lecture est débloquée individuellement dans l'appl
 
 À PROPOS DE LA LECTURE
 
-Les images et lectures d'aura sont une interprétation énergétique, proposée pour la réflexion personnelle et la connaissance de soi. Elles ne constituent pas un diagnostic médical, psychologique, scientifique ou professionnel et ne remplacent pas un avis professionnel.
-```
+Les images et lectures d'aura sont une interprétation énergétique, proposée pour la réflexion personnelle et la connaissance de soi. Elles ne constituent pas un diagnostic médical, psychologique, scientifique ou professionnel et ne remplacent pas un avis professionnel.""",
+))
 
-### 版本資訊（171 / 500）
-```
-Une caméra d'aura conçue avec l'autorité australienne en aura Judith Collins. 15 langues, chaque lecture débloquée individuellement — sans abonnement ni débit automatique.
-```
-
----
-
-## Español（`es-ES`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（78 / 80）
-```
-Tu aura en color, a partir de una foto — creada con la experta Judith Collins.
-```
-
-### 完整說明（2489 / 4000）
-```
-Aura144 es una cámara de aura. Haz una foto de cuerpo entero y descubre los colores de tu campo energético — junto con una lectura escrita de lo que revelan sobre tu estado emocional, mental y espiritual.
+L.append(dict(
+    locale="es-ES", label="Español",
+    name="Aura144",
+    short="Tu aura en color, a partir de una foto — creada con la experta Judith Collins.",
+    full="""Aura144 es una cámara de aura. Haz una foto de cuerpo entero y descubre los colores de tu campo energético — junto con una lectura escrita de lo que revelan sobre tu estado emocional, mental y espiritual.
 
 Desarrollada con Judith Collins, profesora australiana de aura y una de las autoridades más reconocidas en el aura humana. Ella asesora a Aura144 sobre cómo lee el color y cómo explica lo que ve.
 
@@ -639,31 +490,14 @@ Aura144 es gratis. Cada lectura se desbloquea individualmente dentro de la app y
 
 SOBRE LA LECTURA
 
-Las imágenes y lecturas del aura son una interpretación energética, ofrecida para la reflexión personal y el conocimiento de uno mismo. No son un diagnóstico médico, psicológico, científico ni profesional, ni sustituyen el consejo profesional.
-```
+Las imágenes y lecturas del aura son una interpretación energética, ofrecida para la reflexión personal y el conocimiento de uno mismo. No son un diagnóstico médico, psicológico, científico ni profesional, ni sustituyen el consejo profesional.""",
+))
 
-### 版本資訊（171 / 500）
-```
-Una cámara de aura creada con la autoridad australiana en aura Judith Collins. 15 idiomas, cada lectura se desbloquea por separado — sin suscripción ni cargos automáticos.
-```
-
----
-
-## Português（`pt-PT`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（71 / 80）
-```
-A sua aura a cores, de uma só foto — com a especialista Judith Collins.
-```
-
-### 完整說明（2510 / 4000）
-```
-A Aura144 é uma câmara de aura. Tire uma fotografia de corpo inteiro e veja as cores do seu campo energético — com uma leitura escrita do que revelam sobre o seu estado emocional, mental e espiritual.
+L.append(dict(
+    locale="pt-PT", label="Português",
+    name="Aura144",
+    short="A sua aura a cores, de uma só foto — com a especialista Judith Collins.",
+    full="""A Aura144 é uma câmara de aura. Tire uma fotografia de corpo inteiro e veja as cores do seu campo energético — com uma leitura escrita do que revelam sobre o seu estado emocional, mental e espiritual.
 
 Desenvolvida com Judith Collins, professora australiana de aura e uma das autoridades mais reconhecidas na aura humana. É ela que aconselha a Aura144 sobre como lê a cor e como explica o que vê.
 
@@ -714,31 +548,14 @@ A Aura144 é gratuita. Cada leitura é desbloqueada individualmente na aplicaç�
 
 SOBRE A LEITURA
 
-As imagens e leituras de aura são uma interpretação energética, oferecida para reflexão pessoal e autoconhecimento. Não constituem um diagnóstico médico, psicológico, científico ou profissional, nem substituem aconselhamento profissional.
-```
+As imagens e leituras de aura são uma interpretação energética, oferecida para reflexão pessoal e autoconhecimento. Não constituem um diagnóstico médico, psicológico, científico ou profissional, nem substituem aconselhamento profissional.""",
+))
 
-### 版本資訊（176 / 500）
-```
-Uma câmara de aura criada com a autoridade australiana em aura Judith Collins. 15 idiomas, cada leitura desbloqueada individualmente — sem subscrição nem cobranças automáticas.
-```
-
----
-
-## Italiano（`it-IT`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（76 / 80）
-```
-La tua aura a colori, da una foto — sviluppata con l'esperta Judith Collins.
-```
-
-### 完整說明（2536 / 4000）
-```
-Aura144 è una fotocamera per l'aura. Scatta una foto a figura intera e vedi i colori del tuo campo energetico — con una lettura scritta di ciò che rivelano del tuo stato emotivo, mentale e spirituale.
+L.append(dict(
+    locale="it-IT", label="Italiano",
+    name="Aura144",
+    short="La tua aura a colori, da una foto — sviluppata con l'esperta Judith Collins.",
+    full="""Aura144 è una fotocamera per l'aura. Scatta una foto a figura intera e vedi i colori del tuo campo energetico — con una lettura scritta di ciò che rivelano del tuo stato emotivo, mentale e spirituale.
 
 Sviluppata con Judith Collins, insegnante australiana di aura e una delle massime autorità sull'aura umana. È lei a guidare Aura144 su come legge il colore e su come spiega ciò che vede.
 
@@ -789,31 +606,14 @@ Aura144 è gratuita. Ogni lettura si sblocca singolarmente nell'app e il prezzo 
 
 SULLA LETTURA
 
-Le immagini e le letture dell'aura sono un'interpretazione energetica, offerta per la riflessione personale e la conoscenza di sé. Non sono una diagnosi medica, psicologica, scientifica o professionale e non sostituiscono il parere di un professionista.
-```
+Le immagini e le letture dell'aura sono un'interpretazione energetica, offerta per la riflessione personale e la conoscenza di sé. Non sono una diagnosi medica, psicologica, scientifica o professionale e non sostituiscono il parere di un professionista.""",
+))
 
-### 版本資訊（177 / 500）
-```
-Una fotocamera per l'aura sviluppata con l'autorità australiana Judith Collins. 15 lingue, ogni lettura sbloccata singolarmente — nessun abbonamento, nessun addebito automatico.
-```
-
----
-
-## Русский（`ru-RU`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（75 / 80）
-```
-Ваша аура в цвете по одной фотографии — создано с экспертом Judith Collins.
-```
-
-### 完整說明（2507 / 4000）
-```
-Aura144 — это камера ауры. Сделайте одно фото в полный рост и увидьте цвета своего энергетического поля — вместе с письменной трактовкой того, что они говорят о вашем эмоциональном, психическом и духовном состоянии.
+L.append(dict(
+    locale="ru-RU", label="Русский",
+    name="Aura144",
+    short="Ваша аура в цвете по одной фотографии — создано с экспертом Judith Collins.",
+    full="""Aura144 — это камера ауры. Сделайте одно фото в полный рост и увидьте цвета своего энергетического поля — вместе с письменной трактовкой того, что они говорят о вашем эмоциональном, психическом и духовном состоянии.
 
 Приложение создано вместе с Judith Collins — австралийским преподавателем ауры и одним из самых известных специалистов по ауре человека. Она консультирует Aura144 в том, как читать цвет и как объяснять увиденное.
 
@@ -864,31 +664,14 @@ Aura144 бесплатна. Каждое чтение открывается о�
 
 О ЧТЕНИИ
 
-Изображения и чтения ауры — это энергетическая трактовка, предлагаемая для саморефлексии и личного понимания. Они не являются медицинским, психологическим, научным или профессиональным диагнозом и не заменяют консультацию специалиста.
-```
+Изображения и чтения ауры — это энергетическая трактовка, предлагаемая для саморефлексии и личного понимания. Они не являются медицинским, психологическим, научным или профессиональным диагнозом и не заменяют консультацию специалиста.""",
+))
 
-### 版本資訊（152 / 500）
-```
-Камера ауры, созданная с австралийским специалистом по ауре Judith Collins. 15 языков, каждое чтение открывается отдельно — без подписки и автосписаний.
-```
-
----
-
-## हिन्दी（`hi-IN`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（78 / 80）
-```
-एक फ़ोटो से अपनी आभा के रंग देखें — आभा विशेषज्ञ Judith Collins के साथ विकसित।
-```
-
-### 完整說明（2251 / 4000）
-```
-Aura144 एक आभा कैमरा है। पूरे शरीर की एक फ़ोटो लीजिए और अपने ऊर्जा क्षेत्र के रंग देखिए — साथ में एक लिखित पाठ, जो बताता है कि ये रंग आपकी भावनात्मक, मानसिक और आध्यात्मिक स्थिति के बारे में क्या कहते हैं।
+L.append(dict(
+    locale="hi-IN", label="हिन्दी",
+    name="Aura144",
+    short="एक फ़ोटो से अपनी आभा के रंग देखें — आभा विशेषज्ञ Judith Collins के साथ विकसित।",
+    full="""Aura144 एक आभा कैमरा है। पूरे शरीर की एक फ़ोटो लीजिए और अपने ऊर्जा क्षेत्र के रंग देखिए — साथ में एक लिखित पाठ, जो बताता है कि ये रंग आपकी भावनात्मक, मानसिक और आध्यात्मिक स्थिति के बारे में क्या कहते हैं।
 
 यह ऑस्ट्रेलिया की आभा शिक्षिका और मानव आभा पर सबसे प्रतिष्ठित विशेषज्ञों में से एक Judith Collins के साथ विकसित किया गया है। वह Aura144 को सलाह देती हैं कि रंग कैसे पढ़ा जाए और जो दिखे उसे कैसे समझाया जाए।
 
@@ -939,31 +722,14 @@ Aura144 मुफ़्त डाउनलोड है। हर पाठ ऐ�
 
 पाठ के बारे में
 
-आभा की छवियाँ और पाठ एक ऊर्जा-आधारित व्याख्या हैं, जो आत्म-चिंतन और व्यक्तिगत अंतर्दृष्टि के लिए दी जाती हैं। ये चिकित्सकीय, मानसिक, वैज्ञानिक या पेशेवर निदान नहीं हैं और पेशेवर सलाह का विकल्प नहीं हैं।
-```
+आभा की छवियाँ और पाठ एक ऊर्जा-आधारित व्याख्या हैं, जो आत्म-चिंतन और व्यक्तिगत अंतर्दृष्टि के लिए दी जाती हैं। ये चिकित्सकीय, मानसिक, वैज्ञानिक या पेशेवर निदान नहीं हैं और पेशेवर सलाह का विकल्प नहीं हैं।""",
+))
 
-### 版本資訊（138 / 500）
-```
-ऑस्ट्रेलियाई आभा विशेषज्ञ Judith Collins के साथ विकसित आभा कैमरा। 15 भाषाएँ, हर पाठ अलग से अनलॉक — कोई सदस्यता नहीं, कोई स्वतः शुल्क नहीं।
-```
-
----
-
-## Ελληνικά（`el-GR`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（71 / 80）
-```
-Η αύρα σας σε χρώμα, από μία φωτογραφία — με την ειδικό Judith Collins.
-```
-
-### 完整說明（2762 / 4000）
-```
-Το Aura144 είναι μια κάμερα αύρας. Τραβήξτε μία φωτογραφία ολόκληρου σώματος και δείτε τα χρώματα του ενεργειακού σας πεδίου — μαζί με μια γραπτή ανάγνωση για το τι αποκαλύπτουν για τη συναισθηματική, ψυχική και πνευματική σας κατάσταση.
+L.append(dict(
+    locale="el-GR", label="Ελληνικά",
+    name="Aura144",
+    short="Η αύρα σας σε χρώμα, από μία φωτογραφία — με την ειδικό Judith Collins.",
+    full="""Το Aura144 είναι μια κάμερα αύρας. Τραβήξτε μία φωτογραφία ολόκληρου σώματος και δείτε τα χρώματα του ενεργειακού σας πεδίου — μαζί με μια γραπτή ανάγνωση για το τι αποκαλύπτουν για τη συναισθηματική, ψυχική και πνευματική σας κατάσταση.
 
 Αναπτύχθηκε με την Judith Collins, αυστραλή δασκάλα αύρας και μία από τις πιο αναγνωρισμένες αυθεντίες στην ανθρώπινη αύρα. Εκείνη συμβουλεύει το Aura144 για το πώς διαβάζει το χρώμα και πώς εξηγεί αυτό που βλέπει.
 
@@ -1014,31 +780,14 @@ Aura144
 
 ΣΧΕΤΙΚΑ ΜΕ ΤΗΝ ΑΝΑΓΝΩΣΗ
 
-Οι εικόνες και οι αναγνώσεις αύρας είναι μια ενεργειακή ερμηνεία, που προσφέρεται για αυτοστοχασμό και προσωπική επίγνωση. Δεν αποτελούν ιατρική, ψυχολογική, επιστημονική ή επαγγελματική διάγνωση και δεν αντικαθιστούν την επαγγελματική συμβουλή.
-```
+Οι εικόνες και οι αναγνώσεις αύρας είναι μια ενεργειακή ερμηνεία, που προσφέρεται για αυτοστοχασμό και προσωπική επίγνωση. Δεν αποτελούν ιατρική, ψυχολογική, επιστημονική ή επαγγελματική διάγνωση και δεν αντικαθιστούν την επαγγελματική συμβουλή.""",
+))
 
-### 版本資訊（171 / 500）
-```
-Μια κάμερα αύρας, αναπτυγμένη με την αυστραλή ειδικό αύρας Judith Collins. 15 γλώσσες, κάθε ανάγνωση ξεκλειδώνεται ξεχωριστά — χωρίς συνδρομή και χωρίς αυτόματες χρεώσεις.
-```
-
----
-
-## فارسی（`fa-IR`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（68 / 80）
-```
-هاله شما در رنگ، از یک عکس — ساخته‌شده با متخصص هاله Judith Collins.
-```
-
-### 完整說明（2198 / 4000）
-```
-Aura144 یک دوربین هاله است. یک عکس تمام‌قد بگیرید و رنگ‌های میدان انرژی خود را ببینید — همراه با خوانشی نوشتاری از آنچه این رنگ‌ها درباره وضعیت عاطفی، ذهنی و معنوی شما می‌گویند.
+L.append(dict(
+    locale="fa-IR", label="فارسی",
+    name="Aura144",
+    short="هاله شما در رنگ، از یک عکس — ساخته‌شده با متخصص هاله Judith Collins.",
+    full="""Aura144 یک دوربین هاله است. یک عکس تمام‌قد بگیرید و رنگ‌های میدان انرژی خود را ببینید — همراه با خوانشی نوشتاری از آنچه این رنگ‌ها درباره وضعیت عاطفی، ذهنی و معنوی شما می‌گویند.
 
 این برنامه با Judith Collins، آموزگار استرالیایی هاله و یکی از شناخته‌شده‌ترین متخصصان هاله انسانی، توسعه یافته است. او به Aura144 مشاوره می‌دهد که رنگ را چگونه بخواند و آنچه می‌بیند را چگونه توضیح دهد.
 
@@ -1089,31 +838,14 @@ Aura144 رایگان است. هر خوانش به‌صورت جداگانه در
 
 درباره خوانش
 
-تصاویر و خوانش‌های هاله یک تفسیر انرژی‌محور هستند که برای خوداندیشی و بینش شخصی ارائه می‌شوند. آن‌ها تشخیص پزشکی، روان‌شناختی، علمی یا حرفه‌ای نیستند و جای مشاوره تخصصی را نمی‌گیرند.
-```
+تصاویر و خوانش‌های هاله یک تفسیر انرژی‌محور هستند که برای خوداندیشی و بینش شخصی ارائه می‌شوند. آن‌ها تشخیص پزشکی، روان‌شناختی، علمی یا حرفه‌ای نیستند و جای مشاوره تخصصی را نمی‌گیرند.""",
+))
 
-### 版本資訊（136 / 500）
-```
-یک دوربین هاله، ساخته‌شده با متخصص استرالیایی هاله Judith Collins. ۱۵ زبان، هر خوانش جداگانه باز می‌شود — بدون اشتراک و بدون کسر خودکار.
-```
-
----
-
-## Slovenščina（`sl-SI`）
-
-### 名稱（7 / 30）
-```
-Aura144
-```
-
-### 簡短說明（73 / 80）
-```
-Vaša aura v barvah, iz ene fotografije. S strokovnjakinjo Judith Collins.
-```
-
-### 完整說明（2418 / 4000）
-```
-Aura144 je kamera za avro. Naredite eno fotografijo celega telesa in poglejte barve svojega energetskega polja — skupaj s pisnim branjem, kaj povedo o vašem čustvenem, duševnem in duhovnem stanju.
+L.append(dict(
+    locale="sl-SI", label="Slovenščina",
+    name="Aura144",
+    short="Vaša aura v barvah, iz ene fotografije. S strokovnjakinjo Judith Collins.",
+    full="""Aura144 je kamera za avro. Naredite eno fotografijo celega telesa in poglejte barve svojega energetskega polja — skupaj s pisnim branjem, kaj povedo o vašem čustvenem, duševnem in duhovnem stanju.
 
 Razvito z Judith Collins, avstralsko učiteljico avre in eno najbolj priznanih avtoritet na področju človeške avre. Ona svetuje Aurinim 144, kako brati barvo in kako razložiti, kar vidi.
 
@@ -1164,10 +896,151 @@ Aura144 je brezplačna. Vsako branje se odklene posebej v aplikaciji, cena pa je
 
 O BRANJU
 
-Podobe in branja avre so energijska interpretacija, namenjena samorefleksiji in osebnemu vpogledu. Niso medicinska, psihološka, znanstvena ali strokovna diagnoza in ne nadomeščajo strokovnega nasveta.
-```
+Podobe in branja avre so energijska interpretacija, namenjena samorefleksiji in osebnemu vpogledu. Niso medicinska, psihološka, znanstvena ali strokovna diagnoza in ne nadomeščajo strokovnega nasveta.""",
+))
 
-### 版本資訊（168 / 500）
-```
-Kamera za avro, razvita z avstralsko strokovnjakinjo za avro Judith Collins. 15 jezikov, vsako branje se odklene posebej — brez naročnine in brez samodejnih bremenitev.
-```
+# 版本資訊（What's new），每種語言
+WHATS_NEW = {
+    "en-US": "An aura camera co-developed with Australian aura authority Judith Collins. 15 languages, each reading unlocked individually — no subscription, no automatic charges.",
+    "zh-TW": "與澳洲氣場權威 Judith Collins 共同開發的氣場相機。支援 15 種語言，每一項解讀個別解鎖，沒有訂閱、不會自動扣款。",
+    "zh-CN": "与澳洲气场权威 Judith Collins 共同开发的气场相机。支持 15 种语言，每一项解读单独解锁，没有订阅、不会自动扣款。",
+    "ja-JP": "オーラ研究の権威 Judith Collins との共同開発によるオーラカメラ。15言語対応、各リーディングは個別解除で、サブスクリプションも自動課金もありません。",
+    "ko-KR": "오라 전문가 Judith Collins와 공동 개발한 오라 카메라. 15개 언어 지원, 각 리딩은 개별 해제이며 구독과 자동 결제가 없습니다.",
+    "de-DE": "Eine Aura-Kamera, entwickelt mit der australischen Aura-Autorität Judith Collins. 15 Sprachen, jede Lesung einzeln freigeschaltet — kein Abo, keine automatische Abbuchung.",
+    "fr-FR": "Une caméra d'aura conçue avec l'autorité australienne en aura Judith Collins. 15 langues, chaque lecture débloquée individuellement — sans abonnement ni débit automatique.",
+    "es-ES": "Una cámara de aura creada con la autoridad australiana en aura Judith Collins. 15 idiomas, cada lectura se desbloquea por separado — sin suscripción ni cargos automáticos.",
+    "pt-PT": "Uma câmara de aura criada com a autoridade australiana em aura Judith Collins. 15 idiomas, cada leitura desbloqueada individualmente — sem subscrição nem cobranças automáticas.",
+    "it-IT": "Una fotocamera per l'aura sviluppata con l'autorità australiana Judith Collins. 15 lingue, ogni lettura sbloccata singolarmente — nessun abbonamento, nessun addebito automatico.",
+    "ru-RU": "Камера ауры, созданная с австралийским специалистом по ауре Judith Collins. 15 языков, каждое чтение открывается отдельно — без подписки и автосписаний.",
+    "hi-IN": "ऑस्ट्रेलियाई आभा विशेषज्ञ Judith Collins के साथ विकसित आभा कैमरा। 15 भाषाएँ, हर पाठ अलग से अनलॉक — कोई सदस्यता नहीं, कोई स्वतः शुल्क नहीं।",
+    "el-GR": "Μια κάμερα αύρας, αναπτυγμένη με την αυστραλή ειδικό αύρας Judith Collins. 15 γλώσσες, κάθε ανάγνωση ξεκλειδώνεται ξεχωριστά — χωρίς συνδρομή και χωρίς αυτόματες χρεώσεις.",
+    "fa-IR": "یک دوربین هاله، ساخته‌شده با متخصص استرالیایی هاله Judith Collins. ۱۵ زبان، هر خوانش جداگانه باز می‌شود — بدون اشتراک و بدون کسر خودکار.",
+    "sl-SI": "Kamera za avro, razvita z avstralsko strokovnjakinjo za avro Judith Collins. 15 jezikov, vsako branje se odklene posebej — brez naročnine in brez samodejnih bremenitev.",
+}
+
+
+def check():
+    ok = True
+    for e in L:
+        for field in ("名稱", "簡短說明", "完整說明"):
+            key = {"名稱": "name", "簡短說明": "short", "完整說明": "full"}[field]
+            n = len(e[key])
+            if n > LIMITS[field]:
+                print("  ✗ %s %s = %d > %d" % (e["locale"], field, n, LIMITS[field]))
+                ok = False
+    return ok
+
+
+def write_md():
+    lines = []
+    A = lines.append
+    A("# Google Play 商店頁文案（15 種語言，可直接貼上）")
+    A("")
+    A("> 由 `build_store_listing.py` 產生，請勿手改此檔；要改請改腳本再重跑。")
+    A("")
+    A("## 這份文案修正了什麼")
+    A("")
+    A("目前的商店頁寫的是 **「Aura Photo Generator」＋「AI-simulated Aura glow effect」＋"
+      "「entertainment purposes only」**，而官網已經是「與 Judith Collins 共同開發的氣場相機」。"
+      "商店頁是每天約 240 次安裝的實際入口，**這是整份清單裡投報率最高的一件事。**")
+    A("")
+    A("## 兩個刻意的決定")
+    A("")
+    A("1. **應用程式名稱一律維持 `Aura144`**，沒有改成「Aura144：氣場相機」。"
+      "商店名稱會連帶改掉手機桌面上的啟動器名稱，現有 28,000 位使用者會看到圖示改名，因此先不動。")
+    A("2. **完全不放等待時間。** 舊商店頁與 App 內 15 種語言都寫 5–10 分鐘，"
+      "但開發者回報實際約 1–2 分鐘。在確認前不寫入任何數字。")
+    A("")
+    A("## 用語一致性")
+    A("")
+    A("十種解讀的名稱直接沿用 App 內既有翻譯"
+      "（來源 `auracamerapro/assets/translations/*.json`），不另外翻譯，"
+      "以免商店頁與 App 內用詞不一致。")
+    A("")
+    A("## 字數檢查（Google Play 上限：名稱 30 / 簡短說明 80 / 完整說明 4000）")
+    A("")
+    A("| 語言 | locale | 名稱 | 簡短說明 | 完整說明 | 版本資訊 |")
+    A("|---|---|---|---|---|---|")
+    for e in L:
+        A("| %s | `%s` | %d | %d | %d | %d |" % (
+            e["label"], e["locale"], len(e["name"]), len(e["short"]),
+            len(e["full"]), len(WHATS_NEW[e["locale"]])))
+    A("")
+    A("全部在限制內。")
+    A("")
+    A("## 要一併處理的其他欄位")
+    A("")
+    A("| 欄位 | 現在的內容 | 改成 |")
+    A("|---|---|---|")
+    A("| 簡短說明 | `Aura Photo Generator` 等 | 下方各語言版本 |")
+    A("| 完整說明 | 「AI-simulated Aura glow effect…for entertainment purposes only」 | 下方各語言版本 |")
+    A("| 應用程式類別 | 原為 Entertainment / Tools | **Lifestyle**（或 Health & Fitness 的自我探索類） |")
+    A("| 隱私權政策網址 | 可能仍指向舊路徑 | `https://www.aura144.com/privacy`（舊 `/privacy-app` 亦可，內容相同） |")
+    A("| 開發者聯絡信箱 | — | `taomuru@gmail.com` |")
+    A("")
+    A("---")
+    A("")
+    for e in L:
+        A("## %s（`%s`）" % (e["label"], e["locale"]))
+        A("")
+        A("### 名稱（%d / 30）" % len(e["name"]))
+        A("```")
+        A(e["name"])
+        A("```")
+        A("")
+        A("### 簡短說明（%d / 80）" % len(e["short"]))
+        A("```")
+        A(e["short"])
+        A("```")
+        A("")
+        A("### 完整說明（%d / 4000）" % len(e["full"]))
+        A("```")
+        A(e["full"])
+        A("```")
+        A("")
+        A("### 版本資訊（%d / 500）" % len(WHATS_NEW[e["locale"]]))
+        A("```")
+        A(WHATS_NEW[e["locale"]])
+        A("```")
+        A("")
+        A("---")
+        A("")
+    # 移除最後多餘的分隔線
+    while lines and lines[-1] in ("---", ""):
+        lines.pop()
+    return "\n".join(lines) + "\n"
+
+
+def write_txt():
+    out = []
+    out.append("# Aura144 — Google Play 商店頁文案（15 種語言）")
+    out.append("# 由 build_store_listing.py 產生。欄位順序：locale / 名稱 / 簡短說明 / 完整說明 / 版本資訊。")
+    out.append("")
+    for e in L:
+        out.append("===== locale: %s (%s) =====" % (e["locale"], e["label"]))
+        out.append("名稱: %s" % e["name"])
+        out.append("簡短說明: %s" % e["short"])
+        out.append("完整說明:")
+        out.append(e["full"])
+        out.append("版本資訊: %s" % WHATS_NEW[e["locale"]])
+        out.append("")
+    return "\n".join(out)
+
+
+def main():
+    if not check():
+        print("有欄位超出限制，未寫檔。", file=sys.stderr)
+        return 1
+    md = write_md()
+    with open(os.path.join(ROOT, "store-listing.md"), "w", encoding="utf-8") as f:
+        f.write(md)
+    print("wrote store-listing.md (%d 種語言)" % len(L))
+    txt = write_txt()
+    with open(os.path.join(ROOT, "store-listing.txt"), "w", encoding="utf-8") as f:
+        f.write(txt)
+    print("wrote store-listing.txt")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

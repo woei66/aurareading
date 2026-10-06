@@ -14,13 +14,18 @@
       edit the listing anyway.
 - [ ] Update the Google Play listing copy: it still says "entertainment purposes only" and "AI-simulated Aura glow
       effect", which now contradicts the website. This is the single highest-value fix on the list — the listing is
-      where the 240 daily installs actually arrive. Paste-ready English and Traditional Chinese copy, already checked
-      against Play's character limits, is in **`store-listing.md`** at the repo root.
-- [ ] Decide whether the store app name changes to "Aura144: Aura Camera". It also renames the launcher icon label,
-      so it is a visible change for existing users — see the note at the bottom of `store-listing.md`.
-- [ ] Confirm the real processing time before adding any wait time to the listing. The store copy currently says
-      5–10 minutes and so does every App string, but the developer reports 1–2 minutes; `store-listing.md`
-      deliberately omits it until that is settled.
+      where the ~240 daily installs actually arrive. Paste-ready copy for **all 15 languages**, already checked
+      against Play's character limits (name 30 / short 80 / full 4000 / What's new 500), is in
+      **`store-listing.md`** at the repo root; `store-listing.txt` is the same content in a machine-readable form.
+      Regenerate with `python3 build_store_listing.py` after editing the copy.
+- [ ] Decide later whether the store name becomes "Aura144: Aura Camera". It also renames the launcher icon label,
+      so it is a visible change for the existing 28,000 installs — the generated copy keeps the name as `Aura144`
+      until that is decided.
+- [ ] Confirm the real processing time before adding any wait time to the listing. The old store copy says
+      5–10 minutes and so does every App string, but the developer reports 1–2 minutes; the generated copy
+      deliberately omits it, so no number has to be corrected later.
+- [ ] Once the listing copy is in, update `auracamerapro/app-store.txt` too — it is the source file the store copy
+      was originally derived from, and every locale in it is still the old "Aura Photo Generator" text.
 - [ ] Point `www.aura144.com` at GitHub Pages with the `CNAME` file in the repo root, and enable **Enforce HTTPS**.
 - [ ] Submit `https://www.aura144.com/sitemap.xml` in Google Search Console.
 - [ ] Ask someone who has never seen the app to use the site for 30 seconds and say what it does.
