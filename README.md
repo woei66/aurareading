@@ -35,27 +35,39 @@ use facial recognition and does not build any database of face data. See the
 ## Working on this site
 
 The site is plain static HTML served from this repository root via GitHub Pages, with no build step required to
-deploy. Two generator scripts exist for the pages that have repeated structure — they are conveniences, not a
+deploy. Generator scripts exist for the pages that have repeated structure — they are conveniences, not a
 dependency, and the generated HTML is committed.
 
 | Script | Generates | From |
 |---|---|---|
-| `build_pages.py` | `privacy.html`, `tos.html`, `support.html`, `tw/privacy.html`, `tw/tos.html`, `tw/support.html` | the matching `.md` files |
-| `build_secondary.py` | `campaign/index.html`, `share/index.html`, `press/index.html` | inline in the script |
-| `build_app_aliases.py` | `privacy-app.html`, `tos-app.html`, `support-app.html` and the `/tw/` equivalents | byte-for-byte copies of the pages above |
+| `build_pages.py` | `privacy.html`, `tos.html`, `support.html` and the `/tw/` versions | the matching `.md` files |
+| `build_secondary.py` | `campaign/`, `share/`, `press/` (English **and** `/tw/`) | inline in the script |
+| `build_blog.py` | `blog/launch-announcement.html`, `tw/blog/launch-announcement.html`, `feed.xml`, `tw/feed.xml` | inline in the script |
+| `build_app_aliases.py` | `privacy-app.html`, `tos-app.html`, `support-app.html` and the `/tw/` versions | byte-for-byte copies of the pages above |
+| `build_sitemap.py` | `sitemap.xml` | the `PAIRS` list inside the script |
 
-Run `python3 build_pages.py && python3 build_secondary.py && python3 build_app_aliases.py` after editing the
-markdown or the secondary-page copy. The alias script must run **last**, since it copies the generated pages.
+Regenerate everything in this order (the alias script must run last, because it copies the generated pages):
+
+```
+python3 build_pages.py && python3 build_secondary.py && python3 build_blog.py \
+  && python3 build_app_aliases.py && python3 build_sitemap.py
+```
+
+`build_pages.py`, `build_secondary.py` and `build_blog.py` all emit both languages, so a Chinese page can never
+fall out of sync with its English counterpart. Every page carries a three-line `hreflang` block
+(`en` / `zh-Hant` / `x-default`) and a `canonical`, and the header language switch always points at the same page
+in the other language rather than at the home page.
 
 ### Why the `-app` pages exist
 
 The Google Play listing historically pointed at `/privacy-app`. Even though `/privacy` is now the canonical URL,
 that older link must keep resolving — a 404 on the store's privacy-policy URL is an app-listing problem. The alias
 pages are duplicated mechanically rather than hand-maintained, so they cannot drift apart from their canonical
-counterpart; they are deliberately excluded from `sitemap.xml`.
+counterpart; they are deliberately excluded from `sitemap.xml`. Their language switch stays inside the alias pair
+(`/privacy-app` ↔ `/tw/privacy-app`) so the pages Google is told are a pair actually link to each other.
 
-`blog/launch-announcement.html` is hand-written. Images live in `assets/img/` as WebP, generated from the source
-artwork in the app repository (`auracamerapro/assets/`).
+Images live in `assets/img/` as WebP, generated from the source artwork in the app repository
+(`auracamerapro/assets/`).
 
 ## Feedback
 

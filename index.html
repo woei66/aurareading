@@ -29,6 +29,7 @@
   <link rel="apple-touch-icon" href="/assets/img/icon-180.png" />
   <link rel="alternate" hreflang="en" href="https://www.aura144.com/" />
   <link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/" />
+  <link rel="alternate" type="application/rss+xml" title="Aura144" href="/feed.xml" />
   <link rel="alternate" hreflang="x-default" href="https://www.aura144.com/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,6 +139,8 @@
     nav.links { display: flex; align-items: center; gap: 30px; font-size: 14.5px; }
     nav.links a { text-decoration: none; color: var(--ink-2); }
     nav.links a:hover { color: var(--ink); }
+    nav.links a.lang { color: var(--ink-3); }
+    nav.links a.lang:hover { color: var(--ink); }
 
     /* ---------- buttons ---------- */
     .btn, nav.links a.btn, .foot-links a.btn {
@@ -388,7 +391,7 @@
       .share-strip img:nth-child(3) { display: none; }
       .cta-row .btn { width: 100%; justify-content: center; }
       .bar { height: 62px; }
-      nav.links a:not(.btn) { display: none; }
+      nav.links a:not(.btn):not(.lang) { display: none; }
     }
   </style>
 </head>
@@ -406,6 +409,7 @@
         <a href="#how" class="hide-sm">How it works</a>
         <a href="#insights" class="hide-sm">Readings</a>
         <a href="#faq" class="hide-sm">FAQ</a>
+        <a class="lang" href="/tw/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
         <a class="btn"
           href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro&amp;utm_source=aura144_site&amp;utm_medium=nav&amp;utm_campaign=redesign">Download</a>
       </nav>

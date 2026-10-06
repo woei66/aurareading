@@ -48,6 +48,8 @@
     nav.links { display: flex; align-items: center; gap: 26px; font-size: 14.5px; }
     nav.links a { text-decoration: none; color: var(--ink-2); }
     nav.links a:hover { color: var(--ink); }
+    nav.links a.lang { color: var(--ink-3); }
+    nav.links a.lang:hover { color: var(--ink); }
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       background: var(--ink); color: #fff; text-decoration: none; font-size: 15.5px;
@@ -99,7 +101,7 @@
       .wrap { padding: 0 20px; }
       main { padding: 40px 0 64px; }
       .bar { height: 62px; }
-      nav.links a:not(.btn) { display: none; }
+      nav.links a:not(.btn):not(.lang) { display: none; }
     }
   </style>
 </head>
@@ -113,6 +115,7 @@
       </a>
       <nav class="links" aria-label="主要選單">
         <a href="/tw/#how">使用方式</a><a href="/tw/#insights">解讀項目</a><a href="/tw/#faq">常見問題</a>
+        <a class="lang" href="/tos-app" hreflang="en">English</a>
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro&amp;utm_source=aura144_site&amp;utm_medium=legal_page&amp;utm_campaign=redesign">下載</a>
       </nav>
     </div>
@@ -172,7 +175,7 @@
         </div>
         <nav class="foot-links" aria-label="頁尾">
           <a href="/tw/support">支援</a><a href="/tw/privacy">隱私</a><a href="/tw/tos">條款</a>
-          <a href="/">English</a>
+          <a href="/tos">English</a>
           <a href="https://www.yourhumanaura.com/about" target="_blank" rel="noopener">Judith Collins</a>
         </nav>
       </div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aura144 — 氣場相機</title>
+    <link>https://www.aura144.com/tw/</link>
+    <description>Aura144 能從一張全身照讀取身體周圍的能量場，呈現為氣場影像並附上文字解讀。由氣場專家 Judith Collins 擔任顧問共同開發。</description>
+    <language>zh-TW</language>
+    <atom:link href="https://www.aura144.com/tw/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Aura144 已在 Google Play 上架 — 與 Judith Collins 共同打造的氣場相機</title>
+      <link>https://www.aura144.com/tw/blog/launch-announcement.html</link>
+      <guid isPermaLink="true">https://www.aura144.com/tw/blog/launch-announcement.html</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Aura144 能從一張全身照讀取身體周圍的能量場，呈現為氣場影像並附上文字解讀。Android 版本已在 Google Play 免費下載。</description>
+    </item>
+  </channel>
+</rss>

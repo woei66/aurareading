@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://www.aura144.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/" />
@@ -9,20 +10,131 @@
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://www.aura144.com/tw/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/" />
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
-  <url><loc>https://www.aura144.com/support</loc><priority>0.5</priority></url>
-  <url><loc>https://www.aura144.com/tw/support</loc><priority>0.4</priority></url>
-  <url><loc>https://www.aura144.com/privacy</loc><priority>0.4</priority></url>
-  <url><loc>https://www.aura144.com/tw/privacy</loc><priority>0.3</priority></url>
-  <url><loc>https://www.aura144.com/tos</loc><priority>0.4</priority></url>
-  <url><loc>https://www.aura144.com/tw/tos</loc><priority>0.3</priority></url>
-  <url><loc>https://www.aura144.com/press/</loc><priority>0.5</priority></url>
-  <url><loc>https://www.aura144.com/share/</loc><priority>0.4</priority></url>
-  <url><loc>https://www.aura144.com/campaign/</loc><priority>0.3</priority></url>
+
+  <url>
+    <loc>https://www.aura144.com/campaign/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/campaign/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/campaign/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/campaign/" />
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/tw/campaign/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/campaign/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/campaign/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/campaign/" />
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/share/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/share/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/share/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/share/" />
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/tw/share/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/share/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/share/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/share/" />
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/press/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/press/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/press/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/press/" />
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/tw/press/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/press/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/press/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/press/" />
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/blog/launch-announcement.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/blog/launch-announcement.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/blog/launch-announcement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/blog/launch-announcement.html" />
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/tw/blog/launch-announcement.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/blog/launch-announcement.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/blog/launch-announcement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/blog/launch-announcement.html" />
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/support" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/support" />
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/tw/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/support" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/support" />
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/privacy" />
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/tw/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/privacy" />
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/tos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/tos" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/tos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/tos" />
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aura144.com/tw/tos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/tos" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/tos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/tos" />
+    <priority>0.3</priority>
+  </url>
+
+  <!--
+    注意：/privacy-app、/tos-app、/support-app 及其 /tw/ 版本刻意不列入本 sitemap。
+    它們是為了不讓 Google Play 的舊連結失效而保留的副本（由 build_app_aliases.py 產生），
+    正式網址為上方的 /privacy、/tos、/support。
+  -->
 </urlset>

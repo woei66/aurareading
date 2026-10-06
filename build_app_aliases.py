@@ -35,6 +35,18 @@ def _canonical_of(path):
     return path.replace("-app", "")
 
 
+# 語言切換連結的顯示文字
+LANG_LABEL = {}
+for _p in ("/privacy", "/tos", "/support"):
+    LANG_LABEL[_p] = "繁體中文"
+for _p in ("/tw/privacy", "/tw/tos", "/tw/support"):
+    LANG_LABEL[_p] = "English"
+for _p in ("/privacy-app", "/tos-app", "/support-app"):
+    LANG_LABEL[_p] = "繁體中文"
+for _p in ("/tw/privacy-app", "/tw/tos-app", "/tw/support-app"):
+    LANG_LABEL[_p] = "English"
+
+
 def main():
     for src, dest, canonical_path, (en_path, tw_path) in ALIASES:
         src_path = os.path.join(ROOT, src)
@@ -61,6 +73,22 @@ def main():
         ).replace(
             '<link rel="alternate" hreflang="x-default" href="%s" />' % (SITE + _canonical_of(en_path)),
             '<link rel="alternate" hreflang="x-default" href="%s" />' % (SITE + en_path),
+        )
+        # 標題列的語言切換也要留在別名這一組（/tw/privacy-app <-> /privacy-app），
+        # 否則使用者切換語言後會離開別名頁、而 hreflang 又宣稱兩頁成對。
+        # 直接由本頁自己的 canonical 路徑推導另一語言的別名路徑。
+        if canonical_path.startswith("/tw/"):
+            alt_self = canonical_path[len("/tw"):]          # /tw/privacy-app -> /privacy-app
+        else:
+            alt_self = "/tw" + canonical_path               # /privacy-app    -> /tw/privacy-app
+        main_alt = _canonical_of(alt_self)
+        patched = patched.replace(
+            '<a class="lang" href="%s"' % main_alt,
+            '<a class="lang" href="%s"' % alt_self,
+        )
+        patched = patched.replace(
+            '<a href="%s">%s</a>' % (main_alt, LANG_LABEL[alt_self]),
+            '<a href="%s">%s</a>' % (alt_self, LANG_LABEL[alt_self]),
         )
         dest_path = os.path.join(ROOT, dest)
         with open(dest_path, "w", encoding="utf-8") as f:

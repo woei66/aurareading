@@ -52,6 +52,8 @@ CSS = """
     nav.links { display: flex; align-items: center; gap: 26px; font-size: 14.5px; }
     nav.links a { text-decoration: none; color: var(--ink-2); }
     nav.links a:hover { color: var(--ink); }
+    nav.links a.lang { color: var(--ink-3); }
+    nav.links a.lang:hover { color: var(--ink); }
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       background: var(--ink); color: #fff; text-decoration: none; font-size: 15.5px;
@@ -103,7 +105,7 @@ CSS = """
       .wrap { padding: 0 20px; }
       main { padding: 40px 0 64px; }
       .bar { height: 62px; }
-      nav.links a:not(.btn) { display: none; }
+      nav.links a:not(.btn):not(.lang) { display: none; }
     }
 """
 
@@ -281,7 +283,9 @@ def page(lang, kicker, h1, meta, body, title, description, slug):
     base = "https://www.aura144.com" + slug
     nav = "".join('<a href="%s">%s</a>' % (u, html.escape(t)) for t, u in S["nav"])
     links = "".join('<a href="%s">%s</a>' % (u, html.escape(t)) for t, u in S["links"])
-    other_label, other_url = S["other_lang"]
+    other_label, _ = S["other_lang"]
+    # 語言切換要指向「同一頁的另一語言版本」，而不是首頁
+    alt_path = HREFLANG[slug][0 if lang == "tw" else 1]
     navbtn = "nav.links a.btn { color: #fff; }" if lang == "en" else ""
     css = CSS % {"sans": S["sans"], "serif": S["serif"], "navbtn": navbtn}
     meta_html = '<p class="meta">%s</p>' % html.escape(meta) if meta else ""
@@ -324,6 +328,7 @@ def page(lang, kicker, h1, meta, body, title, description, slug):
       </a>
       <nav class="links" aria-label="{'主要選單' if lang == 'tw' else 'Main'}">
         {nav}
+        <a class="lang" href="{alt_path}" hreflang="{'en' if lang == 'tw' else 'zh-Hant'}">{other_label}</a>
         <a class="btn" href="{PLAY_UTM}">{S['cta']}</a>
       </nav>
     </div>
@@ -346,7 +351,7 @@ def page(lang, kicker, h1, meta, body, title, description, slug):
         </div>
         <nav class="foot-links" aria-label="{'頁尾' if lang == 'tw' else 'Footer'}">
           {links}
-          <a href="{other_url}">{other_label}</a>
+          <a href="{alt_path}">{other_label}</a>
           <a href="https://www.yourhumanaura.com/about" target="_blank" rel="noopener">{S['judith']}</a>
         </nav>
       </div>
