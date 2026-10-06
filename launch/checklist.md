@@ -1,24 +1,55 @@
 # Aura144 Launch Execution Checklist
 
-> Owner executes these with the prepared assets. Each item links to its copy + UTM link.
+> Every item below is executed by hand. Copy lives in this folder; every link is a `www.aura144.com` URL.
+> UTM convention: `utm_source=aura144_site` · `utm_medium=<channel>` · `utm_campaign=redesign`
+> (older assets used `utm_campaign=aura_6h` — use `redesign` from now on so the new site is measurable on its own.)
 
-| # | Channel | Action | Copy | UTM (tracking.json) | Est. |
-| - | ------- | ------ | ---- | ------------------- | ---: |
-| 1 | Uptodown | create dev account, upload APK | content/long_descriptions.md LD-1 | dir_003 | 50 |
-| 2 | Product Hunt | launch (weekday, US morning) | launch/README.md PH copy | ph_001 | 40 |
-| 3 | r/alphaandbetausers | post | launch/reddit.md #1 | post_001 | 30 |
-| 4 | r/SideProject | post | launch/reddit.md #2 | post_002 | 20 |
-| 5 | Hacker News | Show HN | launch/hackernews.md | post_003 | 30 |
-| 6 | AlternativeTo | suggest (camera-tool framing!) | content/long_descriptions.md LD-5 | dir_001 | 20 |
-| 7 | AppBrain | claim app + featured submit | LD-4 | dir_002 | 15 |
-| 8 | openPR | manual submit (CAPTCHA) | launch/press.md + 1200x900 image | pr_001 | 5 |
-| 9 | PRLog | account + submit | launch/press.md | pr_002 | 3 |
-| 10 | Amazon Appstore | dev account + publish | LD-1 | dir_004 | 80 |
-| 11 | Samsung Galaxy Store | seller register + publish | LD-1 | dir_005 | 50 |
-| 12 | Aptoide | $69/yr subscription | LD-1 | dir_007 | 30 |
-| 13 | Google Search Console | verify + submit sitemap | sitemap.xml | — | indexing |
-| 14 | Google Ads UAC | after CPI data exists | — | — | UNKNOWN |
+## Before anything else
+
+- [ ] Confirm the "28,000+ installs" metric definition in Google Play Console (see `README.md`). Until it is
+      confirmed, do not put the figure in a press release or a directory listing.
+- [ ] Confirm your Google Play listing's **Privacy Policy URL** points to `https://www.aura144.com/privacy`
+      (the old `/privacy-app` URL no longer exists).
+- [ ] Update the Google Play listing copy: it still says "entertainment purposes only" and "AI-simulated Aura glow
+      effect", which now contradicts the website. This is the single highest-value fix on the list — the listing is
+      where the 240 daily installs actually arrive.
+- [ ] Point `www.aura144.com` at GitHub Pages with the `CNAME` file in the repo root, and enable **Enforce HTTPS**.
+- [ ] Submit `https://www.aura144.com/sitemap.xml` in Google Search Console.
+- [ ] Ask someone who has never seen the app to use the site for 30 seconds and say what it does.
+
+## Website-adjacent channels
+
+| # | Channel | Action | Copy | UTM medium |
+| - | ------- | ------ | ---- | ---------- |
+| 1 | Product Hunt | launch (weekday, US morning) | `launch/README.md` PH copy | `producthunt` |
+| 2 | r/alphaandbetausers | post | `launch/reddit.md` #1 | `reddit_beta` |
+| 3 | r/SideProject | post | `launch/reddit.md` #2 | `reddit_side` |
+| 4 | Hacker News | Show HN | `launch/hackernews.md` | `hackernews` |
+| 5 | openPR | manual submit (CAPTCHA) | `launch/press.md` + `og.jpg` | `pr_openpr` |
+| 6 | PRLog | account + submit | `launch/press.md` | `pr_prlog` |
+| 7 | Existing users | in-app push: "we rebuilt the site" | — | `push` |
+| 8 | Creator outreach | 5–10 personal messages | `launch/creators.md` | `creator` |
+
+## Store and directory listings
+
+| # | Channel | Action | Notes |
+| - | ------- | ------ | ----- |
+| 9 | Google Play | rewrite the "About this app" text | Highest leverage item in this table |
+| 10 | Uptodown | create dev account, upload APK | |
+| 11 | AlternativeTo | suggest the app | Frame as an aura/self-reflection tool, not a camera toy |
+| 12 | AppBrain | claim app + submit | |
+| 13 | Samsung Galaxy Store | seller register + publish | |
+| 14 | Amazon Appstore | dev account + publish | |
+| 15 | Aptoide | paid listing ($69/yr) | Only if the free channels convert |
 
 ## Timing
-- Do #1–#8 within the first hour of a launch day; #10–#11 same week; #14 only after install data shows a positive LTV.
-- Space community posts by ≥6h (respect rate limits; never spam).
+
+- Do #1–#6 within one launch day; space community posts by at least 6 hours and never cross-post the same text.
+- Do the Play listing rewrite (#9) **first** — it affects every install on every other channel.
+- Paid acquisition: only after the free channels show a positive install-to-paid-reading rate.
+
+## Deliberately not doing
+
+- Amazon Appstore and Aptoide were on the old list. Keep them here only if you have the appetite for per-store
+  privacy disclosures — both require re-submitting the data-safety information for a photo-upload app.
+- Posting in skeptic or science communities. See the note at the end of `launch/reddit.md`.

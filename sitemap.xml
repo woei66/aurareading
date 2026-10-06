@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://woei66.github.io/aurareading/</loc><priority>1.0</priority></url>
-  <url><loc>https://woei66.github.io/aurareading/campaign/</loc><priority>0.8</priority></url>
-  <url><loc>https://woei66.github.io/aurareading/share/</loc><priority>0.7</priority></url>
-  <url><loc>https://woei66.github.io/aurareading/blog/launch-announcement.html</loc><priority>0.6</priority></url>
-  <url><loc>https://woei66.github.io/aurareading/press/</loc><priority>0.6</priority></url>
-  <url><loc>https://woei66.github.io/aurareading/support</loc><priority>0.6</priority></url>
-  <url><loc>https://woei66.github.io/aurareading/privacy</loc><priority>0.4</priority></url>
-  <url><loc>https://woei66.github.io/aurareading/tos</loc><priority>0.4</priority></url>
-  <url><loc>https://www.aura144.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro</loc><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.aura144.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aura144.com/" />
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.aura144.com/tw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aura144.com/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/" />
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url><loc>https://www.aura144.com/support</loc><priority>0.5</priority></url>
+  <url><loc>https://www.aura144.com/tw/support</loc><priority>0.4</priority></url>
+  <url><loc>https://www.aura144.com/privacy</loc><priority>0.4</priority></url>
+  <url><loc>https://www.aura144.com/tw/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://www.aura144.com/tos</loc><priority>0.4</priority></url>
+  <url><loc>https://www.aura144.com/tw/tos</loc><priority>0.3</priority></url>
+  <url><loc>https://www.aura144.com/press/</loc><priority>0.5</priority></url>
+  <url><loc>https://www.aura144.com/share/</loc><priority>0.4</priority></url>
+  <url><loc>https://www.aura144.com/campaign/</loc><priority>0.3</priority></url>
 </urlset>

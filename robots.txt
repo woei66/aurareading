@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://woei66.github.io/aurareading/sitemap.xml
+Sitemap: https://www.aura144.com/sitemap.xml

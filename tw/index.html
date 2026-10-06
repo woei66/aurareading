@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura144 氣場相機 — 與澳洲氣場權威 Judith Collins 共同開發</title>
+  <meta name="description"
+    content="Aura144 把一張全身照變成你的氣場影像，並解讀它所顯示的情緒、心理與靈性狀態。與世界頂尖人體氣場專家 Judith Collins 共同開發。Android 免費下載，支援 15 種語言。" />
+  <link rel="canonical" href="https://www.aura144.com/tw/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Aura144" />
+  <meta property="og:url" content="https://www.aura144.com/tw/" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:title" content="Aura144 — 看見你自己能量的顏色" />
+  <meta property="og:description"
+    content="與世界頂尖人體氣場專家 Judith Collins 共同開發的氣場相機。一張全身照，看見你此刻的情緒、心理與靈性狀態。" />
+  <meta property="og:image" content="https://www.aura144.com/assets/img/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aura144 — 看見你自己能量的顏色" />
+  <meta name="twitter:description" content="與氣場權威 Judith Collins 共同開發的氣場相機。Android 免費下載。" />
+  <meta name="twitter:image" content="https://www.aura144.com/assets/img/og.jpg" />
+
+  <meta name="theme-color" content="#faf8f5" />
+  <link rel="icon" href="/assets/img/icon-180.png" />
+  <link rel="apple-touch-icon" href="/assets/img/icon-180.png" />
+  <link rel="alternate" hreflang="en" href="https://www.aura144.com/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.aura144.com/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Serif+TC:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aura144: 氣場相機",
+    "operatingSystem": "Android",
+    "applicationCategory": "LifestyleApplication",
+    "url": "https://www.aura144.com/tw/",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro",
+    "image": "https://www.aura144.com/assets/img/icon-512.png",
+    "inLanguage": "zh-Hant",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Organization", "name": "Aura144" },
+    "description": "Aura144 把一張全身照變成你的氣場影像，由氣場專家 Judith Collins 擔任顧問共同開發。"
+  }
+  </script>
+
+  <style>
+    :root {
+      --paper: #faf8f5;
+      --paper-2: #f3efe9;
+      --ink: #14120f;
+      --ink-2: #4a453e;
+      --ink-3: #8a8580;
+      --rule: #e3ddd4;
+      --accent: #4a3aa8;
+      --serif: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+      --maxw: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+
+    h1, h2, h3, .serif {
+      font-family: var(--serif);
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.35;
+      margin: 0;
+    }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+    .eyebrow {
+      font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+      color: var(--ink-3); margin: 0 0 20px;
+    }
+    .lead { color: var(--ink-2); font-size: 18px; line-height: 1.9; }
+
+    section { position: relative; }
+    .band { padding: 104px 0; }
+    .band-alt { background: var(--paper-2); }
+    .rule-top { border-top: 1px solid var(--rule); }
+
+    .skip { position: absolute; left: -9999px; top: 0; background: var(--ink); color: #fff; padding: 12px 18px; z-index: 100; }
+    .skip:focus { left: 0; }
+
+    /* ---------- header ---------- */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(250, 248, 245, .86);
+      backdrop-filter: saturate(180%) blur(14px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .brand {
+      font-family: var(--serif); font-size: 20px; font-weight: 600;
+      text-decoration: none; display: flex; align-items: center; gap: 10px;
+    }
+    .brand img { width: 26px; height: 26px; border-radius: 7px; }
+    nav.links { display: flex; align-items: center; gap: 28px; font-size: 14.5px; }
+    nav.links a { text-decoration: none; color: var(--ink-2); }
+    nav.links a:hover { color: var(--ink); }
+
+    /* ---------- buttons ---------- */
+    .btn, nav.links a.btn { 
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--ink); color: #fff; text-decoration: none;
+      font-size: 15.5px; font-weight: 500; padding: 14px 24px; border-radius: 999px;
+      border: 1px solid var(--ink); transition: transform .18s ease, background .18s ease;
+    }
+    .btn:hover, nav.links a.btn:hover { color: #fff; background: #2b2620; transform: translateY(-1px); }
+    .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--rule); }
+    .btn-ghost:hover { background: #fff; border-color: var(--ink-3); }
+    .btn svg { flex: none; }
+
+    /* ---------- hero ---------- */
+    .hero { padding: 84px 0 96px; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 76px; align-items: center; }
+    .hero h1 { font-size: clamp(34px, 4.6vw, 56px); }
+    .hero h1 em, .hero h1 span.accent { font-style: normal; color: var(--accent); display: block; }
+    .hero .lead { margin: 26px 0 0; max-width: 30ch; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; align-items: center; }
+    .trust { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; margin-top: 30px; font-size: 13.5px; color: var(--ink-3); }
+    .trust span { display: inline-flex; align-items: center; gap: 8px; }
+    .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex: none; }
+    .hero-visual img {
+      width: 100%; border-radius: 6px; aspect-ratio: 19/25; object-fit: cover;
+      box-shadow: 0 30px 70px -28px rgba(20, 18, 15, .45);
+    }
+    .hero-cap { margin-top: 14px; font-size: 12.5px; color: var(--ink-3); display: flex; justify-content: space-between; gap: 16px; }
+
+    /* ---------- before / after ---------- */
+    .ba-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 34px; }
+    .ba-head h2 { font-size: clamp(26px, 3.2vw, 38px); max-width: 22ch; }
+    .ba {
+      position: relative; overflow: hidden; border-radius: 6px; aspect-ratio: 4/3;
+      background: var(--paper-2); cursor: ew-resize;
+      box-shadow: 0 34px 80px -34px rgba(20, 18, 15, .5); touch-action: pan-y;
+    }
+    .ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .ba .clip { position: absolute; inset: 0; clip-path: inset(0 0 0 50%); }
+    .ba-handle { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #fff; box-shadow: 0 0 0 1px rgba(20, 18, 15, .14); pointer-events: none; }
+    .ba-knob {
+      position: absolute; top: 50%; left: 50%; width: 48px; height: 48px; transform: translate(-50%, -50%);
+      border-radius: 50%; background: #fff; box-shadow: 0 6px 22px rgba(20, 18, 15, .3);
+      display: grid; place-items: center; pointer-events: none;
+    }
+    .ba input[type="range"] {
+      position: absolute; inset: 0; width: 100%; height: 100%; margin: 0;
+      opacity: 0; cursor: ew-resize; -webkit-appearance: none; appearance: none; background: transparent;
+    }
+    .ba input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 48px; height: 100%; }
+    .ba input[type="range"]::-moz-range-thumb { width: 48px; height: 100%; border: 0; opacity: 0; }
+    .ba-tag {
+      position: absolute; top: 16px; font-size: 12px; background: rgba(250, 248, 245, .92); color: var(--ink-2);
+      padding: 6px 12px; border-radius: 999px; backdrop-filter: blur(6px); pointer-events: none;
+    }
+    .ba-tag.l { left: 16px; } .ba-tag.r { right: 16px; }
+    .ba-note { margin-top: 16px; font-size: 12.5px; color: var(--ink-3); }
+
+    /* ---------- authority ---------- */
+    .video { position: relative; aspect-ratio: 16/9; border-radius: 6px; overflow: hidden; background: #0d0b09; box-shadow: 0 34px 80px -34px rgba(20, 18, 15, .55); }
+    .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .auth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .quote { font-family: var(--serif); font-size: clamp(21px, 2.2vw, 27px); line-height: 1.6; margin: 0 0 26px; font-weight: 500; }
+    .byline { display: flex; align-items: center; gap: 14px; }
+    .byline .mark { width: 44px; height: 44px; border-radius: 50%; flex: none; background: linear-gradient(135deg, #b9a6f2, #f0b7c8 55%, #f6d79a); }
+    .byline b { display: block; font-weight: 600; font-size: 15px; }
+    .byline span { font-size: 13.5px; color: var(--ink-3); }
+    .auth-list { list-style: none; padding: 0; margin: 30px 0 0; }
+    .auth-list li { display: flex; gap: 14px; padding: 16px 0; border-top: 1px solid var(--rule); font-size: 15.5px; color: var(--ink-2); }
+    .auth-list li b { color: var(--ink); font-weight: 600; }
+
+    /* ---------- stats ---------- */
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 44px; }
+    .stat { padding: 0 34px; border-left: 1px solid var(--rule); }
+    .stat:first-child { padding-left: 0; border-left: 0; }
+    .stat b { display: block; font-family: var(--serif); font-weight: 600; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.15; }
+    .stat span { display: block; margin-top: 8px; font-size: 13.5px; color: var(--ink-3); }
+    .chart { width: 100%; height: auto; }
+    .chart figcaption { margin-top: 12px; font-size: 12.5px; color: var(--ink-3); line-height: 1.7; }
+
+    /* ---------- steps ---------- */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .step h3 { font-size: 21px; margin: 20px 0 10px; }
+    .step p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+    .step-n { font-family: var(--serif); font-size: 14px; letter-spacing: .1em; color: var(--accent); display: flex; align-items: center; gap: 12px; }
+    .step-n:after { content: ""; height: 1px; flex: 1; background: var(--rule); }
+    .phones { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 56px; }
+    .phone { border-radius: 26px; overflow: hidden; background: #fff; border: 1px solid var(--rule); box-shadow: 0 24px 60px -30px rgba(20, 18, 15, .45); }
+    .phone img { width: 100%; aspect-ratio: 720/1601; object-fit: cover; object-position: top; }
+    .phone-cap { padding: 14px 18px 18px; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--rule); line-height: 1.7; }
+    .phone-cap b { display: block; color: var(--ink); font-weight: 600; font-size: 14px; margin-bottom: 3px; }
+
+    /* ---------- cards ---------- */
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+    .card { background: #fff; border: 1px solid var(--rule); border-radius: 6px; padding: 30px; display: flex; flex-direction: column; }
+    .card h3 { font-size: 20px; margin-bottom: 10px; }
+    .card p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+    .card .ico { width: 30px; height: 30px; margin-bottom: 20px; color: var(--accent); }
+    .card-img { border-radius: 4px; overflow: hidden; margin: -30px -30px 24px; }
+    .card-img img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+
+    /* ---------- bento ---------- */
+    .bento { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
+    .tile { border-radius: 6px; overflow: hidden; position: relative; min-height: 210px; display: flex; align-items: flex-end; border: 1px solid var(--rule); }
+    .tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .tile .scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(12, 10, 9, .94) 0%, rgba(12, 10, 9, .78) 32%, rgba(12, 10, 9, .30) 62%, rgba(12, 10, 9, .10) 100%); }
+    .tile-in { position: relative; padding: 24px; color: #fff; }
+    .tile-in h3 { font-size: 19px; margin-bottom: 6px; }
+    .tile-in p { margin: 0; font-size: 13.5px; color: rgba(255, 255, 255, .88); line-height: 1.7; }
+    .tile-in .n { font-size: 11px; letter-spacing: .14em; color: rgba(255, 255, 255, .72); display: block; margin-bottom: 8px; }
+    .t2 { grid-column: span 2; } .t3 { grid-column: span 3; } .t6 { grid-column: span 6; }
+    .price-note { margin-top: 32px; padding: 22px 26px; border: 1px solid var(--rule); border-radius: 6px; background: #fff; font-size: 15px; color: var(--ink-2); display: flex; gap: 14px; align-items: flex-start; }
+    .price-note b { color: var(--ink); font-weight: 600; }
+
+    /* ---------- uses ---------- */
+    .uses { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+    .use h3 { font-size: 20px; margin-bottom: 12px; }
+    .use p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+    .use .n { font-family: var(--serif); font-size: 13px; letter-spacing: .1em; color: var(--accent); display: block; margin-bottom: 16px; }
+
+    /* ---------- share ---------- */
+    .share-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: center; }
+    .share-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .share-strip img { border-radius: 6px; aspect-ratio: 3/4; object-fit: cover; width: 100%; }
+    .share-strip img:nth-child(2) { transform: translateY(-18px); }
+
+    /* ---------- faq ---------- */
+    .faq { max-width: 880px; }
+    details { border-top: 1px solid var(--rule); }
+    details:last-of-type { border-bottom: 1px solid var(--rule); }
+    summary { cursor: pointer; padding: 24px 40px 24px 0; font-size: 17.5px; font-family: var(--serif); font-weight: 600; list-style: none; position: relative; }
+    summary::-webkit-details-marker { display: none; }
+    summary:after {
+      content: ""; position: absolute; right: 8px; top: 50%; width: 11px; height: 11px;
+      border-right: 1.5px solid var(--ink-3); border-bottom: 1.5px solid var(--ink-3);
+      transform: translateY(-70%) rotate(45deg); transition: transform .22s ease;
+    }
+    details[open] summary:after { transform: translateY(-30%) rotate(-135deg); }
+    details p { margin: 0 0 26px; color: var(--ink-2); font-size: 16px; max-width: 70ch; }
+    details p a { color: var(--accent); }
+
+    /* ---------- final ---------- */
+    .final { text-align: center; }
+    .final h2 { font-size: clamp(28px, 3.8vw, 46px); max-width: 24ch; margin: 0 auto 22px; }
+    .final p { color: var(--ink-2); max-width: 54ch; margin: 0 auto 34px; }
+    .final .trust { justify-content: center; }
+
+    /* ---------- footer ---------- */
+    footer { border-top: 1px solid var(--rule); padding: 60px 0 70px; }
+    .foot-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; }
+    .foot-grid h4 { font-family: var(--serif); font-size: 17px; font-weight: 600; margin: 0 0 10px; }
+    .foot-grid p { margin: 0; font-size: 14px; color: var(--ink-3); max-width: 40ch; line-height: 1.8; }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 26px; font-size: 14px; }
+    .foot-links a { text-decoration: none; color: var(--ink-2); }
+    .foot-links a:hover { color: var(--ink); }
+    .disclaimer { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--ink-3); max-width: 80ch; line-height: 1.8; }
+    .copy { margin-top: 18px; font-size: 12.5px; color: var(--ink-3); }
+
+    /* ---------- reveal ---------- */
+    .rv { opacity: 0; transform: translateY(14px); transition: opacity .42s ease, transform .42s ease; }
+    .rv.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .rv { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* ---------- responsive ---------- */
+    @media (max-width: 980px) {
+      .band { padding: 76px 0; }
+      .hero { padding: 56px 0 70px; }
+      .hero-grid, .auth-grid, .share-grid { grid-template-columns: 1fr; gap: 44px; }
+      .hero .lead { max-width: none; }
+      .hero-visual { max-width: 440px; }
+      .steps, .cards, .uses { grid-template-columns: 1fr; gap: 34px; }
+      .phones { grid-template-columns: repeat(2, 1fr); }
+      .bento { grid-template-columns: repeat(2, 1fr); }
+      .t2, .t3, .t6 { grid-column: span 2; }
+      .stats { grid-template-columns: 1fr; gap: 26px; }
+      .stat { padding: 0; border-left: 0; border-top: 1px solid var(--rule); padding-top: 22px; }
+      .stat:first-child { border-top: 0; padding-top: 0; }
+      nav.links { gap: 18px; }
+      nav.links a.hide-sm { display: none; }
+    }
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      .band { padding: 60px 0; }
+      .bento { grid-template-columns: 1fr; }
+      .t2, .t3, .t6 { grid-column: span 1; }
+      .share-strip { grid-template-columns: repeat(2, 1fr); }
+      .share-strip img:nth-child(3) { display: none; }
+      .cta-row .btn { width: 100%; }
+      .bar { height: 62px; }
+      nav.links a:not(.btn) { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="/tw/">
+        <img src="/assets/img/icon-180.png" alt="" width="26" height="26" />
+        <span>Aura144</span>
+      </a>
+      <nav class="links" aria-label="主要選單">
+        <a href="#how" class="hide-sm">使用方式</a>
+        <a href="#insights" class="hide-sm">解讀項目</a>
+        <a href="#faq" class="hide-sm">常見問題</a>
+        <a class="btn"
+          href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro&amp;utm_source=aura144_site&amp;utm_medium=nav&amp;utm_campaign=redesign_tw">下載</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Android 氣場相機</p>
+          <h1>看見你自己<span class="accent">能量的顏色。</span></h1>
+          <p class="lead">
+            Aura144 把一張全身照變成你的氣場影像，並讀出它所顯示的情緒、心理與靈性狀態。
+          </p>
+          <div class="cta-row">
+            <a class="btn"
+              href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro&amp;utm_source=aura144_site&amp;utm_medium=hero&amp;utm_campaign=redesign_tw">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 20.5V3.5a.6.6 0 0 1 .92-.5l13.6 8.5a.6.6 0 0 1 0 1L3.92 21A.6.6 0 0 1 3 20.5Zm3.5-12.5v8l5.6-4-5.6-4Z" />
+              </svg>
+              Google Play 免費下載
+            </a>
+            <a class="btn btn-ghost" href="#how">看看怎麼用</a>
+          </div>
+          <div class="trust">
+            <span><i class="dot"></i> 與 Judith Collins 共同開發</span>
+            <span><i class="dot"></i> 免費下載</span>
+            <span><i class="dot"></i> 支援 15 種語言</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="/assets/img/hero-aura.webp" width="760" height="1000"
+            alt="Aura144 產生的氣場影像，全身人形周圍環繞著流動的色彩場" />
+          <p class="hero-cap"><span>Aura144 產生的氣場影像</span><span>示範影像</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. BEFORE / AFTER ============ -->
+    <section class="band band-alt rule-top" id="transformation">
+      <div class="wrap">
+        <div class="ba-head rv">
+          <div>
+            <p class="eyebrow">照片的轉變</p>
+            <h2>你的照片，會變成這個樣子。</h2>
+          </div>
+          <p class="lead" style="max-width:32ch;font-size:16px;margin:0">
+            拖曳中間的控制點。Aura144 讀取你身體周圍的能量場，並把它轉譯成顏色。
+          </p>
+        </div>
+
+        <div class="ba rv" id="ba">
+          <img src="/assets/img/before.webp" width="1000" height="750"
+            alt="Aura144 要求的全身照範例：站立、手臂張開、掌心朝前、淺色單純背景" />
+          <div class="clip" id="baClip">
+            <img src="/assets/img/after.webp" width="1000" height="750"
+              alt="由這張照片產生的氣場影像，人形周圍出現色彩場" />
+          </div>
+          <span class="ba-tag l">你的照片</span>
+          <span class="ba-tag r">你的氣場</span>
+          <div class="ba-handle" id="baHandle"></div>
+          <div class="ba-knob">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 6 4 12l5 6M15 6l5 6-5 6" />
+            </svg>
+          </div>
+          <input type="range" id="baRange" min="0" max="100" value="50" step="0.5"
+            aria-label="拖曳以顯示氣場影像覆蓋原照片的比例" />
+        </div>
+        <p class="ba-note">示範影像。你自己的影像會顯示你自己的顏色。</p>
+      </div>
+    </section>
+
+    <!-- ============ 3. AUTHORITY ============ -->
+    <section class="band" id="judith">
+      <div class="wrap auth-grid">
+        <div class="rv">
+          <p class="eyebrow">由氣場專家參與打造</p>
+          <blockquote class="quote">
+            「氣場是身體周圍的能量場，它的顏色反映出你的情緒、你的心智與你的靈性。」
+          </blockquote>
+          <div class="byline">
+            <span class="mark" aria-hidden="true"></span>
+            <div>
+              <b>Judith Collins</b>
+              <span>Aura144 氣場顧問 · <a href="https://www.yourhumanaura.com/about" target="_blank"
+                  rel="noopener">yourhumanaura.com</a></span>
+            </div>
+          </div>
+          <ul class="auth-list">
+            <li><b>她指導解讀的邏輯。</b>Aura144 是與 Judith 共同開發的，因此解讀方式遵循她傳授數十年的氣場傳統。</li>
+            <li><b>她不只是掛名。</b>Aura144 如何讀取顏色、用什麼語言解釋它看到的東西，都來源于她的工作。</li>
+          </ul>
+        </div>
+        <div class="video rv">
+          <iframe src="https://player.vimeo.com/video/1216947553?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            title="Chakras through Aura — Judith Collins" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. DATA ============ -->
+    <section class="band band-alt rule-top" id="numbers">
+      <div class="wrap">
+        <div class="rv" style="margin-bottom:44px">
+          <p class="eyebrow">真實使用狀況</p>
+          <h2 style="font-size:clamp(26px,3.2vw,38px);max-width:22ch">世界各地都有人正在讀自己的氣場。</h2>
+        </div>
+
+        <!-- NOTE: 上線前請先向 Google Play Console 確認此數字的統計口徑 -->
+        <div class="stats rv">
+          <div class="stat"><b>28,000+</b><span>自 2026 年 3 月上架以來的 Android 安裝數（統計口徑待確認）</span></div>
+          <div class="stat"><b>每天</b><span>每天約有 240 人開啟 Aura144</span></div>
+          <div class="stat"><b>190+</b><span>個國家與地區，15 種語言</span></div>
+        </div>
+
+        <figure class="rv" style="margin:0">
+          <img class="chart" src="/assets/img/growth.svg" width="1000" height="300"
+            alt="折線圖：Aura144 每日安裝數從 2026 年 3 月底的每天約 4 次，成長到 2026 年 10 月的每天約 240 次" />
+          <figcaption>每日安裝數，2026 年 3 月至 10 月。主要市場為印度、美國、俄羅斯與墨西哥；超過一半的使用者來自其他國家。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 5. HOW ============ -->
+    <section class="band" id="how">
+      <div class="wrap">
+        <div class="rv" style="margin-bottom:52px">
+          <p class="eyebrow">使用方式</p>
+          <h2 style="font-size:clamp(26px,3.2vw,38px);max-width:20ch">三個步驟、一張照片、不需要任何設備。</h2>
+        </div>
+
+        <div class="steps rv">
+          <div class="step">
+            <span class="step-n">01</span>
+            <h3>選擇解讀項目</h3>
+            <p>四大類、共十種解讀——認識自己、關係、家庭，以及快速的今日氣場。每一項都會事先告訴你需要一張還是多張照片。</p>
+          </div>
+          <div class="step">
+            <span class="step-n">02</span>
+            <h3>上傳全身照</h3>
+            <p>面向鏡頭站立，手臂張開、掌心朝前，背景為單純的淺色牆面。App 內有拍攝指南，告訴你精確的取景比例，確保照片通過檢查。</p>
+          </div>
+          <div class="step">
+            <span class="step-n">03</span>
+            <h3>看見氣場，讀懂解讀</h3>
+            <p>氣場影像會連同文字解讀一起送達。你可以存圖、分享，並加上私人備註，回頭看自己當時的狀態。</p>
+          </div>
+        </div>
+
+        <div class="phones rv">
+          <figure class="phone" style="margin:0">
+            <img src="/assets/img/shot-steps.webp" width="720" height="1601" loading="lazy"
+              alt="Aura144 App 畫面：步驟一，選擇要分析的問題，列出各解讀項目與費用" />
+            <figcaption class="phone-cap"><b>選擇解讀項目</b>付款前就會看到費用。</figcaption>
+          </figure>
+          <figure class="phone" style="margin:0">
+            <img src="/assets/img/shot-guide.webp" width="720" height="1601" loading="lazy"
+              alt="Aura144 拍攝指南畫面：頭頂上方留 30% 空間、掌心朝前、淺色背景等要求" />
+            <figcaption class="phone-cap"><b>照著拍攝指南拍</b>掌心朝前、全身入鏡、單純背景。</figcaption>
+          </figure>
+          <figure class="phone" style="margin:0">
+            <img src="/assets/img/shot-result.webp" width="720" height="1601" loading="lazy"
+              alt="Aura144 結果畫面：處理後的氣場影像、處理時間，以及文字氣場解讀" />
+            <figcaption class="phone-cap"><b>閱讀你的解讀</b>氣場影像加上文字解讀，存入紀錄。</figcaption>
+          </figure>
+          <figure class="phone" style="margin:0">
+            <img src="/assets/img/shot-lang.webp" width="720" height="1601" loading="lazy"
+              alt="Aura144 語言設定畫面，列出英文、簡體中文、繁體中文、德文、希臘文、西班牙文、波斯文、印地文、俄文、斯洛維尼亞文與烏爾都文" />
+            <figcaption class="phone-cap"><b>用你的語言</b>支援 15 種語言，包含繁體中文、English、हिन्दी、Русский。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. WHAT YOU GET ============ -->
+    <section class="band band-alt rule-top" id="what-you-get">
+      <div class="wrap">
+        <div class="rv" style="margin-bottom:48px">
+          <p class="eyebrow">你會得到什麼</p>
+          <h2 style="font-size:clamp(26px,3.2vw,38px);max-width:22ch">一張看得見的影像，加上你能用得上的文字。</h2>
+        </div>
+        <div class="cards rv">
+          <article class="card">
+            <div class="card-img"><img src="/assets/img/aura-1.webp" width="600" height="600" loading="lazy"
+                alt="Aura144 產生的氣場影像" /></div>
+            <h3>你的氣場影像</h3>
+            <p>把你當下的能量場，以全身影像呈現，並帶著那個時刻的顏色。可以存到相簿，也可以隨時分享出去。</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" aria-hidden="true">
+              <path d="M4 6h16M4 11h16M4 16h10" />
+            </svg>
+            <h3>文字解讀</h3>
+            <p>不只是顏色。Aura144 會用平實的語言，說明它在情緒、心理與靈性層面看到什麼，讓你能真的拿去反思。</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 3h9l5 5v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
+              <path d="M14 3v5h5M8 13h8M8 17h5" />
+            </svg>
+            <h3>紀錄與私人備註</h3>
+            <p>每一次解讀都會留在紀錄裡。為它寫下當時生活正在發生什麼事，久了你就有一份屬於自己內在天氣的紀錄。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. READINGS ============ -->
+    <section class="band" id="insights">
+      <div class="wrap">
+        <div class="rv" style="margin-bottom:48px">
+          <p class="eyebrow">十種解讀</p>
+          <h2 style="font-size:clamp(26px,3.2vw,38px);max-width:24ch">先從自己開始，再看身邊的人。</h2>
+        </div>
+
+        <div class="bento rv">
+          <article class="tile t2">
+            <img src="/assets/img/aura-1.webp" width="600" height="600" loading="lazy" alt="" />
+            <div class="scrim"></div>
+            <div class="tile-in">
+              <span class="n">個人</span>
+              <h3>個人氣場解讀</h3>
+              <p>最核心的一項：你的氣場現在顯示出關於你的什麼。</p>
+            </div>
+          </article>
+          <article class="tile t2">
+            <img src="/assets/img/aura-2.webp" width="600" height="600" loading="lazy" alt="" />
+            <div class="scrim"></div>
+            <div class="tile-in">
+              <span class="n">個人</span>
+              <h3>優缺點探索</h3>
+              <p>你的能量在哪裡天生強韌，又在哪裡被消耗。</p>
+            </div>
+          </article>
+          <article class="tile t2">
+            <img src="/assets/img/aura-3.webp" width="600" height="600" loading="lazy" alt="" />
+            <div class="scrim"></div>
+            <div class="tile-in">
+              <span class="n">個人</span>
+              <h3>心理與情緒探索</h3>
+              <p>你此刻在情緒上扛著什麼，以及為什麼它會顯示出來。</p>
+            </div>
+          </article>
+          <article class="tile t3">
+            <img src="/assets/img/aura-4.webp" width="600" height="600" loading="lazy" alt="" />
+            <div class="scrim"></div>
+            <div class="tile-in">
+              <span class="n">關係 · 2 張照片</span>
+              <h3>戀人與夫妻關係解讀</h3>
+              <p>兩個氣場並排看：你們在哪裡順流，又在哪裡互相碰撞。</p>
+            </div>
+          </article>
+          <article class="tile t3">
+            <img src="/assets/img/aura-5.webp" width="600" height="600" loading="lazy" alt="" />
+            <div class="scrim"></div>
+            <div class="tile-in">
+              <span class="n">家庭 · 最多 5 張照片</span>
+              <h3>家庭溝通與情緒</h3>
+              <p>把全家一起讀，也可以只讀單親家長與孩子。</p>
+            </div>
+          </article>
+          <article class="tile t6" style="min-height:190px">
+            <img src="/assets/img/aura-wide.webp" width="1200" height="675" loading="lazy" alt="" />
+            <div class="scrim"></div>
+            <div class="tile-in">
+              <span class="n">每日</span>
+              <h3>今日氣場</h3>
+              <p>一張照片、一次解讀——快速看看你今天身上帶著什麼樣的能量。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="price-note rv">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" aria-hidden="true" style="flex:none;margin-top:6px">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 8h.01M11 12h1v4h1" />
+          </svg>
+          <p style="margin:0"><b>Aura144 免費下載。</b>每一項解讀都在 App 內個別解鎖，費用在付款前就會顯示在畫面上——不會有任何自動扣款。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. WHO ============ -->
+    <section class="band band-alt rule-top" id="who">
+      <div class="wrap">
+        <div class="rv" style="margin-bottom:46px">
+          <p class="eyebrow">誰在使用</p>
+          <h2 style="font-size:clamp(26px,3.2vw,38px);max-width:22ch">三種人會一再回到 Aura144。</h2>
+        </div>
+        <div class="uses rv">
+          <div class="use">
+            <span class="n">01 — 自己</span>
+            <h3>想弄清楚自己在感受什麼</h3>
+            <p>有時候你知道有什麼不對，卻說不出來。顏色比情緒容易直視，而文字解讀會給你看見的畫面一些詞彙。</p>
+          </div>
+          <div class="use">
+            <span class="n">02 — 關係</span>
+            <h3>想看兩個人放在一起</h3>
+            <p>上傳兩張照片，一起讀兩個氣場：伴侶、夫妻、父母、孩子或同事。當一段關係卡住、卻沒人說得出原因時，特別有用。</p>
+          </div>
+          <div class="use">
+            <span class="n">03 — 療癒工作者</span>
+            <h3>把氣場影像帶進你的服務裡</h3>
+            <p>療癒師、塔羅師、瑜伽與冥想老師會用 Aura144 作為與個案對話的起點——一個視覺化的開場，加上一份可以交給對方的文字解讀。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. SHARE ============ -->
+    <section class="band" id="share">
+      <div class="wrap share-grid">
+        <div class="rv">
+          <p class="eyebrow">分享出去</p>
+          <h2 style="font-size:clamp(26px,3.2vw,38px);margin-bottom:20px">你的氣場，可以直接發文。</h2>
+          <p class="lead" style="font-size:16px">
+            把氣場影像存進相簿，或直接分享到 Instagram、LINE、WhatsApp。顏色比自拍更能說話——這就是為什麼大家願意把它貼出來。
+          </p>
+        </div>
+        <div class="share-strip rv">
+          <img src="/assets/img/aura-tall.webp" width="900" height="1125" loading="lazy" alt="使用者分享的氣場影像" />
+          <img src="/assets/img/aura-2.webp" width="600" height="600" loading="lazy" alt="使用者分享的氣場影像" />
+          <img src="/assets/img/aura-4.webp" width="600" height="600" loading="lazy" alt="使用者分享的氣場影像" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. FAQ ============ -->
+    <section class="band band-alt rule-top" id="faq">
+      <div class="wrap">
+        <div class="rv" style="margin-bottom:38px">
+          <p class="eyebrow">常見問題</p>
+          <h2 style="font-size:clamp(26px,3.2vw,38px)">下載之前，先看這裡。</h2>
+        </div>
+
+        <div class="faq rv">
+          <details open>
+            <summary>需要什麼樣的照片？</summary>
+            <p>一張單人全身彩色照：站立、面向鏡頭、手臂張開、掌心朝前。頭頂上方與腳下各留約 30% 的空白，全身要完整入鏡，背景用單純的淺色牆面。短袖與短褲最好。App 內有拍攝指南，而且會在付款前先檢查你的照片——如果沒通過，它會請你重新上傳，而不是讓你付錢換到一份不準的解讀。</p>
+          </details>
+          <details>
+            <summary>我的照片會被怎麼處理？</summary>
+            <p>照片會上傳到我們的伺服器，用來產生你的氣場影像與解讀，之後就會刪除。我們不保留你的人像照片，也不會拿來訓練任何模型。細節請見<a href="/tw/privacy">隱私政策</a>。</p>
+          </details>
+          <details>
+            <summary>這跟一般的照片濾鏡有什麼不同？</summary>
+            <p>濾鏡對每一張照片套用固定的效果。Aura144 讀取你照片中身體周圍的能量場，把它找到的顏色呈現出來，再以文字解讀說明。它是由長年研究人體氣場的 Judith Collins 參與開發的——解讀遵循的是那套傳統，而不是一組預設參數。</p>
+          </details>
+          <details>
+            <summary>Judith Collins 是誰？</summary>
+            <p>Judith Collins 是澳洲的氣場教師，也是人體氣場領域最知名的權威之一。她擔任 Aura144 的氣場顧問，與我們一起決定 App 如何讀取與說明顏色。你可以在 <a href="https://www.yourhumanaura.com/about" target="_blank" rel="noopener">yourhumanaura.com</a> 進一步了解她。</p>
+          </details>
+          <details>
+            <summary>需要任何特殊設備嗎？</summary>
+            <p>不需要。你只需要一支 Android 手機，以及一張自己的照片。不用氣場相機、不用感測器、不用攝影棚，什麼都不用買。這正是重點——這是以往必須親自跑一趟、花錢才能得到的解讀。</p>
+          </details>
+          <details>
+            <summary>費用怎麼算？</summary>
+            <p>Aura144 免費下載。每一項解讀都在 App 內個別解鎖，費用在確認前就會顯示在畫面上，所以你永遠知道自己付的是什麼。不會有任何自動扣款。</p>
+          </details>
+          <details>
+            <summary>為什麼有時候要我等一下？</summary>
+            <p>為了維持服務品質與公平，同一台裝置或同一個網路在兩次解讀之間需要短暫的間隔。如果你看到請你稍候的提示，通常一兩分鐘內就會解除。</p>
+          </details>
+          <details>
+            <summary>iPhone 可以用嗎？</summary>
+            <p>目前不行。Aura144 是 Android App，在 Google Play 上架。目前沒有推出 iPhone 版本的計畫。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 11. FINAL ============ -->
+    <section class="band final" id="download">
+      <div class="wrap">
+        <div class="rv">
+          <h2>你的顏色本來就在那裡。去看看它。</h2>
+          <p>下載 Aura144，照著指南拍一張照片，看看你今天的氣場是什麼樣子。</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn"
+              href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro&amp;utm_source=aura144_site&amp;utm_medium=footer_cta&amp;utm_campaign=redesign_tw">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 20.5V3.5a.6.6 0 0 1 .92-.5l13.6 8.5a.6.6 0 0 1 0 1L3.92 21A.6.6 0 0 1 3 20.5Zm3.5-12.5v8l5.6-4-5.6-4Z" />
+              </svg>
+              Google Play 免費下載
+            </a>
+          </div>
+          <div class="trust">
+            <span><i class="dot"></i> 免費下載</span>
+            <span><i class="dot"></i> 照片處理後即刪除</span>
+            <span><i class="dot"></i> 不需要任何設備</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 12. FOOTER ============ -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <h4>Aura144</h4>
+          <p>與 Judith Collins 共同開發的 Android 氣場相機。看見你的氣場，並讀懂它顯示了什麼。</p>
+        </div>
+        <nav class="foot-links" aria-label="頁尾">
+          <a href="/tw/support">支援</a>
+          <a href="/tw/privacy">隱私</a>
+          <a href="/tw/tos">條款</a>
+          <a href="/">English</a>
+          <a href="https://www.yourhumanaura.com/about" target="_blank" rel="noopener">Judith Collins</a>
+        </nav>
+      </div>
+      <p class="disclaimer">氣場影像與解讀屬於能量層面的詮釋，並非醫療診斷或治療，僅提供自我反思與個人洞察之用。</p>
+      <p class="copy">© 2026 Aura144. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.getElementById('ba');
+      var range = document.getElementById('baRange');
+      var clip = document.getElementById('baClip');
+      var handle = document.getElementById('baHandle');
+      if (!root || !range) return;
+      function set(pct) {
+        clip.style.clipPath = 'inset(0 0 0 ' + pct + '%)';
+        handle.style.left = pct + '%';
+      }
+      range.addEventListener('input', function () { set(range.value); });
+      set(range.value);
+    })();
+
+    (function () {
+      var els = document.querySelectorAll('.rv');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (e) { e.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { rootMargin: '0px 0px -12% 0px', threshold: 0.06 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
+</body>
+
+</html>

@@ -2,15 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aura144 — Aura Camera</title>
-    <link>https://woei66.github.io/aurareading/</link>
-    <description>Aura144: Aura Camera — turn full-body photos into colorful aura visualizations for entertainment.</description>
-    <atom:link href="https://woei66.github.io/aurareading/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://www.aura144.com/</link>
+    <description>Aura144 reads the energy field around the body from a full-body photo and renders it as an aura image with a written interpretation. Co-developed with aura expert Judith Collins.</description>
+    <language>en</language>
+    <atom:link href="https://www.aura144.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Aura144: Aura Camera now on Google Play</title>
-      <link>https://woei66.github.io/aurareading/blog/launch-announcement.html</link>
-      <guid>aura144-launch-2026-08-11</guid>
+      <title>Aura144 is now on Google Play — an aura camera built with Judith Collins</title>
+      <link>https://www.aura144.com/blog/launch-announcement.html</link>
+      <guid>https://www.aura144.com/blog/launch-announcement.html</guid>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Free Android app that turns full-body photos into colorful aura visualizations with entertainment-style interpretations. Multilingual.</description>
+      <description>Aura144 reads the energy field around the body from a full-body photo and renders it as an aura image with a written reading. Free on Android, 15 languages.</description>
     </item>
   </channel>
 </rss>
