@@ -26,8 +26,22 @@
       deliberately omits it, so no number has to be corrected later.
 - [ ] Once the listing copy is in, update `auracamerapro/app-store.txt` too — it is the source file the store copy
       was originally derived from, and every locale in it is still the old "Aura Photo Generator" text.
-- [ ] Point `www.aura144.com` at GitHub Pages with the `CNAME` file in the repo root, and enable **Enforce HTTPS**.
-- [ ] Submit `https://www.aura144.com/sitemap.xml` in Google Search Console.
+- [ ] **Fix the apex domain `aura144.com` — it is broken.** Verified 2026-10-07:
+
+      | URL | Result |
+      |---|---|
+      | `https://www.aura144.com/` | **200 — the only working entry point** |
+      | `https://aura144.com/` | 404 (`404 page not found`, 19 bytes) |
+      | `http://aura144.com/` | 523 (Cloudflare cannot reach the origin) |
+      | `http://www.aura144.com/` | 301 → `http://aura144.com/` → 523, i.e. a dead end |
+
+      The site is served by **Netlify** behind Cloudflare (`x-nf-request-id` in the response headers), not by
+      GitHub Pages — `woei66.github.io/aurareading/` now 301s to `www.aura144.com` because of the repo's
+      `CNAME` file. To fix: add `aura144.com` as a custom domain in Netlify (Site configuration → Domain
+      management) and set it to redirect to the primary `www.aura144.com`, then set Cloudflare SSL/TLS to
+      **Full (strict)**. Also make sure Cloudflare has no redirect rule sending `www` to the apex.
+      Nothing in this repository can fix this — it is DNS and host configuration.
+- [ ] Submit `https://www.aura144.com/sitemap.xml` in Google Search Console. Use the `www` host; the apex 404s.
 - [ ] Ask someone who has never seen the app to use the site for 30 seconds and say what it does.
 
 ## Website-adjacent channels
