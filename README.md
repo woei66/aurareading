@@ -42,8 +42,17 @@ dependency, and the generated HTML is committed.
 |---|---|---|
 | `build_pages.py` | `privacy.html`, `tos.html`, `support.html`, `tw/privacy.html`, `tw/tos.html`, `tw/support.html` | the matching `.md` files |
 | `build_secondary.py` | `campaign/index.html`, `share/index.html`, `press/index.html` | inline in the script |
+| `build_app_aliases.py` | `privacy-app.html`, `tos-app.html`, `support-app.html` and the `/tw/` equivalents | byte-for-byte copies of the pages above |
 
-Run `python3 build_pages.py && python3 build_secondary.py` after editing the markdown or the secondary-page copy.
+Run `python3 build_pages.py && python3 build_secondary.py && python3 build_app_aliases.py` after editing the
+markdown or the secondary-page copy. The alias script must run **last**, since it copies the generated pages.
+
+### Why the `-app` pages exist
+
+The Google Play listing historically pointed at `/privacy-app`. Even though `/privacy` is now the canonical URL,
+that older link must keep resolving — a 404 on the store's privacy-policy URL is an app-listing problem. The alias
+pages are duplicated mechanically rather than hand-maintained, so they cannot drift apart from their canonical
+counterpart; they are deliberately excluded from `sitemap.xml`.
 
 `blog/launch-announcement.html` is hand-written. Images live in `assets/img/` as WebP, generated from the source
 artwork in the app repository (`auracamerapro/assets/`).

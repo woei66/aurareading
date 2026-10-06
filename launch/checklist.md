@@ -8,8 +8,10 @@
 
 - [ ] Confirm the "28,000+ installs" metric definition in Google Play Console (see `README.md`). Until it is
       confirmed, do not put the figure in a press release or a directory listing.
-- [ ] Confirm your Google Play listing's **Privacy Policy URL** points to `https://www.aura144.com/privacy`
-      (the old `/privacy-app` URL no longer exists).
+- [ ] Confirm your Google Play listing's **Privacy Policy URL**. Either URL now works and serves identical content:
+      `https://www.aura144.com/privacy` (canonical) or the legacy `https://www.aura144.com/privacy-app`, which is
+      kept alive as a byte-identical copy so the existing store link does not break. Prefer the canonical one if you
+      edit the listing anyway.
 - [ ] Update the Google Play listing copy: it still says "entertainment purposes only" and "AI-simulated Aura glow
       effect", which now contradicts the website. This is the single highest-value fix on the list — the listing is
       where the 240 daily installs actually arrive.

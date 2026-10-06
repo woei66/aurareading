@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隱私權政策 — Aura144</title>
+  <meta name="description" content="Aura144 如何處理你的照片、人臉資料與個人資訊。" />
+  <link rel="canonical" href="https://www.aura144.com/tw/privacy-app" />
+  <link rel="alternate" hreflang="en" href="https://www.aura144.com/privacy-app" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/privacy-app" />
+  <link rel="alternate" hreflang="x-default" href="https://www.aura144.com/privacy-app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Aura144" />
+  <meta property="og:url" content="https://www.aura144.com/tw/privacy" />
+  <meta property="og:title" content="隱私權政策 — Aura144" />
+  <meta property="og:description" content="Aura144 如何處理你的照片、人臉資料與個人資訊。" />
+  <meta property="og:image" content="https://www.aura144.com/assets/img/og.jpg" />
+  <meta name="theme-color" content="#faf8f5" />
+  <link rel="icon" href="/assets/img/icon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Serif+TC:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #faf8f5; --paper-2: #f3efe9; --ink: #14120f; --ink-2: #4a453e;
+      --ink-3: #8a8580; --rule: #e3ddd4; --accent: #4a3aa8; --maxw: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif; font-size: 17px; line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+    header {
+      position: sticky; top: 0; z-index: 50; background: rgba(250,248,245,.86);
+      backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid var(--rule);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .brand {
+      font-family: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif; font-size: 20px; font-weight: 600;
+      text-decoration: none; display: flex; align-items: center; gap: 10px; color: var(--ink);
+    }
+    .brand img { width: 26px; height: 26px; border-radius: 7px; }
+    nav.links { display: flex; align-items: center; gap: 26px; font-size: 14.5px; }
+    nav.links a { text-decoration: none; color: var(--ink-2); }
+    nav.links a:hover { color: var(--ink); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--ink); color: #fff; text-decoration: none; font-size: 15.5px;
+      font-weight: 500; padding: 14px 24px; border-radius: 999px; border: 1px solid var(--ink);
+      transition: background .18s ease, transform .18s ease;
+    }
+    .btn:hover { background: #2b2620; transform: translateY(-1px); }
+    
+
+    main { padding: 64px 0 96px; }
+    .prose { max-width: 780px; }
+    .prose .kicker {
+      font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+      color: var(--ink-3); margin: 0 0 16px;
+    }
+    .prose h1 {
+      font-family: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif; font-weight: 600; font-size: clamp(30px, 3.8vw, 44px);
+      line-height: 1.25; margin: 0 0 14px; letter-spacing: 0;
+    }
+    .prose .meta { color: var(--ink-3); font-size: 14px; margin: 0 0 10px; }
+    .prose h2 {
+      font-family: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif; font-weight: 600; font-size: 22px; line-height: 1.4;
+      margin: 48px 0 12px; padding-top: 22px; border-top: 1px solid var(--rule);
+    }
+    .prose h3 {
+      font-family: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif; font-weight: 600; font-size: 18px; line-height: 1.45;
+      margin: 30px 0 8px;
+    }
+    .prose p { margin: 0 0 16px; color: var(--ink-2); }
+    .prose strong { color: var(--ink); font-weight: 600; }
+    .prose ul, .prose ol { margin: 0 0 18px; padding-left: 22px; color: var(--ink-2); }
+    .prose li { margin-bottom: 8px; }
+    .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 40px 0; }
+    .prose code { background: var(--paper-2); padding: 2px 6px; border-radius: 4px; font-size: .92em; }
+
+    footer { border-top: 1px solid var(--rule); padding: 48px 0 64px; }
+    .foot-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; }
+    .foot-grid p { margin: 0; font-size: 14px; color: var(--ink-3); max-width: 38ch; line-height: 1.7; }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
+    .foot-links a { text-decoration: none; color: var(--ink-2); }
+    .foot-links a:hover { color: var(--ink); }
+    .disclaimer {
+      margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--rule);
+      font-size: 12.5px; color: var(--ink-3); max-width: 80ch; line-height: 1.8;
+    }
+    .copy { margin-top: 16px; font-size: 12.5px; color: var(--ink-3); }
+
+    @media (max-width: 560px) {
+      .wrap { padding: 0 20px; }
+      main { padding: 40px 0 64px; }
+      .bar { height: 62px; }
+      nav.links a:not(.btn) { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="/tw/">
+        <img src="/assets/img/icon-180.png" alt="" width="26" height="26" />
+        <span>Aura144</span>
+      </a>
+      <nav class="links" aria-label="主要選單">
+        <a href="/tw/#how">使用方式</a><a href="/tw/#insights">解讀項目</a><a href="/tw/#faq">常見問題</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro&amp;utm_source=aura144_site&amp;utm_medium=legal_page&amp;utm_campaign=redesign">下載</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap prose">
+      <p class="kicker">法律</p>
+      <h1>隱私權政策</h1>
+      <p class="meta">最後更新：2026 年 5 月 2 日</p>
+      <h2>1) 我們是誰</h2>
+      <p><strong>控制者／開發者：</strong> LIN WEI TING</p>
+      <p><strong>聯絡信箱：</strong> taomuru@gmail.com</p>
+      <h2>2) 適用範圍</h2>
+      <p>本隱私權政策說明 Aura144（以下稱「本 App」）在你使用本 App 時，如何蒐集、使用、儲存與保護資訊。你不需要建立帳號即可使用本 App。</p>
+      <h2>3) 照片、人臉資料與敏感性資料</h2>
+      <p>本 App 允許你上傳可能包含人物臉部或身體的照片。</p>
+      <p>本 App 不使用人臉辨識、人臉識別、人臉特徵點偵測、人臉範本擷取、生物特徵識別，或任何其他可從臉部辨識特定身分的技術。</p>
+      <p>本 App 不建立也不儲存人臉範本、人臉指紋、生物特徵檔案，或任何人臉資料庫。</p>
+      <p>若照片中包含臉部，該臉部僅作為你自行選擇、用以產生氣場影像之影像的一部分而存在。</p>
+      <p>本 App 僅將上傳的影像用於產生你要求的氣場影像與解讀。</p>
+      <p>如果你不希望臉部出現在上傳的照片中，可以在上傳前將臉部模糊、遮蓋或馬賽克處理。</p>
+      <h2>4) 我們蒐集哪些資訊</h2>
+      <p><strong>A) 你提供的內容</strong></p>
+      <ul>
+      <li>你為產生氣場影像而自行選擇上傳的照片。</li>
+      <li>由這些照片產生的氣場影像與解讀結果。</li>
+      <p><strong>B) 裝置與 App 資料</strong></p>
+      <li>維持 App 運作所需的最少量技術資料，例如本機 App 實例識別碼與購買驗證相關資料。</li>
+      <p><strong>C) 付款</strong></p>
+      <li>付款由 Google Play 處理。我們不蒐集、也不儲存你的信用卡號碼。我們可能從平台取得購買確認資料，以驗證購買並解鎖付費內容。</li>
+      <p>我們不要求註冊帳號，也不會為了使用本 App 的核心功能而蒐集你的姓名、電子郵件、電話號碼、通訊錄或精確位置。</p>
+      </ul>
+      <h2>5) 我們如何使用資訊</h2>
+      <p>用於接收你選擇的照片並產生你要求的氣場影像與解讀；將產生的結果回傳至 App；驗證 App 內購買並提供付費內容；維護服務安全、防止濫用，以及遵循法律義務。</p>
+      <h2>6) 上傳處理與保留期間</h2>
+      <p>你選擇的照片僅會在產生氣場影像所需的處理期間上傳至我們的伺服器。處理完成、結果回傳後，原始上傳照片即自伺服器刪除。回傳的氣場影像與解讀儲存在你自己的裝置上。我們不會在伺服器端保留上傳照片的永久資料庫。由於結果儲存在裝置本機，裝置重置、移除 App 或本機資料被刪除後，結果可能無法復原。</p>
+      <h2>7) 分享與揭露</h2>
+      <p>我們不販售個人資訊。我們不會為了廣告或側寫而將上傳照片、人臉資料或產生的結果分享給第三方。若法律要求，或為保護權利、安全與服務安全，我們可能揭露資訊。</p>
+      <h2>8) 資訊儲存地點</h2>
+      <p>暫時上傳的照片在產生氣場影像期間於我們的伺服器上處理。產生的氣場影像與解讀結果於回傳後儲存在你的裝置本機。</p>
+      <h2>9) 安全</h2>
+      <p>我們採用合理的技術與組織措施保護資訊，包括存取控制與傳輸安全。但沒有任何傳輸或儲存方式能保證百分之百安全。</p>
+      <h2>10) 你的選擇</h2>
+      <p>使用本 App 不需要帳號。你可以在裝置設定中控制相簿權限。如果你不希望照片包含臉部，可以在上傳前將臉部模糊、遮蓋或馬賽克處理。</p>
+      <h2>11) 你的權利</h2>
+      <p><strong>A) 歐洲經濟區／英國居民</strong></p>
+      <p>你可以要求查閱、更正、刪除、限制處理及可攜帶你的個人資料，並在適用情況下反對處理。你也可以向當地資料保護主管機關提出申訴。</p>
+      <p><strong>B) 美國居民（包含加州居民）</strong></p>
+      <p>在適用法律例外範圍內，你可能擁有知悉、查閱、刪除或更正個人資訊的權利。我們不販售個人資訊，也不將其用於跨情境行為廣告。</p>
+      <h2>12) 兒童隱私</h2>
+      <p>本 App 並非針對 13 歲以下兒童，或當地法律所定最低年齡以下之兒童。如果你認為有兒童提供了個人資訊，請與我們聯絡，我們將審查該請求。</p>
+      <h2>13) 自動化處理</h2>
+      <p>本 App 使用自動化影像處理，以產生你要求的氣場影像與解讀。此處理僅用於產生你要求的氣場解讀，不用於身分驗證或人臉辨識，也不會產生法律或類似重大影響。</p>
+      <h2>14) 本政策的變更</h2>
+      <p>我們可能不時更新本隱私權政策。更新版本將公布於本頁，並更新「最後更新」日期。</p>
+      <h2>15) 聯絡我們</h2>
+      <p>若對本政策或你的個人資訊有任何問題或請求：</p>
+      <p><strong>電子郵件：</strong> taomuru@gmail.com</p>
+      <hr />
+      <p><em>本頁為英文版之翻譯，僅供參考。若中英文版本有任何不一致，以英文版為準。</em></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <p>與 Judith Collins 共同開發的 Android 氣場相機。看見你的氣場，並讀懂它顯示了什麼。</p>
+        </div>
+        <nav class="foot-links" aria-label="頁尾">
+          <a href="/tw/support">支援</a><a href="/tw/privacy">隱私</a><a href="/tw/tos">條款</a>
+          <a href="/">English</a>
+          <a href="https://www.yourhumanaura.com/about" target="_blank" rel="noopener">Judith Collins</a>
+        </nav>
+      </div>
+      <p class="disclaimer">氣場影像與解讀屬於能量層面的詮釋，並非醫療診斷或治療，僅提供自我反思與個人洞察之用。</p>
+      <p class="copy">© 2026 Aura144. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

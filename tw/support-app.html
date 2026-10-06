@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>支援 — Aura144</title>
+  <meta name="description" content="Aura144 的協助：照片要求、你的資料、紀錄與付款。" />
+  <link rel="canonical" href="https://www.aura144.com/tw/support-app" />
+  <link rel="alternate" hreflang="en" href="https://www.aura144.com/support-app" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.aura144.com/tw/support-app" />
+  <link rel="alternate" hreflang="x-default" href="https://www.aura144.com/support-app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Aura144" />
+  <meta property="og:url" content="https://www.aura144.com/tw/support" />
+  <meta property="og:title" content="支援 — Aura144" />
+  <meta property="og:description" content="Aura144 的協助：照片要求、你的資料、紀錄與付款。" />
+  <meta property="og:image" content="https://www.aura144.com/assets/img/og.jpg" />
+  <meta name="theme-color" content="#faf8f5" />
+  <link rel="icon" href="/assets/img/icon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Serif+TC:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #faf8f5; --paper-2: #f3efe9; --ink: #14120f; --ink-2: #4a453e;
+      --ink-3: #8a8580; --rule: #e3ddd4; --accent: #4a3aa8; --maxw: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif; font-size: 17px; line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+    header {
+      position: sticky; top: 0; z-index: 50; background: rgba(250,248,245,.86);
+      backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid var(--rule);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .brand {
+      font-family: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif; font-size: 20px; font-weight: 600;
+      text-decoration: none; display: flex; align-items: center; gap: 10px; color: var(--ink);
+    }
+    .brand img { width: 26px; height: 26px; border-radius: 7px; }
+    nav.links { display: flex; align-items: center; gap: 26px; font-size: 14.5px; }
+    nav.links a { text-decoration: none; color: var(--ink-2); }
+    nav.links a:hover { color: var(--ink); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--ink); color: #fff; text-decoration: none; font-size: 15.5px;
+      font-weight: 500; padding: 14px 24px; border-radius: 999px; border: 1px solid var(--ink);
+      transition: background .18s ease, transform .18s ease;
+    }
+    .btn:hover { background: #2b2620; transform: translateY(-1px); }
+    
+
+    main { padding: 64px 0 96px; }
+    .prose { max-width: 780px; }
+    .prose .kicker {
+      font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+      color: var(--ink-3); margin: 0 0 16px;
+    }
+    .prose h1 {
+      font-family: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif; font-weight: 600; font-size: clamp(30px, 3.8vw, 44px);
+      line-height: 1.25; margin: 0 0 14px; letter-spacing: 0;
+    }
+    .prose .meta { color: var(--ink-3); font-size: 14px; margin: 0 0 10px; }
+    .prose h2 {
+      font-family: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif; font-weight: 600; font-size: 22px; line-height: 1.4;
+      margin: 48px 0 12px; padding-top: 22px; border-top: 1px solid var(--rule);
+    }
+    .prose h3 {
+      font-family: "Noto Serif TC", "Fraunces", Georgia, "PingFang TC", "Microsoft JhengHei", serif; font-weight: 600; font-size: 18px; line-height: 1.45;
+      margin: 30px 0 8px;
+    }
+    .prose p { margin: 0 0 16px; color: var(--ink-2); }
+    .prose strong { color: var(--ink); font-weight: 600; }
+    .prose ul, .prose ol { margin: 0 0 18px; padding-left: 22px; color: var(--ink-2); }
+    .prose li { margin-bottom: 8px; }
+    .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 40px 0; }
+    .prose code { background: var(--paper-2); padding: 2px 6px; border-radius: 4px; font-size: .92em; }
+
+    footer { border-top: 1px solid var(--rule); padding: 48px 0 64px; }
+    .foot-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; }
+    .foot-grid p { margin: 0; font-size: 14px; color: var(--ink-3); max-width: 38ch; line-height: 1.7; }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
+    .foot-links a { text-decoration: none; color: var(--ink-2); }
+    .foot-links a:hover { color: var(--ink); }
+    .disclaimer {
+      margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--rule);
+      font-size: 12.5px; color: var(--ink-3); max-width: 80ch; line-height: 1.8;
+    }
+    .copy { margin-top: 16px; font-size: 12.5px; color: var(--ink-3); }
+
+    @media (max-width: 560px) {
+      .wrap { padding: 0 20px; }
+      main { padding: 40px 0 64px; }
+      .bar { height: 62px; }
+      nav.links a:not(.btn) { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="/tw/">
+        <img src="/assets/img/icon-180.png" alt="" width="26" height="26" />
+        <span>Aura144</span>
+      </a>
+      <nav class="links" aria-label="主要選單">
+        <a href="/tw/#how">使用方式</a><a href="/tw/#insights">解讀項目</a><a href="/tw/#faq">常見問題</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro&amp;utm_source=aura144_site&amp;utm_medium=legal_page&amp;utm_campaign=redesign">下載</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap prose">
+      <p class="kicker">協助</p>
+      <h1>支援</h1>
+      
+      <p>取得協助、提出問題，並找到常見問題的答案。</p>
+      <h2>聯絡我們</h2>
+      <p>如果你對 App 有任何疑問、需要協助，或想回報問題，請寄信給我們：</p>
+      <p><strong>taomuru@gmail.com</strong></p>
+      <p>我們通常在 24–48 小時內回覆。</p>
+      <h2>常見問題</h2>
+      <h3>氣場影像是怎麼產生的？</h3>
+      <p>Aura144 會讀取你照片中身體周圍的能量場，把它找到的顏色呈現為氣場影像，並附上一份文字解讀。解讀屬於能量層面的詮釋，並非醫療或科學診斷。</p>
+      <h3>我的照片會儲存在伺服器上嗎？</h3>
+      <p>不會。你的照片只會在處理期間暫時上傳，氣場影像產生完成後即立刻刪除。我們不會儲存或分享你的照片。細節請見<a href="/tw/privacy">隱私權政策</a>。</p>
+      <h3>換裝置之後，我的歷史影像還在嗎？</h3>
+      <p>產生的影像儲存在你的裝置本機。換裝置前請自行備份重要的影像，因為我們無法從伺服器端為你復原。</p>
+      <h3>為什麼兩次解讀之間要等一下？</h3>
+      <p>為維持服務品質與公平使用，同一台裝置或同一個網路在兩次解讀之間需要短暫的間隔（約兩分鐘）。如果看到請你稍候的提示，通常一兩分鐘內就會解除。</p>
+      <h3>照片有什麼要求？如果被退件怎麼辦？</h3>
+      <p>建議的拍攝方式：面向鏡頭站立、手臂張開、掌心朝前，頭頂上方與腳下各留約 30% 空白，全身完整入鏡，背景為單純的淺色牆面，並建議穿著短袖與短褲。App 會在付款前先檢查照片；若未通過，會請你重新上傳，而不是讓你付費換到一份不準的解讀。</p>
+      <h3>費用怎麼算？會被自動扣款嗎？</h3>
+      <p>Aura144 免費下載。每一項解讀都在 App 內個別解鎖，費用在確認前就會顯示，不會有任何自動扣款或訂閱扣款。</p>
+      <h3>隱私權政策在哪裡？</h3>
+      <p>隱私權政策請見 <a href="/tw/privacy">aura144.com/privacy</a>。</p>
+      <h3>服務條款在哪裡？</h3>
+      <p>服務條款請見 <a href="/tw/tos">aura144.com/tos</a>。</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <p>與 Judith Collins 共同開發的 Android 氣場相機。看見你的氣場，並讀懂它顯示了什麼。</p>
+        </div>
+        <nav class="foot-links" aria-label="頁尾">
+          <a href="/tw/support">支援</a><a href="/tw/privacy">隱私</a><a href="/tw/tos">條款</a>
+          <a href="/">English</a>
+          <a href="https://www.yourhumanaura.com/about" target="_blank" rel="noopener">Judith Collins</a>
+        </nav>
+      </div>
+      <p class="disclaimer">氣場影像與解讀屬於能量層面的詮釋，並非醫療診斷或治療，僅提供自我反思與個人洞察之用。</p>
+      <p class="copy">© 2026 Aura144. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
