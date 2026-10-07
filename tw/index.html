@@ -214,9 +214,10 @@
     .step p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
     .step-n { font-family: var(--serif); font-size: 14px; letter-spacing: .1em; color: var(--accent); display: flex; align-items: center; gap: 12px; }
     .step-n:after { content: ""; height: 1px; flex: 1; background: var(--rule); }
-    .phones { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 56px; }
-    .phone { border-radius: 26px; overflow: hidden; background: #fff; border: 1px solid var(--rule); box-shadow: 0 24px 60px -30px rgba(20, 18, 15, .45); }
-    .phone img { width: 100%; aspect-ratio: 720/1601; object-fit: cover; object-position: top; }
+    .phones { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 56px; }
+    .phone { border-radius: 20px; overflow: hidden; background: #fff; border: 1px solid var(--rule); box-shadow: 0 24px 60px -30px rgba(20, 18, 15, .45); }
+    /* 截圖原生比例 1170×2532；x7、x9 已裁掉狀態列，故不強制統一高度 */
+    .phone img { width: 100%; height: auto; display: block; }
     .phone-cap { padding: 14px 18px 18px; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--rule); line-height: 1.7; }
     .phone-cap b { display: block; color: var(--ink); font-weight: 600; font-size: 14px; margin-bottom: 3px; }
 
@@ -497,24 +498,29 @@
 
         <div class="phones rv">
           <figure class="phone" style="margin:0">
-            <img src="/assets/img/shot-steps.webp" width="720" height="1601" loading="lazy"
-              alt="Aura144 App 畫面：步驟一，選擇要分析的問題，列出各解讀項目與費用" />
-            <figcaption class="phone-cap"><b>選擇解讀項目</b>付款前就會看到費用。</figcaption>
+            <img src="/assets/img/shot-upload-empty.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 上傳畫面：照片欄位尚未選擇，上方顯示本次解讀費用，付款按鈕為未啟用狀態" />
+            <figcaption class="phone-cap"><b>上傳一張全身照</b>照片未通過檢查前，無法送出。</figcaption>
           </figure>
           <figure class="phone" style="margin:0">
-            <img src="/assets/img/shot-guide.webp" width="720" height="1601" loading="lazy"
-              alt="Aura144 拍攝指南畫面：頭頂上方留 30% 空間、掌心朝前、淺色背景等要求" />
-            <figcaption class="phone-cap"><b>照著拍攝指南拍</b>掌心朝前、全身入鏡、單純背景。</figcaption>
+            <img src="/assets/img/shot-upload-confirm.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 確認畫面：已選好一張全身照，顯示費用，付款並送出按鈕已可點擊" />
+            <figcaption class="phone-cap"><b>付款前先看到費用</b>確認之前不會有任何扣款。</figcaption>
           </figure>
           <figure class="phone" style="margin:0">
-            <img src="/assets/img/shot-result.webp" width="720" height="1601" loading="lazy"
-              alt="Aura144 結果畫面：處理後的氣場影像、處理時間，以及文字氣場解讀" />
-            <figcaption class="phone-cap"><b>閱讀你的解讀</b>氣場影像加上文字解讀，存入紀錄。</figcaption>
+            <img src="/assets/img/shot-result.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 結果畫面：產生好的氣場影像，附分享與儲存按鈕" />
+            <figcaption class="phone-cap"><b>你的氣場影像</b>可直接儲存，或從 App 分享出去。</figcaption>
           </figure>
           <figure class="phone" style="margin:0">
-            <img src="/assets/img/shot-lang.webp" width="720" height="1601" loading="lazy"
-              alt="Aura144 語言設定畫面，列出英文、簡體中文、繁體中文、德文、希臘文、西班牙文、波斯文、印地文、俄文、斯洛維尼亞文與烏爾都文" />
-            <figcaption class="phone-cap"><b>用你的語言</b>支援 15 種語言，包含繁體中文、English、हिन्दी、Русский。</figcaption>
+            <img src="/assets/img/shot-interpretation.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 解讀畫面：處理後的影像、處理時間，以及文字氣場解讀" />
+            <figcaption class="phone-cap"><b>閱讀解讀內容</b>才華、潛意識與情緒，都有文字說明。</figcaption>
+          </figure>
+          <figure class="phone" style="margin:0">
+            <img src="/assets/img/shot-records.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 紀錄畫面：列出已完成的氣場影像與個人氣場解讀及日期" />
+            <figcaption class="phone-cap"><b>每一次解讀都留存</b>可回頭重看，並加上私人備註。</figcaption>
           </figure>
         </div>
       </div>

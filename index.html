@@ -262,12 +262,13 @@
       display: flex; align-items: center; gap: 12px;
     }
     .step-n:after { content: ""; height: 1px; flex: 1; background: var(--rule); }
-    .phones { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 56px; }
+    .phones { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 56px; }
     .phone {
-      border-radius: 26px; overflow: hidden; background: #fff; border: 1px solid var(--rule);
+      border-radius: 20px; overflow: hidden; background: #fff; border: 1px solid var(--rule);
       box-shadow: 0 24px 60px -30px rgba(20, 18, 15, .45);
     }
-    .phone img { width: 100%; aspect-ratio: 720/1601; object-fit: cover; object-position: top; }
+    /* 截圖原生比例 1170×2532；x7、x9 已裁掉狀態列，故不強制統一高度 */
+    .phone img { width: 100%; height: auto; display: block; }
     .phone-cap { padding: 14px 18px 18px; font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--rule); }
     .phone-cap b { display: block; color: var(--ink); font-weight: 500; font-size: 14px; margin-bottom: 3px; }
 
@@ -576,24 +577,29 @@
 
         <div class="phones rv">
           <figure class="phone" style="margin:0">
-            <img src="/assets/img/shot-steps.webp" width="720" height="1601" loading="lazy"
-              alt="Aura144 app screen: step one, select the issue to analyze, with each reading and its fee listed" />
-            <figcaption class="phone-cap"><b>Pick your reading</b>The app shows the fee before anything is charged.</figcaption>
+            <img src="/assets/img/shot-upload-empty.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 upload screen: the photo picker is empty, with the reading fee shown above it and a disabled Pay and Submit button" />
+            <figcaption class="phone-cap"><b>Upload one full-body photo</b>Submitting is blocked until a photo passes the check.</figcaption>
           </figure>
           <figure class="phone" style="margin:0">
-            <img src="/assets/img/shot-guide.webp" width="720" height="1601" loading="lazy"
-              alt="Aura144 shooting guide screen showing the required pose: 30% space above the head, palms facing forward, light background" />
-            <figcaption class="phone-cap"><b>Follow the photo guide</b>Palms forward, full body in frame, plain background.</figcaption>
+            <img src="/assets/img/shot-upload-confirm.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 confirm screen: a full-body photo is selected, the fee is shown, and Pay and Submit is active" />
+            <figcaption class="phone-cap"><b>See the fee before you pay</b>Nothing is charged until you confirm.</figcaption>
           </figure>
           <figure class="phone" style="margin:0">
-            <img src="/assets/img/shot-result.webp" width="720" height="1601" loading="lazy"
-              alt="Aura144 result screen showing the processed aura image, processing time and the written aura interpretation" />
-            <figcaption class="phone-cap"><b>Read your interpretation</b>The aura image plus a written reading, saved to your records.</figcaption>
+            <img src="/assets/img/shot-result.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 result screen showing the generated aura image with Share and Save buttons" />
+            <figcaption class="phone-cap"><b>Your aura image</b>Save it, or share it straight from the app.</figcaption>
           </figure>
           <figure class="phone" style="margin:0">
-            <img src="/assets/img/shot-lang.webp" width="720" height="1601" loading="lazy"
-              alt="Aura144 language settings screen listing English, Chinese, German, Greek, Spanish, Persian, Hindi, Russian, Slovenian and Urdu" />
-            <figcaption class="phone-cap"><b>In your own language</b>15 languages, including English, 繁體中文, हिन्दी, Русский and more.</figcaption>
+            <img src="/assets/img/shot-interpretation.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 interpretation screen showing the processed image, processing time and the written aura interpretation" />
+            <figcaption class="phone-cap"><b>Read the interpretation</b>Talents, subconscious and emotions, in writing.</figcaption>
+          </figure>
+          <figure class="phone" style="margin:0">
+            <img src="/assets/img/shot-records.webp" width="720" height="1558" loading="lazy"
+              alt="Aura144 records screen listing completed aura pictures and personal aura readings with dates" />
+            <figcaption class="phone-cap"><b>Every reading kept</b>Revisit past readings and add private notes.</figcaption>
           </figure>
         </div>
       </div>
