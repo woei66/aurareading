@@ -5,7 +5,6 @@ mental and spiritual state. Developed with aura advisor **Judith Collins**.
 
 - **Platform:** Android
 - **Store:** [Google Play — Aura144: Aura Camera](https://play.google.com/store/apps/details?id=com.tripbnb.auracamerapro&utm_source=github&utm_medium=readme&utm_campaign=redesign)
-- **Package ID:** `com.tripbnb.auracamerapro`
 - **Web:** https://www.aura144.com/ (繁體中文: https://www.aura144.com/tw/)
 
 ## How it works
@@ -32,38 +31,6 @@ Uploaded photos are processed to generate the requested result and then deleted 
 use facial recognition and does not build any database of face data. See the
 [privacy policy](https://www.aura144.com/privacy).
 
-## Working on this site
-
-The site is plain static HTML served from this repository root via GitHub Pages, with no build step required to
-deploy. Generator scripts exist for the pages that have repeated structure — they are conveniences, not a
-dependency, and the generated HTML is committed.
-
-| Script | Generates | From |
-|---|---|---|
-| `build_pages.py` | `privacy.html`, `tos.html`, `support.html` and the `/tw/` versions | the matching `.md` files |
-| `build_secondary.py` | `campaign/`, `share/`, `press/` (English **and** `/tw/`) | inline in the script |
-| `build_blog.py` | `blog/launch-announcement.html`, `tw/blog/launch-announcement.html`, `feed.xml`, `tw/feed.xml` | inline in the script |
-| `build_app_aliases.py` | `privacy-app.html`, `tos-app.html`, `support-app.html` and the `/tw/` versions | byte-for-byte copies of the pages above |
-| `build_sitemap.py` | `sitemap.xml` | the `PAIRS` list inside the script |
-| `build_store_listing.py` | `store-listing.md`, `store-listing.txt` | the copy for all 15 locales inside the script |
-
-Regenerate everything in this order (the alias script must run last, because it copies the generated pages):
-
-```
-python3 build_pages.py && python3 build_secondary.py && python3 build_blog.py \
-  && python3 build_app_aliases.py && python3 build_sitemap.py && python3 build_store_listing.py
-```
-
-`build_store_listing.py` is separate from the site: it produces the Google Play listing copy for all 15 locales and
-refuses to write unless every field passes Play's character limits (name 30 / short description 80 / full
-description 4000 / What's new 500). The reading names in it are copied from the app's own
-`assets/translations/*.json` rather than retranslated, so the store page and the app do not drift apart in wording.
-
-`build_pages.py`, `build_secondary.py` and `build_blog.py` all emit both languages, so a Chinese page can never
-fall out of sync with its English counterpart. Every page carries a three-line `hreflang` block
-(`en` / `zh-Hant` / `x-default`) and a `canonical`, and the header language switch always points at the same page
-in the other language rather than at the home page.
-
 ### Why the `-app` pages exist
 
 The Google Play listing historically pointed at `/privacy-app`. Even though `/privacy` is now the canonical URL,
@@ -75,6 +42,3 @@ counterpart; they are deliberately excluded from `sitemap.xml`. Their language s
 Images live in `assets/img/` as WebP, generated from the source artwork in the app repository
 (`auracamerapro/assets/`).
 
-## Feedback
-
-Open an [issue](https://github.com/woei66/aurareading/issues) or use the [support page](https://www.aura144.com/support).
